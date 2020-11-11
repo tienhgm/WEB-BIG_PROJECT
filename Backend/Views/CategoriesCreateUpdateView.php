@@ -1,0 +1,27 @@
+<div class="col-md-12" style="margin-left: 20px;">  
+    <div class="panel panel-primary">
+        <p>Categories</p>
+        
+        <form method="post" action="<?php echo $action; ?>">
+            <!-- rows -->
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-2">Name</div>
+                <div class="col-md-10" style="margin-left: 20px;">
+                    <input type="text" value="<?php echo isset($record->name)?$record->name:""; ?>" name="name" class="form-control" required>
+                </div>
+            </div>
+            <!-- end rows -->
+            
+           
+            <!-- rows -->
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-2"></div>
+                <div class="col-md-10" style="margin-left: 20px;">
+                    <input type="submit" value="Process" class="btn btn-primary">
+                </div>
+            </div>
+            <!-- end rows -->
+        </form>
+     
+    </div>
+</div>
