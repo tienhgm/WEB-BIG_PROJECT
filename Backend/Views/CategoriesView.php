@@ -1,10 +1,10 @@
-<div class="col-md-12" style="margin-left: 20px;">
+<div class="col-md-12">
     <div style="margin-bottom:5px;">
         <a href="index.php?controller=categories&action=create" class="btn btn-primary">Add Category</a>
     </div>
-    <div class="panel panel-primary">
-       
-        <div class="panel-body">
+    <div class="card card-primary">
+        <h6 class="card-header bg-info" style="color: white">Categories</h6>
+        <div class="card-body">
             <table class="table table-bordered">
               <thead class="thead-light">
                 <tr>
