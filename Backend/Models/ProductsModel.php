@@ -44,9 +44,9 @@
 			$area = $_POST["area"];	
 			$discount = $_POST["discount"];	
 			$description = $_POST["description"];	
-			$phong_tam = $_POST["phong_tam"];
+			$phong_tam = $_POST["phong_tam"];	
 			$phong_bep = $_POST["phong_bep"];		
-			$chung_chu = isset($_POST["hot"]) ? 1 : 0;
+			$chung_chu = isset($_POST["chung_chu"]) ? 1 : 0;
 			$dieu_hoa = isset($_POST["dieu_hoa"]) ? 1 : 0;
 			$ban_cong = isset($_POST["ban_cong"]) ? 1 : 0;
 			$gia_dien_nuoc = $_POST["gia_dien_nuoc"];
@@ -54,7 +54,7 @@
 			// $time = $_POST["time"];
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("update products set name='$name',category_id=$category_id,price=$price,address='$address',area=$area,discount=$discount,description='$description',phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu, dieu_hoa=$dieu_hoa, ban_cong=$ban_cong, gia_dien_nuoc=$gia_dien_nuoc, quantities= $quantities where id=$id");
+			$conn->query("update products set name='$name', category_id=$category_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
 			
 		}
 		public function modelCreate(){
@@ -68,7 +68,7 @@
 			$description = $_POST["description"];	
 			$phong_tam = $_POST["phong_tam"];
 			$phong_bep = $_POST["phong_bep"];		
-			$chung_chu = isset($_POST["hot"]) ? 1 : 0;
+			$chung_chu = isset($_POST["chung_chu"]) ? 1 : 0;
 			$dieu_hoa = isset($_POST["dieu_hoa"]) ? 1 : 0;
 			$ban_cong = isset($_POST["ban_cong"]) ? 1 : 0;
 			$gia_dien_nuoc = $_POST["gia_dien_nuoc"];
@@ -77,7 +77,7 @@
 
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("insert into products set name='$name',category_id=$category_id,price=$price,address='$address',area=$area,discount=$discount,description='$description',phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu, dieu_hoa=$dieu_hoa, ban_cong=$ban_cong, gia_dien_nuoc=$gia_dien_nuoc, quantities= $quantities");
+			$conn->query("insert into products set name='$name', category_id=$category_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities");
 		}
 		public function modelDelete($id){
 			//---
