@@ -160,11 +160,7 @@
 
           <!-- Page Heading -->
           <!-- Content Row -->
-        <div class="row">
-
-          <!-- Content Row -->
-          <div class="row">
-              <?php 
+        <?php 
                 if(file_exists($fileController)){
                     include $fileController;
                     if(class_exists($classController)){
@@ -173,8 +169,6 @@
                     }
                 }
               ?>
-          </div>
-        </div>
         <!-- /.container-fluid -->
 
       </div>

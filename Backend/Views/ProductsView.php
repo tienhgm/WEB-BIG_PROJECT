@@ -2,9 +2,9 @@
     <div style="margin-bottom:5px;">
         <a href="index.php?controller=products&action=create" class="btn btn-primary">Add products</a>
     </div>
-    <div class="panel panel-primary">
-       
-        <div class="panel-body">
+    <div class="card card-primary">
+        <h6 class="card-header bg-info" style="color: white">Products</h6>
+        <div class="card-body">
             <table class="table table-bordered">
               <thead class="thead-light">
                 <tr>

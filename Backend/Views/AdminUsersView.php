@@ -1,11 +1,11 @@
-<div class="col-md-12" style="margin-left: 20px;">
+<div class="col-md-12">
     <div style="margin-bottom:5px;">
         <a href="index.php?controller=adminUsers&action=create" class="btn btn-primary">Add user</a>
     </div>
-    <div class="panel panel-primary">
-       
-        <div class="panel-body">
-            <table class="table table-bordered">
+    <div class="card">
+  <h6 class="card-header bg-info" style="color: white">Admin-User</h6>
+  <div class="card-body">
+    <table class="table table-bordered table-hover">
               <thead class="thead-light">
                 <tr>
                   <th scope="col">id</th>
@@ -29,8 +29,7 @@
               </tbody>
               <?php endforeach; ?>
             </table>
-            
-            <style type="text/css">
+             <style type="text/css">
                 .pagination{padding:0px; margin:0px;}
                 .page-link{display: inline;}
                 .tien tr:nth-child(even){
@@ -44,6 +43,7 @@
                     <?php endfor; ?>
                 </li>
             </ul>
-        </div>
-    </div>
+  </div>
 </div>
+</div>
+
