@@ -49,5 +49,13 @@
 			//di chuyen den trang danh sach cac ban ghi
 			echo "<script>location.href='index.php?controller=products&action=read';</script>";
 		}
+		//chi tiet san pham
+        public function detail(){
+            $id= isset($_GET["id"]) ? $_GET["id"] :0;
+            //goi ham tu model de thuc hien
+            $data= $this->modelListProductsDetail($id);
+            //di chuyen den trang danh sach cac ban ghi
+           include "Views/ProductsDetailView.php";
+        }
 	}
  ?>

@@ -112,5 +112,14 @@
 			return $record->name;
 			//---
 		}
+		//lay danh sach cac cot con lai trong table products
+        public function modelListProductsDetail($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from products where id = $id");
+			//tra ve mot ban ghi
+			return $query->fetchAll();
+			//---
+        }	
 	}
  ?>
