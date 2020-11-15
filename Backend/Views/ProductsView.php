@@ -7,58 +7,33 @@
         <div class="card-body">
             <table class="table table-bordered">
               <thead class="thead-light">
-                <tr>
-                  <!-- <th scope="col">photo</th> -->
+                <tr style="text-align: center;">
+                  <th scope="col" style="width: 100px;">photo</th>
                   <th scope="col">Name</th>
-                  <th scope="col">Category</th>
-                  <th scope="col">PRICE</th>
+                  <th scope="col" style="width: 150px;">Category</th>
+                  <th scope="col" style="width: 150px;">PRICE</th>
                   <th scope="col">ADDRESS</th>
-                  <!-- <th scope="col">AREA</th> -->
-                  <th scope="col">DISCOUNT</th>
-                  <!-- <th scope="col">Description</th> -->
-                  <!-- <th scope="col">Phòngtắm</th>
-                  <th scope="col">Phòngbếp</th>
-                  <th scope="col">ChungChủ</th>
-                  <th scope="col">Điềuhòa</th>
-                  <th scope="col">Bancông</th>
-                  <th scope="col">Điện_Nước</th> -->
-                  <th scope="col">Quantities</th>
+                  <th scope="col" style="width: 80px;">DISCOUNT</th>
+                  
                   <!-- <th scope="col">DATE</th> -->
                   <th scope="col">detail</th>
-                  <th scope="col"></th>
+                  <th scope="col"style="width: 100px;"></th>
                 </tr>
               </thead>
               <?php foreach($listRecord as $rows): ?>
               <tbody>
-                <tr>
-                 
-                  <td><?php echo $rows->name; ?></td>
+                <tr style="text-align: center;">
+                  <td style="">
+                    <?php if($rows->photo != "" && file_exists('../Assets/Upload/Products/'.$rows->photo)): ?>
+                      <img src="../Assets/Upload/Products/<?php echo $rows->photo; ?>" style="width:100px;">
+                    <?php endif; ?>
+                  </td>
+                  <th><?php echo $rows->name; ?></th>
                   <th><?php echo $this->modelGetCategoryName($rows->category_id); ?></th>
                   <th> <?php echo number_format($rows->price);?> VNĐ</th>
-                  <td><?php echo $rows->address; ?></td>
-                 <!--  <td><?php echo number_format($rows->area);?> m2</td> -->
-                  <td><?php echo number_format($rows->discount); ?> %</td>
-                  <!-- <td><?php echo $rows->description; ?></td>
-                  <td><?php echo $rows->phong_tam;?></td>
-                  <td><?php echo $rows->phong_bep;?></td>
-                  <td style="text-align: center;"> 
-                    <?php if($rows->chung_chu == 1): ?>
-                        <span class="fa fa-check"></span>
-                    <?php endif; ?>
-                  </td>
+                  <th><?php echo $rows->address; ?></th>
+                  <th><?php echo number_format($rows->discount); ?> %</th>
                   
-                  <td style="text-align: center;">
-                    <?php if($rows->dieu_hoa == 1): ?>
-                        <span class="fa fa-check"></span>
-                    <?php endif; ?>
-                  </td>
-                  <td style="text-align: center;">
-                    <?php if($rows->ban_cong == 1): ?>
-                        <span class="fa fa-check"></span>
-                    <?php endif; ?>
-                  </td>
-                  <td><?php echo $rows->gia_dien_nuoc;?></td> -->
-                  <td><?php echo $rows->quantities;?></td>
                   <td><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id;?>" class="label label-success">Chi tiết</a></td>
                   <td style="text-align:center;">
                     <a href="index.php?controller=products&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;

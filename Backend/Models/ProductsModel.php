@@ -51,11 +51,29 @@
 			$ban_cong = isset($_POST["ban_cong"]) ? 1 : 0;
 			$gia_dien_nuoc = $_POST["gia_dien_nuoc"];
 			$quantities= $_POST["quantities"];
-			// $time = $_POST["time"];
+			
 			//---
 			$conn = Connection::getInstance();
 			$conn->query("update products set name='$name', category_id=$category_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
-			
+			//neu user chon anh thi thuc hien upload anh
+			if($_FILES["photo"]["name"]!= ""){
+				//---
+				//xoa anh cu truoc khi upload anh moi
+				$oldImage = $conn->query("select photo from products where id=$id");
+				if($oldImage->rowCount() > 0){
+					//lay mot ban ghi
+					$oldPhoto = $oldImage->fetch();
+					//xoa anh cu bang ham unlink
+					if(file_exists('../Assets/Upload/Products/'.$oldPhoto->photo))
+						unlink('../Assets/Upload/Products/'.$oldPhoto->photo);
+				}
+				//---
+				$photo = time().$_FILES["photo"]["name"];
+				//thuc hien upload file
+				move_uploaded_file($_FILES["photo"]["tmp_name"], "../Assets/Upload/Products/".$photo);
+				//update truong photo
+				$conn->query("update products set photo='$photo' where id=$id");
+			}
 		}
 		public function modelCreate(){
 			//---
@@ -73,11 +91,17 @@
 			$ban_cong = isset($_POST["ban_cong"]) ? 1 : 0;
 			$gia_dien_nuoc = $_POST["gia_dien_nuoc"];
 			$quantities= $_POST["quantities"];
-			// $time = $_POST["time"];
+			
+			$photo = "";
+			if($_FILES["photo"]["name"]!= ""){
+				$photo = time().$_FILES["photo"]["name"];
+				//thuc hien upload file
+				move_uploaded_file($_FILES["photo"]["tmp_name"], "../Assets/Upload/Products/".$photo);
+			}
 
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("insert into products set name='$name', category_id=$category_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities");
+			$conn->query("insert into products set name='$name', category_id=$category_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo='$photo',date=now()");
 		}
 		public function modelDelete($id){
 			//---

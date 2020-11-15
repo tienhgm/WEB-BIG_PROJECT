@@ -69,10 +69,10 @@
                 <tr>
                     <th style="width:100px;">Ngày đăng</th>
                     <td>
-                      <!--   <?php  
-                            $date= Date_create($order->date);
+                        <?php  
+                            $date= Date_create($rows->date);
                             echo Date_format($date, "d/m/Y");
-                        ?> -->
+                        ?>
                     </td>
                 </tr>
             
@@ -85,7 +85,9 @@
                 </tr>
                 
                 <tr>
-                    <td></td>
+                    <td><?php if($rows->photo != "" && file_exists('../Assets/Upload/Products/'.$rows->photo)): ?>
+                      <img src="../Assets/Upload/Products/<?php echo $rows->photo; ?>" style="width:100px;">
+                    <?php endif; ?></td>
                     <td><?php echo $rows->description; ?></td>
                 </tr>
                

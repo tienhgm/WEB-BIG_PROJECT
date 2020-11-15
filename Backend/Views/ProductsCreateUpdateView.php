@@ -1,4 +1,4 @@
-<div class="col-md-12" style="margin-left: 20px;">  
+<div class="col-md-12">  
     <div class="panel panel-primary">
         <h2>Edit product</h2>
         <!-- muon upload duoc anh thi phai co thuoc tinh enctype="multipart/form-data" -->
@@ -7,7 +7,7 @@
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Name</div>
                 <div class="col-md-8" >
-                    <input type="text" value="<?php echo isset($record->name)?$record->name:""; ?>" name="name" class="form-control" required>
+                    <input type="text" value="<?php echo isset($record->name)?$record->name:""; ?>" name="name" class="form-control" >
                 </div>
             </div>
             <!-- end rows -->
@@ -31,15 +31,15 @@
              <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Price</div>
                 <div class="col-md-8">
-                    <input type="number" value="<?php echo isset($record->price)?$record->price:""; ?>" name="price"  class="form-control" required>
+                    <input type="number" value="<?php echo isset($record->price)?$record->price:""; ?>" name="price"  class="form-control" >
                 </div>
             </div>
             <!-- end rows -->
-             <!-- rows -->
+            <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Address</div>
                 <div class="col-md-8" >
-                    <input type="text" value="<?php echo isset($record->address)?$record->address:""; ?>" name="address" class="form-control" required>
+                    <input type="text" value="<?php echo isset($record->address)?$record->address:""; ?>" name="address" class="form-control" >
                 </div>
             </div>
             <!-- end rows -->
@@ -47,7 +47,7 @@
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">AREA</div>
                 <div class="col-md-8" >
-                    <input type="number" value="<?php echo isset($record->area)?$record->area:""; ?>" name="area" class="form-control" required>
+                    <input type="number" value="<?php echo isset($record->area)?$record->area:""; ?>" name="area" class="form-control" >
                 </div>
             </div>
             <!-- end rows -->
@@ -74,7 +74,7 @@
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Phòng tắm</div>
                 <div class="col-md-8" >
-                    <input type="text" value="<?php echo isset($record->phong_tam)?$record->phong_tam:""; ?>" name="phong_tam" class="form-control" required> (có hay không? kín hay chung?)
+                    <input type="text" value="<?php echo isset($record->phong_tam)?$record->phong_tam:""; ?>" name="phong_tam" class="form-control" > (có hay không? kín hay chung?)
                 </div>
             </div>
             <!-- end rows -->
@@ -82,14 +82,14 @@
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Phòng bếp</div>
                 <div class="col-md-8" >
-                    <input type="text" value="<?php echo isset($record->phong_bep)?$record->phong_bep:""; ?>" name="phong_bep" class="form-control" required> (có hay không? kín hay chung?)
+                    <input type="text" value="<?php echo isset($record->phong_bep)?$record->phong_bep:""; ?>" name="phong_bep" class="form-control" > (có hay không? kín hay chung?)
                 </div>
             </div>
             <!-- end rows -->
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-3">Chung chủ</div>
-                <div class="col-md-">
+                <div class="col-md">
                     <input type="checkbox" <?php if(isset($record->chung_chu)&&$record->chung_chu == 1): ?> checked <?php endif; ?> name="chung_chu"> 
                 </div>
             </div>
@@ -97,7 +97,7 @@
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-3">Điều hòa</div>
-                <div class="col-md-">
+                <div class="col-md">
                     <input type="checkbox" <?php if(isset($record->dieu_hoa)&&$record->dieu_hoa == 1): ?> checked <?php endif; ?> name="dieu_hoa"> 
                 </div>
             </div>
@@ -105,7 +105,7 @@
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-3">Ban công</div>
-                <div class="col-md-">
+                <div class="col-md">
                     <input type="checkbox" <?php if(isset($record->ban_cong)&&$record->ban_cong == 1): ?> checked <?php endif; ?> name="ban_cong"> 
                 </div>
             </div>
@@ -114,7 +114,7 @@
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Giá điện nước</div>
                 <div class="col-md-8" >
-                    <input type="text" value="<?php echo isset($record->gia_dien_nuoc)?$record->gia_dien_nuoc:""; ?>" name="gia_dien_nuoc" class="form-control" required> 
+                    <input type="text" value="<?php echo isset($record->gia_dien_nuoc)?$record->gia_dien_nuoc:""; ?>" name="gia_dien_nuoc" class="form-control" > 
                 </div>
             </div>
             <!-- end rows -->
@@ -122,7 +122,15 @@
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">quantities</div>
                 <div class="col-md-8" >
-                    <input type="number" value="<?php echo isset($record->quantities)?$record->quantities:""; ?>" name="quantities" class="form-control" required> 
+                    <input type="number" value="<?php echo isset($record->quantities)?$record->quantities:""; ?>" name="quantities" class="form-control" > 
+                </div>
+            </div>
+            <!-- end rows -->
+            <!-- rows -->
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-2">Photo</div>
+                <div class="col-md-10">
+                    <input type="file" name="photo">
                 </div>
             </div>
             <!-- end rows -->
