@@ -39,6 +39,7 @@
 			//---
 			$name = $_POST["name"];
 			$category_id = $_POST["category_id"];
+			$location_id = $_POST["location_id"];
 			$price = $_POST["price"];			
 			$address = $_POST["address"];
 			$area = $_POST["area"];	
@@ -54,7 +55,7 @@
 			
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("update products set name='$name', category_id=$category_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
+			$conn->query("update products set name='$name', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
 			//neu user chon anh thi thuc hien upload anh
 			if($_FILES["photo"]["name"]!= ""){
 				//---
@@ -79,6 +80,7 @@
 			//---
 			$name = $_POST["name"];
 			$category_id = $_POST["category_id"];
+			$location_id = $_POST["location_id"];
 			$price = $_POST["price"];			
 			$address = $_POST["address"];
 			$area = $_POST["area"];	
@@ -101,7 +103,7 @@
 
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("insert into products set name='$name', category_id=$category_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo='$photo',date=now()");
+			$conn->query("insert into products set name='$name', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount, description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo='$photo',date=now()");
 		}
 		public function modelDelete($id){
 			//---
@@ -131,6 +133,25 @@
 			//---
 			$conn = Connection::getInstance();
 			$query = $conn->query("select * from categories where id = $id");
+			//tra ve mot ban ghi
+			$record = $query->fetch();
+			return $record->name;
+			//---
+		}
+		//lay cac location
+		public function modelGetLocation(){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from location order by id desc");
+			//tra ve nhieu ban ghi
+			return $query->fetchAll();
+			//---
+		}
+		//lay ten location
+		public function modelGetLocationName($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from location where id = $id");
 			//tra ve mot ban ghi
 			$record = $query->fetch();
 			return $record->name;

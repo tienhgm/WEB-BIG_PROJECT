@@ -1,4 +1,4 @@
-<div class="col-md-12">
+<div class="col-md-12" >
     <div style="margin-bottom:5px;">
         <a href="index.php?controller=adminUsers&action=create" class="btn btn-primary">Add user</a>
     </div>
@@ -46,4 +46,3 @@
   </div>
 </div>
 </div>
-

@@ -28,6 +28,22 @@
             </div>
             <!-- end rows -->
             <!-- rows -->
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-2">Location</div>
+                <div class="col-md-10">
+                    <select class="form-control" style="width: 200px;" name="location_id">
+                        <?php 
+                            //lay cac danh muc cha
+                            $location = $this->modelGetLocation();
+                         ?>
+                         <?php foreach($location as $rows): ?>
+                            <option value="<?php echo $rows->id; ?>"><?php echo $rows->name; ?></option>
+                         <?php endforeach; ?>
+                    </select>
+                </div>
+            </div>
+            <!-- end rows -->
+            <!-- rows -->
              <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Price</div>
                 <div class="col-md-8">

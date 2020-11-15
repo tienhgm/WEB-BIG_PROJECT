@@ -55,6 +55,11 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Categories</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?controller=location&action=read">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Location</span></a>
+      </li>
       <hr class="sidebar-divider">
       <!-- Heading -->
       <div class="sidebar-heading">
@@ -170,7 +175,6 @@
                 }
               ?>
         <!-- /.container-fluid -->
-
       </div>
       <!-- End of Main Content -->
 

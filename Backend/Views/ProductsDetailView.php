@@ -13,12 +13,16 @@
                 <tr>
                     <th style="width:100px;">Name</th>
                     <td><?php echo $rows->name; ?></td>
-                    <th style="width:100px;">Category</th>
-                    <td><?php echo $this->modelGetCategoryName($rows->category_id); ?></td>
                 </tr>
                 <tr>
+                    <th style="width:100px;">Category</th>
+                    <td><?php echo $this->modelGetCategoryName($rows->category_id); ?></td>
                     <th style="width:100px;">Price</th>
                     <td><?php echo number_format($rows->price);?> VNĐ</td>
+                </tr>
+                <tr>
+                    <th style="width:100px;">Location</th>
+                    <td><?php echo $this->modelGetLocationName($rows->location_id); ?></td>
                     <th style="width:100px;">Address</th>
                     <td><?php echo $rows->address; ?></td>
                 </tr>

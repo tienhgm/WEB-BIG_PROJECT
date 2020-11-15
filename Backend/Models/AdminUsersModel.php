@@ -42,7 +42,7 @@
 			$password = $_POST["password"];	
 					
 			//ma hoa password
-			
+			$password = md5($password);		
 			//---
 			$conn = Connection::getInstance();
 			$conn->query("insert into admin_users set name='$name',email='$email', password='$password'");

@@ -1,6 +1,6 @@
 <div class="col-md-12" >
     <div style="margin-bottom:5px;">
-        <a href="index.php?controller=categories&action=create" class="btn btn-primary">Add Category</a>
+        <a href="index.php?controller=location&action=create" class="btn btn-primary">Add Location</a>
     </div>
     <div class="card card-primary">
         <h6 class="card-header bg-info" style="color: white">Categories</h6>
@@ -17,8 +17,8 @@
                 <tr>
                   <td><?php echo $rows->name; ?></td>
                   <td style="text-align:center;">
-                      <a href="index.php?controller=categories&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;
-                        <a href="index.php?controller=categories&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
+                      <a href="index.php?controller=location&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;
+                        <a href="index.php?controller=location&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
                   </td>
                 </tr>
               </tbody>
@@ -35,7 +35,7 @@
             <ul class="pagination">
                 <li class="page-item">
                     <?php for($i = 1; $i <= $numPage; $i++): ?>
-                    <a href="index.php?controller=categories&action=read&p=<?php echo $i; ?>" class="page-link"><?php echo $i; ?></a>
+                    <a href="index.php?controller=location&action=read&p=<?php echo $i; ?>" class="page-link"><?php echo $i; ?></a>
                     <?php endfor; ?>
                 </li>
             </ul>

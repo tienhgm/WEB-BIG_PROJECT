@@ -31,7 +31,7 @@
                   <th><?php echo $rows->name; ?></th>
                   <th><?php echo $this->modelGetCategoryName($rows->category_id); ?></th>
                   <th> <?php echo number_format($rows->price);?> VNĐ</th>
-                  <th><?php echo $rows->address; ?></th>
+                  <th><?php echo $this->modelGetLocationName($rows->location_id); ?></th>
                   <th><?php echo number_format($rows->discount); ?> %</th>
                   
                   <td><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id;?>" class="label label-success">Chi tiết</a></td>
