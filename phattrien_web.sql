@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 15, 2020 lúc 05:04 AM
+-- Thời gian đã tạo: Th10 15, 2020 lúc 06:30 AM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -66,6 +66,31 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `location`
+--
+
+CREATE TABLE `location` (
+  `id` int(11) NOT NULL,
+  `name` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `location`
+--
+
+INSERT INTO `location` (`id`, `name`) VALUES
+(1, 'Cầu Giấy'),
+(2, 'Đống Đa'),
+(3, 'Hoàn Kiếm'),
+(4, 'Hoàng Mai'),
+(5, 'Nam Từ Liêm'),
+(6, 'Bắc Từ Liêm'),
+(7, 'Thanh Xuân'),
+(8, 'Hà Đông');
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `owner_users`
 --
 
@@ -99,6 +124,7 @@ CREATE TABLE `products` (
   `name` varchar(500) NOT NULL,
   `photo` varchar(255) NOT NULL,
   `category_id` int(11) NOT NULL,
+  `location_id` int(11) NOT NULL,
   `address` varchar(500) NOT NULL,
   `description` varchar(4000) NOT NULL,
   `area` double NOT NULL,
@@ -118,8 +144,8 @@ CREATE TABLE `products` (
 -- Đang đổ dữ liệu cho bảng `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `photo`, `category_id`, `address`, `description`, `area`, `discount`, `chung_chu`, `phong_tam`, `phong_bep`, `dieu_hoa`, `ban_cong`, `gia_dien_nuoc`, `price`, `quantities`, `date`) VALUES
-(7, 'nhà nghỉ thành công', '16054120581.jpg', 4, 'Htm, Cầu Giấy', '<p>đ&acirc;y l&agrave; nh&agrave; nghỉ to&agrave;n g&aacute;i&nbsp;</p>\r\n', 100, 5, 1, 'không', 'có', 1, 0, '15k/số', 1500000, 2, '2020-11-15');
+INSERT INTO `products` (`id`, `name`, `photo`, `category_id`, `location_id`, `address`, `description`, `area`, `discount`, `chung_chu`, `phong_tam`, `phong_bep`, `dieu_hoa`, `ban_cong`, `gia_dien_nuoc`, `price`, `quantities`, `date`) VALUES
+(8, 'Chung cư mini DEMO', '16054179961.jpg', 4, 1, '120 Hồ Tùng Mậu', '<p>Đ&acirc;y l&agrave; chung cư mini</p>\r\n', 40, 5, 1, 'Phòng tắm kím', 'Bếp chung', 1, 1, '15k/số điện , 20k/m3 nước', 3000000, 2, '2020-11-15');
 
 -- --------------------------------------------------------
 
@@ -159,6 +185,12 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `location`
+--
+ALTER TABLE `location`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `owner_users`
 --
 ALTER TABLE `owner_users`
@@ -193,6 +225,12 @@ ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT cho bảng `location`
+--
+ALTER TABLE `location`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
 -- AUTO_INCREMENT cho bảng `owner_users`
 --
 ALTER TABLE `owner_users`
@@ -202,7 +240,7 @@ ALTER TABLE `owner_users`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `renter_users`
