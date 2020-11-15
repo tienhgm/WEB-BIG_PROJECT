@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 11, 2020 lúc 02:49 PM
+-- Thời gian đã tạo: Th10 15, 2020 lúc 05:04 AM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin_users` (
   `id` int(11) NOT NULL,
-  `name` varchar(500) NOT NULL,
-  `email` varchar(500) NOT NULL,
-  `password` varchar(500) NOT NULL
+  `name` varchar(500) CHARACTER SET utf8 NOT NULL,
+  `email` varchar(500) CHARACTER SET utf8 NOT NULL,
+  `password` varchar(500) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -39,7 +39,8 @@ CREATE TABLE `admin_users` (
 --
 
 INSERT INTO `admin_users` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Nguyễn Văn A', 'nva@gmail.com', '202cb962ac59075b964b07152d234b70');
+(1, 'Nguyễn Văn A', 'nva@gmail.com', '202cb962ac59075b964b07152d234b70'),
+(10, ' tien', 'nve@gmail.com', '202cb962ac59075b964b07152d234b70');
 
 -- --------------------------------------------------------
 
@@ -49,7 +50,7 @@ INSERT INTO `admin_users` (`id`, `name`, `email`, `password`) VALUES
 
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -76,7 +77,7 @@ CREATE TABLE `owner_users` (
   `phonenumber` int(11) NOT NULL,
   `cmnd` int(11) NOT NULL,
   `address` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `owner_users`
@@ -96,6 +97,7 @@ INSERT INTO `owner_users` (`id`, `name`, `email`, `password`, `phonenumber`, `cm
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `name` varchar(500) NOT NULL,
+  `photo` varchar(255) NOT NULL,
   `category_id` int(11) NOT NULL,
   `address` varchar(500) NOT NULL,
   `description` varchar(4000) NOT NULL,
@@ -103,20 +105,21 @@ CREATE TABLE `products` (
   `discount` double NOT NULL,
   `chung_chu` int(11) NOT NULL,
   `phong_tam` varchar(500) NOT NULL,
-  `phong_bep` varchar(255) NOT NULL,
+  `phong_bep` varchar(500) NOT NULL,
   `dieu_hoa` int(11) NOT NULL,
   `ban_cong` int(11) NOT NULL,
   `gia_dien_nuoc` varchar(255) NOT NULL,
   `price` double NOT NULL,
-  `quantities` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `quantities` int(11) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `category_id`, `address`, `description`, `area`, `discount`, `chung_chu`, `phong_tam`, `phong_bep`, `dieu_hoa`, `ban_cong`, `gia_dien_nuoc`, `price`, `quantities`) VALUES
-(1, 'nha nghi 1*', 1, 'ha noi', 'day la nha nghi', 100, 2, 1, 'có , kín', 'có, chung ', 1, 0, '3k/ số \r\n20k/m3', 1500000, 3);
+INSERT INTO `products` (`id`, `name`, `photo`, `category_id`, `address`, `description`, `area`, `discount`, `chung_chu`, `phong_tam`, `phong_bep`, `dieu_hoa`, `ban_cong`, `gia_dien_nuoc`, `price`, `quantities`, `date`) VALUES
+(7, 'nhà nghỉ thành công', '16054120581.jpg', 4, 'Htm, Cầu Giấy', '<p>đ&acirc;y l&agrave; nh&agrave; nghỉ to&agrave;n g&aacute;i&nbsp;</p>\r\n', 100, 5, 1, 'không', 'có', 1, 0, '15k/số', 1500000, 2, '2020-11-15');
 
 -- --------------------------------------------------------
 
@@ -126,9 +129,9 @@ INSERT INTO `products` (`id`, `name`, `category_id`, `address`, `description`, `
 
 CREATE TABLE `renter_users` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8 NOT NULL,
   `phonenumber` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -181,7 +184,7 @@ ALTER TABLE `renter_users`
 -- AUTO_INCREMENT cho bảng `admin_users`
 --
 ALTER TABLE `admin_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `categories`
@@ -199,7 +202,7 @@ ALTER TABLE `owner_users`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT cho bảng `renter_users`
