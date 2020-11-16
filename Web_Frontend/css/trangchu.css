@@ -1,0 +1,148 @@
+
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.logo{
+    margin-left: 10%;
+    color: rgb(233, 47, 103) !important;
+}
+.login{
+    margin-right: 5%;
+}
+.login .fa{
+    color: white;
+}
+.login a{
+    font-size: 21px;
+    color: white;
+}
+.login a:hover{
+    text-decoration: none;
+    color: rgb(7, 174, 240);
+}
+.lienhe{
+    margin-right: 11%;
+    line-height: 0px;
+    color: white;
+}
+.lienhe .sdt{
+    cursor: pointer;
+    margin-top: -5px;
+    font-size: 26px;
+    color: #ff9a02;
+}
+.lienhe .sdt:hover{
+    color: #b67a21;
+}
+.lienhe .diadiem{
+    cursor: pointer;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: rgb(193, 236, 187);
+}
+.lienhe .diadiem:hover{
+    color: rgb(7, 174, 240);
+}
+.Category .nav-link{
+    font-size: 18px !important;
+}
+.Category .nav-link:hover{
+    color: rgb(7, 174, 240) !important;
+}
+/* banner */
+.banner{
+    position: relative;
+    width: 100%;
+    padding: 0 !important;margin: 0 !important;
+}
+.banner img{
+    padding: 0 !important;margin: 0 !important;
+    width: 100%;
+    height: 550px;
+}
+.search{
+    width: 50%;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+}
+.search h2{
+    color: #eeeeee;
+}
+.search .search-content{
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    padding:20px ;
+}
+
+
+
+/* footer */
+.key-word{
+    width: 80%;
+    margin: auto;
+}
+.key-word .nav-link{
+    padding: 0 !important;
+    color: black;
+    font-size: 15px;
+}
+.key-word .nav-link:hover{
+    color: brown;
+}
+.key-word a:hover{
+    text-decoration: none;
+}
+
+.footer-deco{
+    width: 100%;
+    height: 35px;
+    background-image: url('../images/footer_deco.png');
+}
+/* footer-content */
+.footer-content{
+    background-color:#003C71;
+    padding: 25px 0px;
+}
+.footer-content>.row{
+    width: 80% ;
+    margin: auto;
+}
+.footer-content .icon img{
+    width: 32px;height: 32px;
+}
+.footer-content h6{
+    font-weight: bold;
+    color: rgb(247, 150, 5);
+}
+.footer-content a{
+    font-size: 17px;
+    color: #dddddd;
+    padding: 7px 0;
+}
+.footer-content a:hover{
+    color: rgb(173, 212, 235);
+}
+.footer-content p{
+    font-size: 18px;
+    color: #f173b2;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+.footer-content .chungnhan img{
+    width: 70%;
+}
+/*  */
+.copyright{
+    width: 79%;
+    margin: 0px auto;margin-top: 25px;
+    border-top:1px dotted #eeeeee;
+    color: #eeeeee;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
