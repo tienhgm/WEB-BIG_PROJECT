@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../Assets/Frontend/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/icon_font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/css/trangchu.css">
-    
+    <script src="../Assets/Frontend/js/bootstrap.bundle.min.js"></script>
     <title>Trang chủ</title>
 </head>
 <body>
