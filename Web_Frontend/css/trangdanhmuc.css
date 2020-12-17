@@ -1,0 +1,28 @@
+/* main */
+.main-title{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;padding-bottom: 10px;
+    border-bottom: 1px solid #aaaaaa;
+}
+.main-title a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #015F95;
+}
+.main-title a:hover{
+    text-decoration: none;
+    color: #015F95;
+}
+.main-title .home:hover{
+    color: cornflowerblue;
+}
+.main-title h4{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.main-title p{
+    font-size: 15px;
+    font-weight: 600;
+}
