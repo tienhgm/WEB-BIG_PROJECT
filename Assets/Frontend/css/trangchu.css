@@ -1,0 +1,334 @@
+
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.logo{
+    margin-left: 10%;
+    color: rgb(233, 47, 103) !important;
+}
+.login{
+    margin-right: 5%;
+}
+.login .fa{
+    color: white;
+}
+.login a{
+    font-size: 21px;
+    color: white;
+}
+.login a:hover{
+    text-decoration: none;
+    color: rgb(7, 174, 240);
+}
+.lienhe{
+    margin-right: 11%;
+    line-height: 0px;
+    color: white;
+}
+.lienhe .sdt{
+    cursor: pointer;
+    margin-top: -5px;
+    font-size: 26px;
+    color: #ff9a02;
+}
+.lienhe .sdt:hover{
+    color: #b67a21;
+}
+.lienhe .diadiem{
+    cursor: pointer;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: rgb(193, 236, 187);
+}
+.lienhe .diadiem:hover{
+    color: rgb(7, 174, 240);
+}
+.Category .nav-link{
+    font-size: 18px !important;
+}
+.Category .nav-link:hover{
+    color: rgb(7, 174, 240) !important;
+}
+/* banner */
+.banner{
+    position: relative;
+    width: 100%;
+    padding: 0 !important;margin: 0 !important;
+}
+.banner img{
+    padding: 0 !important;margin: 0 !important;
+    width: 100%;
+    height: 550px;
+}
+.search{
+    width: 50%;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+}
+.search h2{
+    color: #eeeeee;
+}
+.search .search-content{
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    padding:20px ;
+}
+
+/* main */
+.main{
+    background: #ecf0f5;
+    padding-bottom: 60px;
+}
+/* dichvu */
+.dichvu{
+    background-color: rgba(0,60,113,0.05);
+}
+.dichvu-main{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.dichvu div{
+    color: #003c71;
+    padding: 3px;
+}
+.dichvu span{
+    position: absolute;
+    top:28% ;
+}
+.dichvu .fa{
+    font-size: 45px;
+}
+/* content */
+.content{
+    margin-top: 20px;
+}
+.chothuevip{
+    width: 80%;
+    margin: auto;
+}
+.chothuevip-title{
+    border-bottom: 2px solid #003c71;
+    position: relative;
+}
+.chothuevip-title h4{
+    color: #003c71;
+}
+.chothuevip-title a{
+    position: absolute;
+    top: 7px;
+    right: 1%;
+    color: #003c71;
+}
+.chothuevip-title a:hover{
+    text-decoration: none;
+    color: #0c78d6;
+}
+.chothuevip-title i{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.chothuevip-main{
+    margin:10px 0;
+    width: 100%;
+}
+.chothuevip-main .card:last-child{
+    margin-right: 0;
+}
+.chothuevip-main .card{
+    z-index: 500;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.chothuevip-main .card h5{
+    font-size: 14px;
+    position: absolute;
+    color:wheat;
+    left: -30px;
+    top: -14px;
+    background: red;
+    padding: 24px 28px 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); 
+    box-shadow: 0 1px 5px #000;
+    border-radius: 0;
+}
+.chothuevip-main .card a:hover{
+    text-decoration: none;
+    background: #c4daee;
+}
+.chothuevip-main .card h6{
+    color:#003c71;
+}
+.chothuevip-main .card .area{
+    color: red;
+}
+.chothuevip-main .card .fa-star{
+    color: rgb(226, 226, 87);
+}
+.chothuevip-main .card .address{
+    color: #3a7c03;
+}
+.chothuevip-main .card .price{
+    color: #00c1de;
+    font-size: 20px;
+}
+.chothuevip-main .card p{
+    line-height: 1px;
+}
+/* chothuemoi */
+.chothuemoi{
+    margin-top: 50px;
+}
+/* tintucmoi */
+.tintucmoi{
+    margin-top: 50px;
+}
+.tintucmoi-main{
+    margin-top: 30px;
+}
+.tintucmoi-main a{
+    margin-bottom: 20px;
+}
+.tintucmoi-content img{
+    width: 150px;height: 105px;
+    margin-right: 10px;
+}
+.tintucmoi-content h5{
+    color: #003c71;
+    font-size: 22px;
+    line-height: 21px;
+}
+.tintucmoi-content p{
+    color: rgb(32, 30, 30);
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 17px;
+    -webkit-line-clamp: 3;
+    height: 53px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.tintucmoi-main a:hover{
+    text-decoration: none;
+}
+.tintucmoi-main a:hover .tintucmoi-content h5{
+    color: rgb(184, 44, 44);
+}
+
+/* Cac dia diem cho thue noi tieng */
+.diadiemnoi{
+    margin-top: 20px;
+}
+.diadiemnoi-main{
+    margin-top: 20px;
+}
+.img-container{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 245px;
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+}
+.diadiem{
+    transition: transform 0.5s ease;
+}
+.diadiem:hover{
+    transform: scale(1.1);
+}
+.img-container img{
+    transform: translate(0,0);
+    width: 100% !important;
+}
+.tenquan{
+    width: 100%;
+    height: 42px;
+    background: rgba(16, 105, 179, 0.8);
+    position: absolute;
+    color: black;
+    z-index: 100;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+}
+/* footer */
+.key-word{
+    width: 80%;
+    margin: auto;
+}
+.key-word .nav-link{
+    padding: 0 !important;
+    color: black;
+    font-size: 15px;
+}
+.key-word .nav-link:hover{
+    color: brown;
+}
+.key-word a:hover{
+    text-decoration: none;
+}
+
+.footer-deco{
+    width: 100%;
+    height: 35px;
+    background-image: url('../images/footer_deco.png');
+}
+/* footer-content */
+.footer-content{
+    background-color:#003C71;
+    padding: 25px 0px;
+}
+.footer-content>.row{
+    width: 80% ;
+    margin: auto;
+}
+.footer-content .icon img{
+    width: 32px;height: 32px;
+}
+.footer-content h6{
+    font-weight: bold;
+    color: rgb(247, 150, 5);
+}
+.footer-content a{
+    font-size: 17px;
+    color: #dddddd;
+    padding: 7px 0;
+}
+.footer-content a:hover{
+    color: rgb(173, 212, 235);
+}
+.footer-content p{
+    font-size: 18px;
+    color: #f173b2;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+.footer-content .chungnhan img{
+    width: 70%;
+}
+/*  */
+.copyright{
+    width: 79%;
+    margin: 0px auto;margin-top: 25px;
+    border-top:1px dotted #eeeeee;
+    color: #eeeeee;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
