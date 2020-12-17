@@ -4,11 +4,11 @@
     margin: 0 !important;
 }
 .logo{
-    margin-left: 10%;
+    margin-left: 9%;
     color: rgb(233, 47, 103) !important;
 }
 .login{
-    margin-right: 5%;
+    margin-right: 10%;
 }
 .login .fa{
     color: white;
@@ -21,30 +21,7 @@
     text-decoration: none;
     color: rgb(7, 174, 240);
 }
-.lienhe{
-    margin-right: 11%;
-    line-height: 0px;
-    color: white;
-}
-.lienhe .sdt{
-    cursor: pointer;
-    margin-top: -5px;
-    font-size: 26px;
-    color: #ff9a02;
-}
-.lienhe .sdt:hover{
-    color: #b67a21;
-}
-.lienhe .diadiem{
-    cursor: pointer;
-    margin-top: -5px;
-    margin-bottom: 0px;
-    font-size: 16px;
-    color: rgb(193, 236, 187);
-}
-.lienhe .diadiem:hover{
-    color: rgb(7, 174, 240);
-}
+
 .Category .nav-link{
     font-size: 18px !important;
 }

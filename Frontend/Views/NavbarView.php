@@ -20,17 +20,14 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="Chungcu-nguyencan">Chung cư nguyên căn</a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Chungcu-nguyencan">Tin tức</a>
+                    </li>
                 </ul>
               
                 <div class="login my-1">
                     <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
                     <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink">&nbsp;Tài khoản</a>
-                </div>
-                <div class="lienhe">
-                    <h2 class="sdt"><i class="fa fa-phone" aria-hidden="true"></i> 1900 1009</h2>
-                    <p class="diadiem">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8h - 21h  <i class="fa fa-map-marker" aria-hidden="true"></i> Hà Nội
-                    </p>
                 </div>
             </div>
         </nav>
