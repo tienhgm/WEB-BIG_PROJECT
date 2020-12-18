@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="../Assets/Frontend/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/icon_font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/css/trangchu.css">
-    <script src="../Assets/Frontend/js/bootstrap.bundle.min.js"></script>
+
+    
     <title>Trang chủ</title>
 </head>
 <body>
@@ -33,232 +34,11 @@
                     <a href="#">Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="chothuevip-main row">
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <h5>VIP</h5>
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <?php  
+                        include "Controllers/HomeHotProductsController.php";
+                        $obj= new HomeHotProductsController();
+                        $obj->read();
+                    ?>
                 </div>
             </div>
             <!-- chothuemoi -->
@@ -267,83 +47,7 @@
                     <h4>CHO THUÊ MỚI NHẤT</h4>
                     <a href="#">Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
-                <div class="chothuevip-main row">
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <h5>VIP</h5>
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                <div class="chothuevip-main row">   
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
@@ -619,48 +323,11 @@
     </div>
     <!-- /main -->
     <!-- footer -->
-    <footer class="container-fluid">
-       
-        <div class="footer-deco"></div>
-        <div class="footer-content">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h6>NHÀ TRỌ TOT</h6>
-                    <p>Website cho thuê phòng trọ, nhà trọ nhanh chóng và hiệu quả</p>
-                    <a class="nav-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Hotline: 0345666888</a>
-                    <a class="nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: nhatrotot@gmail.com</a>
-                </div>
-                <div class="col-lg-3">
-                    <h6>THÔNG TIN</h6>
-                    <a class="nav-link" href="#">Giới thiệu</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">Chính sách bảo mật</a>
-                    <a class="nav-link" href="#">Quy định sử dụng</a>
-                </div>
-                <div class="col-lg-3">
-                    <h6>HƯỚNG DẪN</h6>
-                    <a class="nav-link" href="#">Hướng dẫn đăng tin</a>
-                    <a class="nav-link" href="#">Bảng giá dịch vụ</a>
-                    <a class="nav-link" href="#">Quy định đăng tin</a>
-                    <a class="nav-link" href="#">Liên hệ hỗ trợ</a>
-                </div>
-                <div class="col-lg-3">
-                    <h6>KẾT NỐI VỚI CHÚNG TÔI</h6>
-                    <a class="icon" href="#"><img src="../Assets/Frontend/images/fb.jpg" alt=""></a>
-                    <a class="icon" href="#"><img src="../Assets/Frontend/images/zalo-icon.png" alt=""></a>
-                    <a class="icon" href="#"><img src="../Assets/Frontend/images/youtobe.png" alt=""></a>
-                    <br /><br />
-                    <h6>ĐƯỢC CHỨNG NHẬN</h6>
-                    <a class="chungnhan" href="http://online.gov.vn/Home/WebDetails/21863"><img src="../Assets/Frontend/images/bocongthuong.png" alt=""></a>
-                </div>
-            </div>
-            <div class="copyright">
-                Copyright © 2016 - 2020 Nhatrotot.com. Ghi rõ nguồn "Nhatrotot.com" khi phát hành lại thông tin từ website này.
-            </div>
-        </div>
-    </footer>
+    <?php include "FooterView.php"; ?>
     <!-- /footer -->
     <script src="../Assets/Frontend/js/jquery-3.5.1.min.js"></script>
+    <script src="../Assets/Frontend/js/bootstrap.bundle.min.js"></script>
+    
     <script>
         $(document).ready(function(){
             $(".img").mousemove(function(event){

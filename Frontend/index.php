@@ -23,12 +23,6 @@
    if(isset($_GET["controller"]) == false){
 		include "Views/LayoutTrangChu.php";
    }
-   else if($_GET["controller"]=="account" && $_GET["action"]=="login"){
-   		include "Views/LoginView.php";
-   }
-   else if($_GET["controller"]=="AboutUs"&& $_GET["action"]=="read"){
-   		include "Views/AboutUsView.php";
-   }
 	else{
 		include "Views/LayoutTrangTrong.php";
 	}
