@@ -1,0 +1,62 @@
+
+.favarite-icon{
+  color: red;
+}
+.review{
+  color: orange;
+  padding-right: 10px;
+}
+.address{
+  margin-top: 5px;
+}
+
+.score{
+  background-color:green;
+  color: white;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.score-description{
+  color: green;
+}
+
+.sign-in{
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  border-width: 0px;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.comment{
+  margin-top: 40px;
+  text-align: justify;
+}
+
+
+.recommend-detail{
+  padding-left: 10px;
+}
+
+.rent-feature{
+  margin-top: 20px;
+}
+.rent-feature tr{
+  border: 1px solid gray;
+}
+
+.head-row{
+  text-align: center;
+}
+
+
+
+

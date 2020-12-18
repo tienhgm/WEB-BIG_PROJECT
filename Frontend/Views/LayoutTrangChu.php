@@ -3,67 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="icon_font/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/trangchu.css">
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../Assets/Frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/Frontend/icon_font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Assets/Frontend/css/trangchu.css">
+    <script src="../Assets/Frontend/js/bootstrap.bundle.min.js"></script>
     <title>Trang chủ</title>
 </head>
 <body>
     <!-- header -->
-    <header class=" container-fluid">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: #003C71;">
-            <a class="navbar-brand logo" href="TrangChu.html">NHÀ TRỌ TOT</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse m-auto" id="navbarSupportedContent">
-                <ul class="Category navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="TrangDanhMuc.html">Phòng trọ</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Chungcu-mini.html">Chung cư mini</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Nhanguyencan.html">Nhà nguyên căn</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Chungcu-nguyencan">Chung cư nguyên căn</a>
-                    </li>
-                </ul>
-              
-                <div class="login my-1">
-                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-                    <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink">&nbsp;Tài khoản</a>
-                </div>
-                <div class="lienhe">
-                    <h2 class="sdt"><i class="fa fa-phone" aria-hidden="true"></i> 1900 1009</h2>
-                    <p class="diadiem">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i> 8h - 21h  <i class="fa fa-map-marker" aria-hidden="true"></i> Hà Nội
-                    </p>
-                </div>
-            </div>
-        </nav>
-        <!-- banner -->
-        <div class="banner container-fluid">
-            <img src="images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg" alt="">
-            <div class="search">
-                <h2>Tìm kiếm phòng!</h2>
-                <div class="search-content">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Phòng bạn cần tìm" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                          <button class="btn btn-danger" type="button" id="button-addon2">Tìm</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </header>
-    <!-- /header -->
+    <?php include "Views/NavbarVIew.php";?>
+    <!--/header  -->
+
     <!-- main -->
     <div class="main">
         <!-- dichvu -->
@@ -85,8 +35,8 @@
                 <div class="chothuevip-main row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
-                            <a href="TrangChiTiet.html">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                            <a href="#">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <h5>VIP</h5>
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
@@ -112,7 +62,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -137,7 +87,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -162,7 +112,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -187,7 +137,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -212,7 +162,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -237,7 +187,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -262,7 +212,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -287,7 +237,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20201121103745-jrzcu.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -321,7 +271,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <h5>VIP</h5>
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
@@ -347,7 +297,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -372,7 +322,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -397,7 +347,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -422,7 +372,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -447,7 +397,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -472,7 +422,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -497,7 +447,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -522,7 +472,7 @@
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="card">
                             <a href="#">
-                                <img src="/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
+                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
                                     <p class="area">
@@ -555,7 +505,7 @@
                 <div class="tintucmoi-main row">
                     <a href="#" class="col-lg-6 col-md-12">
                         <div class="tintucmoi-content d-flex">
-                            <img src="images/chothuematbang01-1_1591697241.jpg" alt="">
+                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
                             <div>
                                 <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
                                 <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
@@ -564,7 +514,7 @@
                     </a>
                     <a href="#" class="col-lg-6 col-md-12">
                         <div class="tintucmoi-content d-flex">
-                            <img src="images/chothuematbang01-1_1591697241.jpg" alt="">
+                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
                             <div>
                                 <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
                                 <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
@@ -573,7 +523,7 @@
                     </a>
                     <a href="#" class="col-lg-6 col-md-12">
                         <div class="tintucmoi-content d-flex">
-                            <img src="images/chothuematbang01-1_1591697241.jpg" alt="">
+                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
                             <div>
                                 <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
                                 <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
@@ -582,7 +532,7 @@
                     </a>
                     <a href="#" class="col-lg-6 col-md-12">
                         <div class="tintucmoi-content d-flex">
-                            <img src="images/chothuematbang01-1_1591697241.jpg" alt="">
+                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
                             <div>
                                 <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
                                 <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
@@ -591,7 +541,7 @@
                     </a>
                     <a href="#" class="col-lg-6 col-md-12">
                         <div class="tintucmoi-content d-flex">
-                            <img src="images/chothuematbang01-1_1591697241.jpg" alt="">
+                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
                             <div>
                                 <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
                                 <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
@@ -600,7 +550,7 @@
                     </a>
                     <a href="#" class="col-lg-6 col-md-12">
                         <div class="tintucmoi-content d-flex">
-                            <img src="images/chothuematbang01-1_1591697241.jpg" alt="">
+                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
                             <div>
                                 <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
                                 <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
@@ -618,7 +568,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="images/ho-hoan-kiem-1.png" alt=""></a>
+                                <a href="#"><img class="img" src="../Assets/Frontend/images/ho-hoan-kiem-1.png" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Hoàn Kiếm</div>
                         </div>
@@ -626,7 +576,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="images/20200222151632-0d67_wm.jpg" alt=""></a>
+                                <a href="#"><img class="img" src="../Assets/Frontend/images/20200222151632-0d67_wm.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Cầu Giấy</div>
                         </div>
@@ -634,7 +584,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="images/unnamed.jpg" alt=""></a>
+                                <a href="#"><img class="img" src="../Assets/Frontend/images/unnamed.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Thanh Xuân</div>
                         </div>
@@ -642,7 +592,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="images/a16.jpg" alt=""></a>
+                                <a href="#"><img class="img" src="../Assets/Frontend/images/a16.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Đống Đa</div>
                         </div>
@@ -650,7 +600,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="images/1541794002754279644.jpg" alt=""></a>
+                                <a href="#"><img class="img" src="../Assets/Frontend/images/1541794002754279644.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Hai Bà Trưng</div>
                         </div>
@@ -658,7 +608,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="images/tayho.jpg" alt=""></a>
+                                <a href="#"><img class="img" src="../Assets/Frontend/images/tayho.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Tây Hồ</div>
                         </div>
@@ -670,32 +620,7 @@
     <!-- /main -->
     <!-- footer -->
     <footer class="container-fluid">
-        <!-- <div class="key-word row">
-            <div class="col-lg-3">
-                <a href="#"><h6>CHO THUÊ PHÒNG TRỌ</h6></a>
-                <a class="nav-link" href="#">Cho thuê phòng trọ Cầu giấy</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-            </div>
-            <div class="key-word col-lg-3">
-                <a href="#"><h6>CHUNG CƯ MINI</h6></a>
-                <a class="nav-link" href="#">Cho thuê phòng trọ Cầu giấy</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-            </div>
-            <div class="col-lg-3">
-                <a href="#"><h6>NHÀ NGUYÊN CĂN</h6></a>
-                <a class="nav-link" href="#">Cho thuê phòng trọ Cầu giấy</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-            </div>
-            <div class="key-word col-lg-3">
-                <a href="#"><h6>CHUNG CƯ NGUYÊN CĂN</h6></a>
-                <a class="nav-link" href="#">Cho thuê phòng trọ Cầu giấy</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-            </div>
-        </div> -->
+       
         <div class="footer-deco"></div>
         <div class="footer-content">
             <div class="row">
@@ -721,12 +646,12 @@
                 </div>
                 <div class="col-lg-3">
                     <h6>KẾT NỐI VỚI CHÚNG TÔI</h6>
-                    <a class="icon" href="#"><img src="images/fb.jpg" alt=""></a>
-                    <a class="icon" href="#"><img src="images/zalo-icon.png" alt=""></a>
-                    <a class="icon" href="#"><img src="images/youtobe.png" alt=""></a>
+                    <a class="icon" href="#"><img src="../Assets/Frontend/images/fb.jpg" alt=""></a>
+                    <a class="icon" href="#"><img src="../Assets/Frontend/images/zalo-icon.png" alt=""></a>
+                    <a class="icon" href="#"><img src="../Assets/Frontend/images/youtobe.png" alt=""></a>
                     <br /><br />
                     <h6>ĐƯỢC CHỨNG NHẬN</h6>
-                    <a class="chungnhan" href="http://online.gov.vn/Home/WebDetails/21863"><img src="images/bocongthuong.png" alt=""></a>
+                    <a class="chungnhan" href="http://online.gov.vn/Home/WebDetails/21863"><img src="../Assets/Frontend/images/bocongthuong.png" alt=""></a>
                 </div>
             </div>
             <div class="copyright">
@@ -735,7 +660,7 @@
         </div>
     </footer>
     <!-- /footer -->
-
+    <script src="../Assets/Frontend/js/jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function(){
             $(".img").mousemove(function(event){
