@@ -1,0 +1,100 @@
+/* main */
+.main-title{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;padding-bottom: 10px;
+    border-bottom: 1px solid #aaaaaa;
+}
+.main-title a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #015F95;
+}
+.main-title a:hover{
+    text-decoration: none;
+    color: #015F95;
+}
+.main-title .home:hover{
+    color: cornflowerblue;
+}
+.main-title h4{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.main-title p{
+    font-size: 15px;
+    font-weight: 600;
+}
+/* main-content */
+.main-content{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.main-content>div{padding: 0;}
+.danhsachphong{
+    background: white;
+    z-index: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #dddddd, -2px -2px 1px #dddddd;
+}
+.phong{
+    border-bottom: 1px solid blanchedalmond;
+    margin-bottom: 10px; 
+    padding:10px;  
+}
+.phong:last-child{
+    margin-bottom: 0;
+    border: none;
+}
+.phong img{
+    width: 160px;
+    height: 115px;
+}
+.phong>div{
+    padding: 5px 10px 0px;
+}
+.phong h6{
+    color:#113d7e;
+    font-weight: bold;
+}
+.phong .tomtat{
+    color: rgb(66, 62, 62);
+    font-size: 14px;
+    margin-top: -5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 15px;
+    -webkit-line-clamp: 2;
+    height: 30px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.phong .gia{
+    margin-top: -15px;
+    color: rgb(236, 89, 89);
+    font-weight: 800;
+    font-size: 19px;
+}
+.phong .dientich{
+    margin-top: -18px;
+    color: rgb(0, 136, 34);
+    font-weight: 500;
+    font-size: 16px;
+}
+.danhsachphong nav{
+    float: right;
+    margin-right: 10px;
+}
+/* timkiemphong */
+.timkiemphong{
+    margin-left: 5%;
+    background: white;
+    z-index: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px #dddddd, -2px -2px 1px #dddddd;
+}
+.timkiemphong .card{
+    border: none;
+}
