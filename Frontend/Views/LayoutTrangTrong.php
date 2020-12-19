@@ -23,7 +23,7 @@
             <a >Phòng trọ</a>
             <h4>Cho thuê phòng trọ, Tìm nhà trọ giá rẻ mới nhất 2020</h4>
             <p>Cho thuê phòng trọ, tìm nhà trọ giá rẻ, không chung chủ, an ninh và nhiều tiện nghi mới nhất tại Việt Nam. Đăng tin cho thuê phòng trọ nhanh chóng và hiệu quả cao.</p>
-        </div>
+        </div><br>
         <div class="container">
             <div class="col-lg-3 pull-right text-right">
                 <select class="form-control" onchange="location.href ='index.php?controller=products&action=categories&id=<?php echo $category_id?>&sort='+this.value;">
@@ -109,30 +109,56 @@
                     </ul>
                   </nav>
             </div>
-            <div class="timkiemphong col-md-12 col-lg-3">
+             <div class="timkiemphong col-md-12 col-lg-3">
                 <div class="card">
-                        <h5 class="card-header bg-info">Tìm kiếm</h5>
+                        <h5 class="card-header">Tìm kiếm</h5>
                         <div class="card-body khuvuc">
                             <h5 class="card-title">Theo địa điểm</h5>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
+                            <p class="card-text"><a href="#">Quận Hoàn Kiếm</a></p>
+                            <p class="card-text"><a href="#">Quận Cầu Giấy</a></p>
+                            <p class="card-text"><a href="#">Quận Đống Đa</a></p>
+                            <p class="card-text"><a href="#">Quận Thanh Xuân</a></p>
+                            <p class="card-text"><a href="#">Quận Tây Hồ</a></p>
+                            <p class="card-text"><a href="#">Quận Nam Từ Liêm</a></p>
+                            <p class="card-text"><a href="#">Quận Bắc Từ Liêm</a></p>
+                            <p class="card-text"><a href="#">Quận Ba Đình</a></p>
                         </div>
                         <div class="card-body mucgia">
                             <h5 class="card-title">Theo mức giá</h5>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text"><a href="#">Dưới 1 triệu</a></p>
+                                    <p class="card-text"><a href="#">Từ 2 - 3  triệu</a></p>
+                                    <p class="card-text"><a href="#">Từ 5 - 7 triệu</a></p>
+                                    <p class="card-text"><a href="#">Từ 10 - 15 triệu</a></p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-text"><a href="#">Từ 1 - 2 triệu</a></p>
+                                    <p class="card-text"><a href="#">Từ 3 - 5 triệu</a></p>
+                                    <p class="card-text"><a href="#">Từ 7 - 10 triệu</a></p>
+                                    <p class="card-text"><a href="#">Trên 15 triệu</a></p>
+                                </div>      
+                            </div>                  
                         </div>
                         <div class="card-body dientich">
                             <h5 class="card-title">Theo diện tích</h5>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
-                            <p class="card-text"><a href="#">Hoàn Kiếm</a></p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="card-text"><a href="#">Dưới 15 m2</a></p>
+                                    <p class="card-text"><a href="#">Từ 15 - 25 m2</a></p>
+                                    <p class="card-text"><a href="#">Từ 50 - 70 m2</a></p>
+                                    <p class="card-text"><a href="#">Từ 100 - 150 m2</a></p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="card-text"><a href="#">Từ 25 - 35 m2</a></p>
+                                    <p class="card-text"><a href="#">Từ 35 - 50 m2</a></p>
+                                    <p class="card-text"><a href="#">Từ 70 - 100 m2</a></p>
+                                    <p class="card-text"><a href="#">Trên 150 m2</a></p>
+                                </div>      
+                            </div>         
                         </div>
                   </div>
-             </div>     
-            </div>
+             </div>    
         </div>
     </div>
 
