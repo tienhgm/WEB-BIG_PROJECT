@@ -55,8 +55,14 @@
 .phong>div{
     padding: 5px 10px 0px;
 }
+.phong div a:hover{
+    text-decoration: none;
+}
+.phong div a:hover h6{
+    color: rgb(43, 156, 231);
+}
 .phong h6{
-    color:#113d7e;
+    color:#10438f;
     font-weight: bold;
 }
 .phong .tomtat{
@@ -74,7 +80,7 @@
 .phong .gia{
     margin-top: -15px;
     color: rgb(236, 89, 89);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 19px;
 }
 .phong .dientich{
@@ -88,6 +94,7 @@
     margin-right: 10px;
 }
 /* timkiemphong */
+
 .timkiemphong{
     margin-left: 5%;
     background: white;
@@ -97,4 +104,32 @@
 }
 .timkiemphong .card{
     border: none;
+}
+.timkiemphong .card-header{
+    color: rgb(185, 3, 161);
+    background: rgb(160, 214, 214);
+}
+.timkiemphong .card-title{
+    color: green;
+}
+.timkiemphong .card-body{
+    border-bottom: 1px solid #cccccc;
+    padding: 15px;
+}
+.timkiemphong .card-body:last-child{
+    border: none;
+}
+.timkiemphong a{
+    color: #141414;
+    font-size: 16px;
+    font-weight: 600;
+}
+.timkiemphong a:hover{
+    text-decoration: none;
+    color: rgb(81, 104, 231);
+}
+@media all and (max-width:992px){
+    .timkiemphong{
+        margin-left: 0;margin-top: 30px;
+    }
 }
