@@ -1,5 +1,6 @@
+<br>
 <div class="container">
-    <div class="col-lg-3 pull-right text-right">
+    <div class="col-lg-3 pull-right text-right" style="position: absolute;left: -5px;">
         <select class="form-control" onchange="location.href ='index.php?controller=products&action=categories&id=<?php echo $category_id?>&sort='+this.value;">
           <option value="0">Sắp xếp</option>
           <option value="priceAsc">Giá tăng dần</option>
@@ -9,7 +10,7 @@
         </select>
     </div>
 </div>
-<br>
+<br><br>
 <?php foreach($listRecordCategory as $rows): ?>
 	<div class="phong d-flex">
 	    <img style="height: 143px;" src="../Assets/Frontend/images/<?php echo $rows->photo ?>" alt="">
