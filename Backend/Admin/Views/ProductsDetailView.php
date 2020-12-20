@@ -15,6 +15,10 @@
                     <td><?php echo $rows->name; ?></td>
                 </tr>
                 <tr>
+                    <th style="width:100px;">Chủ sở hữu</th>
+                    <td><?php echo $this->modelGetOwnerName($rows->owner_id); ?></td>
+                </tr>
+                <tr>
                     <th style="width:100px;">Category</th>
                     <td><?php echo $this->modelGetCategoryName($rows->category_id); ?></td>
                     <th style="width:100px;">Price</th>
@@ -68,6 +72,14 @@
                         <?php endif; ?>
                     </td>
                 </tr>
+                <tr>
+                    <th style="width:100px;">HOT</th>
+                    <td>
+                        <?php if($rows->hot == 1): ?>
+                        <span class="fa fa-check"></span>
+                        <?php endif; ?>
+                    </td>
+                </tr>
                 
                 
                 <tr>
@@ -84,14 +96,19 @@
             <table class="table table-bordered table-hover">
                 <tr>
                     <th style="width: 100px; text-align: center;">Photo</th>
-                    <th style="text-align: center;">Mô tả</th>
+                     <td><?php if($rows->photo != "" && file_exists('../Assets/Upload/Products/'.$rows->photo)): ?>
+                      <img src="../../Assets/Upload/Products/<?php echo $rows->photo; ?>" style="width:100px;">
+                    <?php endif; ?></td>
                     
                 </tr>
-                
                 <tr>
-                    <td><?php if($rows->photo != "" && file_exists('../Assets/Upload/Products/'.$rows->photo)): ?>
-                      <img src="../Assets/Upload/Products/<?php echo $rows->photo; ?>" style="width:100px;">
-                    <?php endif; ?></td>
+                    <th style="text-align: center;">Title</th>
+                   
+                    <td><?php echo $rows->title; ?></td>
+                </tr>
+                <tr>
+                    <th style="text-align: center;">Mô tả</th>
+                   
                     <td><?php echo $rows->description; ?></td>
                 </tr>
                

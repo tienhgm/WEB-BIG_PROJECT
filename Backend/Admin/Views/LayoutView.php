@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +17,7 @@
   <!-- Custom styles for this template-->
   <link href="../../Assets/Backend/css/sb-admin-2.min.css" rel="stylesheet">
    <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../Assets/Backend/css/bootstrap.min.css">
   <script src="ckeditor/ckeditor.js"></script>
 </head>
 
@@ -181,7 +180,6 @@
       <!-- End of Main Content -->
 
       <!-- Footer -->
-      
       <!-- End of Footer -->
 
     </div>
@@ -217,6 +215,7 @@
   <!-- Bootstrap core JavaScript-->
   <script src="../../Assets/Backend/vendor/jquery/jquery.min.js"></script>
   <script src="../../Assets/Backend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
 
   <!-- Core plugin JavaScript-->
   <script src="../../Assets/Backend/vendor/jquery-easing/jquery.easing.min.js"></script>

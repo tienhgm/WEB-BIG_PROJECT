@@ -1,6 +1,9 @@
 <div class="col-md-12">  
     <div class="panel panel-primary">
         <h2>Edit product</h2>
+        <div style="margin-bottom:5px;">
+            <input onclick="history.go(-1);" type="button" value="Back" class="btn btn-danger">
+        </div>
         <!-- muon upload duoc anh thi phai co thuoc tinh enctype="multipart/form-data" -->
         <form method="post" enctype="multipart/form-data" action="<?php echo $action; ?>">
             <!-- rows -->
@@ -77,9 +80,20 @@
             <!-- end rows -->
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
+                <div class="col-md-2">Title</div>
+                <div class="col-md-10">
+                    <textarea id="title" class="title" name="title"><?php echo isset($record->title)?$record->title:""; ?> </textarea>
+                    <script type="text/javascript">
+                        CKEDITOR.replace("title");    
+                    </script>
+                </div>
+            </div>
+            <!-- end rows -->
+            <!-- rows -->
+            <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Description</div>
                 <div class="col-md-10">
-                    <textarea id="description" name="description"><?php echo isset($record->description)?$record->description:""; ?></textarea>
+                    <textarea id="description" class="description" name="description"><?php echo isset($record->description)?$record->description:""; ?></textarea>
                     <script type="text/javascript">
                         CKEDITOR.replace("description");
                     </script>
@@ -123,6 +137,14 @@
                 <div class="col-md-3">Ban công</div>
                 <div class="col-md">
                     <input type="checkbox" <?php if(isset($record->ban_cong)&&$record->ban_cong == 1): ?> checked <?php endif; ?> name="ban_cong"> 
+                </div>
+            </div>
+            <!-- end rows -->
+            <!-- rows -->
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-3">hot</div>
+                <div class="col-md">
+                    <input type="checkbox" <?php if(isset($record->hot)&&$record->hot == 1): ?> checked <?php endif; ?> name="hot"> 
                 </div>
             </div>
             <!-- end rows -->

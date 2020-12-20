@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../Assets/Frontend/css/trangchu.css">
 
     
-    <title>Trang chủ</title>
+    <title>NHATRO VIP</title>
 </head>
 <body>
     <!-- header -->

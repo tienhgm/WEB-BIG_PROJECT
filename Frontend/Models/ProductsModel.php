@@ -38,6 +38,51 @@
 			//tra ve tat ca cac ban truy van duoc
 			return $query->fetchAll();
 		}
+		//ham tinh tong so ban ghi
+		public function modelTotal($category_id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select id from products where category_id=$category_id order by id desc");
+			//lay tong so ban ghi
+			return $query->rowCount();
+			//---
+		}
+		//lay mot ban ghi
+		public function modelGetProduct($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from products where id = $id");
+			//tra ve mot ban ghi
+			return $query->fetch();
+			//---
+		}
+		//lay category 
+		public function modelGetCategory($category_id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select name from categories where id = $category_id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->name;
+			//---
+		}
+		//lay location
+		public function modelGetLocation($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select lo.name from location lo JOIN products p ON lo.id = p.location_id where p.id = p.$id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->name;
+			//---
+		}
+		//lay tca ban ghi
+		public function modelGetAllProduct(){
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from products");
+			$result = $query->fetchAll();
+			return $result;
+		}
 
 	}
 	

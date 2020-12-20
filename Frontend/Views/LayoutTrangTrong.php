@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../Assets/Frontend/css/trangchu.css">
       <link rel="stylesheet" href="../Assets/Frontend/css/trangdanhmuc.css">
     
-    <title>Trang chủ</title>
+    <title>NHATRO VIP</title>
 </head>
 <body>
     <!-- header -->
@@ -39,75 +39,16 @@
         <!-- main-content -->
         <div class="main-content row">
             <div class="danhsachphong col-md-12 col-lg-8">
-                <div class="phong d-flex">
-                    <img src="../Assets/Frontend/images/phong.jpg" alt="">
-                    <div>
-                        <h6>Nhà, phòng trọ khép kín 25m2 mới xây khép kín hoàn kiếm hà nội</h6>
-                        <p class="tomtat">Cho thuê phòng trọ mới xây dựng khép kín chính chủ rộng đẹp thoáng mát ở khu vực hoàn kiếm hà nội. Phù hợp cho người làm văn phòng và hộ gia đình ở Địa chỉ : Số nhà 44B Phố</p>
-                        <p class="gia">3.5 Triệu/tháng</p>
-                        <p class="dientich">Diện tích: 25 m² &nbsp;&nbsp; Khu vực: Hoàn Kiếm, Hà Nội</p>
-                    </div>
-                </div>
-                <div class="phong d-flex">
-                    <img src="../Assets/Frontend/images/phong.jpg" alt="">
-                    <div>
-                        <h6>Nhà, phòng trọ khép kín 25m2 mới xây khép kín hoàn kiếm hà nội</h6>
-                        <p class="tomtat">Cho thuê phòng trọ mới xây dựng khép kín chính chủ rộng đẹp thoáng mát ở khu vực hoàn kiếm hà nội. Phù hợp cho người làm văn phòng và hộ gia đình ở Địa chỉ : Số nhà 44B Phố</p>
-                        <p class="gia">3.5 Triệu/tháng</p>
-                        <p class="dientich">Diện tích: 25 m² &nbsp;&nbsp; Khu vực: Hoàn Kiếm, Hà Nội</p>
-                    </div>
-                </div>
-                <div class="phong d-flex">
-                    <img src="../Assets/Frontend/images/phong.jpg" alt="">
-                    <div>
-                        <h6>Nhà, phòng trọ khép kín 25m2 mới xây khép kín hoàn kiếm hà nội</h6>
-                        <p class="tomtat">Cho thuê phòng trọ mới xây dựng khép kín chính chủ rộng đẹp thoáng mát ở khu vực hoàn kiếm hà nội. Phù hợp cho người làm văn phòng và hộ gia đình ở Địa chỉ : Số nhà 44B Phố</p>
-                        <p class="gia">3.5 Triệu/tháng</p>
-                        <p class="dientich">Diện tích: 25 m² &nbsp;&nbsp; Khu vực: Hoàn Kiếm, Hà Nội</p>
-                    </div>
-                </div>
-                <div class="phong d-flex">
-                    <img src="../Assets/Frontend/images/phong.jpg" alt="">
-                    <div>
-                        <h6>Nhà, phòng trọ khép kín 25m2 mới xây khép kín hoàn kiếm hà nội</h6>
-                        <p class="tomtat">Cho thuê phòng trọ mới xây dựng khép kín chính chủ rộng đẹp thoáng mát ở khu vực hoàn kiếm hà nội. Phù hợp cho người làm văn phòng và hộ gia đình ở Địa chỉ : Số nhà 44B Phố</p>
-                        <p class="gia">3.5 Triệu/tháng</p>
-                        <p class="dientich">Diện tích: 25 m² &nbsp;&nbsp; Khu vực: Hoàn Kiếm, Hà Nội</p>
-                    </div>
-                </div>
-                <div class="phong d-flex">
-                    <img src="../Assets/Frontend/images/phong.jpg" alt="">
-                    <div>
-                        <h6>Nhà, phòng trọ khép kín 25m2 mới xây khép kín hoàn kiếm hà nội</h6>
-                        <p class="tomtat">Cho thuê phòng trọ mới xây dựng khép kín chính chủ rộng đẹp thoáng mát ở khu vực hoàn kiếm hà nội. Phù hợp cho người làm văn phòng và hộ gia đình ở Địa chỉ : Số nhà 44B Phố</p>
-                        <p class="gia">3.5 Triệu/tháng</p>
-                        <p class="dientich">Diện tích: 25 m² &nbsp;&nbsp; Khu vực: Hoàn Kiếm, Hà Nội</p>
-                    </div>
-                </div>
-                <div class="phong d-flex">
-                    <img src="../Assets/Frontend/images/phong.jpg" alt="">
-                    <div>
-                        <h6>Nhà, phòng trọ khép kín 25m2 mới xây khép kín hoàn kiếm hà nội</h6>
-                        <p class="tomtat">Cho thuê phòng trọ mới xây dựng khép kín chính chủ rộng đẹp thoáng mát ở khu vực hoàn kiếm hà nội. Phù hợp cho người làm văn phòng và hộ gia đình ở Địa chỉ : Số nhà 44B Phố</p>
-                        <p class="gia">3.5 Triệu/tháng</p>
-                        <p class="dientich">Diện tích: 25 m² &nbsp;&nbsp; Khu vực: Hoàn Kiếm, Hà Nội</p>
-                    </div>
-                </div>
-                <nav aria-label="...">
-                    <ul class="pagination">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                      </li>
-                    </ul>
-                  </nav>
+                <?php 
+                //load dong MVC
+                    if(file_exists($fileController)){
+                        include $fileController;
+                        if(class_exists($classController)){
+                            $obj= new $classController();
+                            $obj->$action();
+                        }
+                    }
+                ?>
             </div>
              <div class="timkiemphong col-md-12 col-lg-3">
                 <div class="card">
