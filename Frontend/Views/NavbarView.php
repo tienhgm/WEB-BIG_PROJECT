@@ -1,4 +1,4 @@
- <!-- header -->
+     <!-- header -->
     <header class=" container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: #003C71;">
             <a class="navbar-brand logo" href="index.php">NHÀ TRỌ TOT</a>

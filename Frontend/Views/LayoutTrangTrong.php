@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../Assets/Frontend/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/icon_font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/css/trangchu.css">
-      <link rel="stylesheet" href="../Assets/Frontend/css/trangdanhmuc.css">
-    
+    <link rel="stylesheet" href="../Assets/Frontend/css/trangdanhmuc.css">
+    <link rel="stylesheet" href="../Assets/Frontend/css/trangchitiet.css">
     <title>NHATRO VIP</title>
 </head>
 <body>
@@ -24,18 +24,7 @@
             <h4>Cho thuê phòng trọ, Tìm nhà trọ giá rẻ mới nhất 2020</h4>
             <p>Cho thuê phòng trọ, tìm nhà trọ giá rẻ, không chung chủ, an ninh và nhiều tiện nghi mới nhất tại Việt Nam. Đăng tin cho thuê phòng trọ nhanh chóng và hiệu quả cao.</p>
         </div><br>
-        <div class="container">
-            <div class="col-lg-3 pull-right text-right">
-                <select class="form-control" onchange="location.href ='index.php?controller=products&action=categories&id=<?php echo $category_id?>&sort='+this.value;">
-                  <option value="0">Sắp xếp</option>
-                  <option value="priceAsc">Giá tăng dần</option>
-                  <option value="priceDesc">Giá giảm dần</option>
-                  <option value="nameAsc">Sắp xếp A-Z</option>
-                  <option value="nameDesc">Sắp xếp Z-A</option>
-                </select>
-            </div>
-        </div>
-        <br>
+        
         <!-- main-content -->
         <div class="main-content row">
             <div class="danhsachphong col-md-12 col-lg-8">
@@ -55,14 +44,16 @@
                         <h5 class="card-header">Tìm kiếm</h5>
                         <div class="card-body khuvuc">
                             <h5 class="card-title">Theo địa điểm</h5>
-                            <p class="card-text"><a href="#">Quận Hoàn Kiếm</a></p>
-                            <p class="card-text"><a href="#">Quận Cầu Giấy</a></p>
-                            <p class="card-text"><a href="#">Quận Đống Đa</a></p>
-                            <p class="card-text"><a href="#">Quận Thanh Xuân</a></p>
-                            <p class="card-text"><a href="#">Quận Tây Hồ</a></p>
-                            <p class="card-text"><a href="#">Quận Nam Từ Liêm</a></p>
-                            <p class="card-text"><a href="#">Quận Bắc Từ Liêm</a></p>
-                            <p class="card-text"><a href="#">Quận Ba Đình</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=3">Quận Hoàn Kiếm</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=1">Quận Cầu Giấy</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=2">Quận Đống Đa</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=7">Quận Thanh Xuân</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=10">Quận Tây Hồ</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=4">Quận Hoàng Mai</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=5">Quận Nam Từ Liêm</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=6">Quận Bắc Từ Liêm</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=9">Quận Ba Đình</a></p>
+                            <p class="card-text"><a href="index.php?controller=products&action=locations&id=8">Quận Hà Đông</a></p>
                         </div>
                         <div class="card-body mucgia">
                             <h5 class="card-title">Theo mức giá</h5>
