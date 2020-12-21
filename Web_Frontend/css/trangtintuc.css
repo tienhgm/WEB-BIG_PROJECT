@@ -1,0 +1,102 @@
+.blog-title{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+.blog-title a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #015F95;
+}
+.blog-title a:hover{
+    text-decoration: none;
+    color: #015F95;
+}
+.blog-title .home:hover{
+    color: cornflowerblue;
+}
+/* main */
+.main-content{
+    margin-top: 15px;
+}
+.menu-tintuc{
+    background: #f3eaea;
+}
+.menu-tintuc a{
+    color: #222;
+    font-size: 16px;
+}
+.menu-tintuc a:hover{
+    color: rgb(26, 122, 36);
+}
+/* tintuc */
+.tin .tomtat{
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 18px;
+    height: 38px;
+}
+.tintuc{
+    margin-top: 20px;
+}
+.tin{
+    padding-bottom: 10px !important;
+    padding: 0;
+    border-bottom: 1px dashed #bbbbbb;
+}
+.tin:last-child{
+    border-bottom: 1px dashed #bbbbbb;
+}
+/* timkiemtin */
+.timkiemtin{
+    margin-left: 5%;
+}
+.timkiemtin .card{
+    margin-bottom: 30px;
+}
+.timkiemtin .card-header{
+    font-weight: bold;
+    color: #4cae4c;
+}
+.tinmoi img{
+    width: 80px;
+    height: 60px;
+}
+.tinmoi{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #cccccc;
+}
+.tinmoi:last-child{
+    border: none;
+}
+.tinmoi h6{
+    color: #333333;
+    padding-left: 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.tinmoi a:hover h6{
+    color: rgb(12, 12, 150);
+}
+.tinmoi a:hover{
+    text-decoration: none;
+}
+
+.quantam{
+    padding: 0px 14px;
+    margin-bottom: 0px;
+}
+.quantam li{
+    list-style: square;
+    color: #bbbbbb;
+}
+.quantam li a{
+    color: #333333;
+    font-weight: 700;
+    font-size: 15px;
+}
+.quantam li a:hover{
+    color: rgb(12, 12, 150);
+    text-decoration: none;
+}
