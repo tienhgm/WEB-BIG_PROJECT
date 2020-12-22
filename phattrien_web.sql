@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 16, 2020 lúc 02:05 PM
+-- Thời gian đã tạo: Th12 22, 2020 lúc 11:36 AM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -86,7 +86,9 @@ INSERT INTO `location` (`id`, `name`) VALUES
 (5, 'Nam Từ Liêm'),
 (6, 'Bắc Từ Liêm'),
 (7, 'Thanh Xuân'),
-(8, 'Hà Đông');
+(8, 'Hà Đông'),
+(9, 'Ba Đình'),
+(10, 'Tây Hồ');
 
 -- --------------------------------------------------------
 
@@ -109,8 +111,8 @@ CREATE TABLE `owner_users` (
 --
 
 INSERT INTO `owner_users` (`id`, `name`, `email`, `password`, `phonenumber`, `cmnd`, `address`) VALUES
-(1, 'Nguyen Thai Tiep', 'ntt@gmail.com', '202cb962ac59075b964b07152d234b70\r\n', 123456789, 7182696, 'Thai Binh'),
-(7, 'Nguyen TIen', 'tienhg@gmail.com', '202cb962ac59075b964b07152d234b70', 842432000, 123456789, '23 hg');
+(7, 'Nguyen TIen', 'tienhg@gmail.com', '202cb962ac59075b964b07152d234b70', 842432000, 123456789, '23 hg'),
+(8, 'Tuấn chó ', 'tuancho@gmail.com', '202cb962ac59075b964b07152d234b70', 842432000, 12345, 'vinh phuc');
 
 -- --------------------------------------------------------
 
@@ -126,6 +128,7 @@ CREATE TABLE `products` (
   `category_id` int(11) NOT NULL,
   `location_id` int(11) NOT NULL,
   `address` varchar(500) NOT NULL,
+  `title` varchar(500) NOT NULL,
   `description` varchar(4000) NOT NULL,
   `area` double NOT NULL,
   `discount` double NOT NULL,
@@ -134,6 +137,7 @@ CREATE TABLE `products` (
   `phong_bep` varchar(500) NOT NULL,
   `dieu_hoa` int(11) NOT NULL,
   `ban_cong` int(11) NOT NULL,
+  `hot` int(11) NOT NULL,
   `gia_dien_nuoc` varchar(255) NOT NULL,
   `price` double NOT NULL,
   `quantities` int(11) NOT NULL,
@@ -144,14 +148,17 @@ CREATE TABLE `products` (
 -- Đang đổ dữ liệu cho bảng `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `photo`, `owner_id`, `category_id`, `location_id`, `address`, `description`, `area`, `discount`, `chung_chu`, `phong_tam`, `phong_bep`, `dieu_hoa`, `ban_cong`, `gia_dien_nuoc`, `price`, `quantities`, `date`) VALUES
-(8, 'Chung cư mini DEMO', '16054183181.jpg', 7, 4, 4, '120 Hồ Tùng Mậu', '<p>Đ&acirc;y l&agrave; chung cư mini</p>\r\n', 40, 5, 1, 'Phòng tắm kín', 'Bếp chung', 1, 1, '15k/số điện , 20k/m3 nước', 3000000, 2, '2020-11-15'),
-(10, 'chung cư NOHOPE', '', 0, 4, 7, 'htm VN HN', '<p>day la nha nghi 5*</p>\r\n', 123, 11, 1, 'có', 'Không', 1, 1, '15k/số điện , 100k/m3 nước', 12345678, 2, '2020-12-16'),
-(11, 'Resort siêu cấp vũ trụ', '', 7, 4, 8, 'Minh Khai , Hà Nội', '<p>Resort 500*</p>\r\n', 999, 54, 1, 'Phòng tắm kím', 'có', 1, 0, '15k/số điện , 100k/m3 nước', 9999999, 100, '2020-12-16'),
-(15, 'tienhg', '', 0, 4, 6, '321', '<p>321</p>\r\n', 321, 321, 1, 'dsa', 'dsa', 1, 0, '321', 123, 321, '2020-12-16'),
-(21, ' tien', '', 0, 4, 8, '321', '<p>323</p>\r\n', 321, 321, 1, '321', '321', 0, 0, '321321', 321, 32, '2020-12-16'),
-(22, ' tien hotel', '', 0, 4, 8, '321', '<p>332</p>\r\n', 32, 33, 1, '321', '321321', 1, 1, '1321', 321, 323, '2020-12-16'),
-(23, 'Nguyễn Mạnh Tiến', '', 7, 4, 2, '32132', '<p>21321</p>\r\n', 321, 323, 1, '1321', '3232', 1, 0, '32', 32, 321, '2020-12-16');
+INSERT INTO `products` (`id`, `name`, `photo`, `owner_id`, `category_id`, `location_id`, `address`, `title`, `description`, `area`, `discount`, `chung_chu`, `phong_tam`, `phong_bep`, `dieu_hoa`, `ban_cong`, `hot`, `gia_dien_nuoc`, `price`, `quantities`, `date`) VALUES
+(8, 'Chung cư mini DEMO', '16054183181.jpg', 7, 4, 8, '120 Hồ Tùng Mậu', '', '<p>Đ&acirc;y l&agrave; chung cư mini</p>\r\n', 40, 5, 1, 'Phòng tắm kín', 'Bếp chung', 1, 1, 1, '15k/số điện , 20k/m3 nước', 3000000, 2, '2020-11-15'),
+(10, 'chung cư NOHOPE', '', 0, 4, 8, 'htm VN HN', '', '<p>day la nha nghi 5*</p>\r\n', 123, 11, 1, 'có', 'Không', 1, 1, 1, '15k/số điện , 100k/m3 nước', 12345678, 2, '2020-12-16'),
+(11, 'Resort siêu cấp vũ trụ', '', 7, 4, 8, 'Minh Khai , Hà Nội', '', '<p>Resort 500*</p>\r\n', 999, 54, 1, 'Phòng tắm kím', 'có', 1, 0, 1, '15k/số điện , 100k/m3 nước', 9999999, 100, '2020-12-16'),
+(15, 'tienhg', '', 0, 4, 8, '321', '', '<p>321</p>\r\n', 321, 321, 1, 'dsa', 'dsa', 1, 0, 1, '321', 123, 321, '2020-12-16'),
+(21, ' tien', '', 0, 4, 8, '321', '', '<p>323</p>\r\n', 321, 321, 1, '321', '321', 0, 0, 0, '321321', 321, 32, '2020-12-16'),
+(22, ' tien hotel', '16086311341.jpg', 0, 4, 10, '321', '', '<p>332</p>\r\n', 32, 33, 1, '321', '321321', 1, 1, 1, '1321', 321, 323, '2020-12-16'),
+(23, 'Nguyễn Mạnh Tiến', '', 7, 4, 5, '32132', '', '<p>21321</p>\r\n', 321, 323, 1, '1321', '3232', 1, 0, 1, '32', 32, 321, '2020-12-16'),
+(24, 'tuấn chó ', '', 8, 4, 5, '23 hg', '', '<p>3121</p>\r\n', 123, 1, 1, 'Phòng tắm kín', '321', 1, 0, 1, '321321', 1, 2, '2020-12-16'),
+(25, 'Nguyễn Mạnh Tiến', '16086319320.jpg', 7, 4, 10, '23 hg', '<p>1234v</p>\r\n', '<p>456132</p>\r\n', 123, 5, 0, 'Phòng tắm kím', 'Bếp chung', 1, 0, 1, '1321', 123456, 5, '2020-12-20'),
+(26, '123Nguyễn Văn E  ', '16086308721.jpg', 0, 4, 10, '3', '<p>day ls&aacute;d&nbsp;</p>\r\n', '<p>sda34</p>\r\n', 321, 21321, 1, '321', 'Bếp chung', 1, 1, 1, '15k/số', 231, 12, '2020-12-20');
 
 -- --------------------------------------------------------
 
@@ -172,7 +179,29 @@ CREATE TABLE `renter_users` (
 --
 
 INSERT INTO `renter_users` (`id`, `name`, `email`, `password`, `phonenumber`) VALUES
-(1, ' tien', 'tienhga@gmail.com', '123', 842432000);
+(1, ' tien', 'tienhga@gmail.com', '202cb962ac59075b964b07152d234b70', 842432000);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `slide`
+--
+
+CREATE TABLE `slide` (
+  `id` int(11) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `slide`
+--
+
+INSERT INTO `slide` (`id`, `photo`, `title`, `description`) VALUES
+(5, '16086320010.jpg', '<p>NHATRO TOT</p>\r\n', '<p>Đơn vị uy t&iacute;n h&agrave;ng đầu</p>\r\n'),
+(6, '16086320701.jpg', '<p>CHI PH&Iacute; PHẢI CHĂNG</p>\r\n', '<p>Bảo đảm gi&aacute; cả tốt nhất</p>\r\n'),
+(7, '16086321032.jpg', '<p>HẾT L&Ograve;NG V&Igrave; KH&Aacute;CH H&Agrave;NG</p>\r\n', '<p>Đội ngũ tư vấn chi tiết v&agrave; tận t&igrave;nh</p>\r\n');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -215,6 +244,12 @@ ALTER TABLE `renter_users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `slide`
+--
+ALTER TABLE `slide`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -234,25 +269,31 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT cho bảng `location`
 --
 ALTER TABLE `location`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `owner_users`
 --
 ALTER TABLE `owner_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT cho bảng `renter_users`
 --
 ALTER TABLE `renter_users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT cho bảng `slide`
+--
+ALTER TABLE `slide`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
