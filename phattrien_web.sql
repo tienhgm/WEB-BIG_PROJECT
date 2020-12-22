@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 22, 2020 lúc 11:36 AM
+-- Thời gian đã tạo: Th12 22, 2020 lúc 01:37 PM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -93,6 +93,28 @@ INSERT INTO `location` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `news`
+--
+
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL,
+  `name` varchar(500) NOT NULL,
+  `description` varchar(4000) NOT NULL,
+  `detail_content` text NOT NULL,
+  `photo` varchar(500) NOT NULL,
+  `hot` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `news`
+--
+
+INSERT INTO `news` (`id`, `name`, `description`, `detail_content`, `photo`, `hot`) VALUES
+(2, 'Nguyễn Mạnh Tiến', '<p>123</p>\r\n', '<p>hg</p>\r\n', '16086401250.jpg', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `owner_users`
 --
 
@@ -158,7 +180,8 @@ INSERT INTO `products` (`id`, `name`, `photo`, `owner_id`, `category_id`, `locat
 (23, 'Nguyễn Mạnh Tiến', '', 7, 4, 5, '32132', '', '<p>21321</p>\r\n', 321, 323, 1, '1321', '3232', 1, 0, 1, '32', 32, 321, '2020-12-16'),
 (24, 'tuấn chó ', '', 8, 4, 5, '23 hg', '', '<p>3121</p>\r\n', 123, 1, 1, 'Phòng tắm kín', '321', 1, 0, 1, '321321', 1, 2, '2020-12-16'),
 (25, 'Nguyễn Mạnh Tiến', '16086319320.jpg', 7, 4, 10, '23 hg', '<p>1234v</p>\r\n', '<p>456132</p>\r\n', 123, 5, 0, 'Phòng tắm kím', 'Bếp chung', 1, 0, 1, '1321', 123456, 5, '2020-12-20'),
-(26, '123Nguyễn Văn E  ', '16086308721.jpg', 0, 4, 10, '3', '<p>day ls&aacute;d&nbsp;</p>\r\n', '<p>sda34</p>\r\n', 321, 21321, 1, '321', 'Bếp chung', 1, 1, 1, '15k/số', 231, 12, '2020-12-20');
+(26, '123Nguyễn Văn E  ', '16086308721.jpg', 0, 4, 10, '3', '<p>day ls&aacute;d&nbsp;</p>\r\n', '<p>sda34</p>\r\n', 321, 21321, 1, '321', 'Bếp chung', 1, 1, 1, '15k/số', 231, 12, '2020-12-20'),
+(27, 'Nguyễn Mạnh Tiến', '16086399640.jpg', 7, 4, 7, '3', '<p>21</p>\r\n', '<p>421</p>\r\n', 1, 2, 0, '321', '321', 1, 1, 1, '321', 12, 32, '2020-12-22');
 
 -- --------------------------------------------------------
 
@@ -226,6 +249,12 @@ ALTER TABLE `location`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `owner_users`
 --
 ALTER TABLE `owner_users`
@@ -272,6 +301,12 @@ ALTER TABLE `location`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
+-- AUTO_INCREMENT cho bảng `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT cho bảng `owner_users`
 --
 ALTER TABLE `owner_users`
@@ -281,7 +316,7 @@ ALTER TABLE `owner_users`
 -- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT cho bảng `renter_users`

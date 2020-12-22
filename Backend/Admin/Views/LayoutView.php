@@ -87,12 +87,17 @@
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
       <div class="sidebar-heading">
-        Products
+        Objects
       </div>
       <li class="nav-item">
         <a class="nav-link" href="index.php?controller=products&action=read">
           <i class="fas fa-fw fa-cog"></i>
           <span>Products</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?controller=news&action=read">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>News</span></a>
       </li>
       <hr class="sidebar-divider d-none d-md-block">
       <div class="sidebar-heading">
@@ -172,18 +177,16 @@
         <!-- Begin Page Content -->
       <div class="container-fluid">
 
-          <!-- Page Heading -->
           <!-- Content Row -->
-        <?php 
-                if(file_exists($fileController)){
-                    include $fileController;
-                    if(class_exists($classController)){
-                        $obj= new $classController();
-                        $obj->$action();
-                    }
+          <?php 
+            if(file_exists($fileController)){
+                include $fileController;
+                if(class_exists($classController)){
+                    $obj= new $classController();
+                    $obj->$action();
                 }
-              ?>
-        <!-- /.container-fluid -->
+            }
+          ?>
       </div>
       <!-- End of Main Content -->
 
@@ -200,7 +203,6 @@
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-
   <!-- Logout Modal-->
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -223,11 +225,8 @@
   <!-- Bootstrap core JavaScript-->
   <script src="../../Assets/Backend/vendor/jquery/jquery.min.js"></script>
   <script src="../../Assets/Backend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-
   <!-- Core plugin JavaScript-->
   <script src="../../Assets/Backend/vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Custom scripts for all pages-->
   <script src="../../Assets/Backend/js/sb-admin-2.min.js"></script>
   <!-- load ck editor -->
