@@ -17,14 +17,7 @@
 
     <!-- main -->
     <div class="main">
-        <!-- dichvu -->
-        <div class="dichvu">
-            <div class="dichvu-main row">
-                <div class="col-lg-4"><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;&nbsp;<span>Chọn lọc <b>chất lượng nhất</b></span></div>
-                <div class="col-lg-4"><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;&nbsp;<span>Bảo đảm <b>giá tốt nhất</b></span></div>
-                <div class="col-lg-4"><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;&nbsp;<span>Đội ngũ tư vấn <b>chi tiết và tận tình</b></span></div>
-            </div>
-        </div>
+        
         <!-- danh sach phong -->
         <div class="col-xs-12 content no-padding">
             <!-- cho thuê vip -->

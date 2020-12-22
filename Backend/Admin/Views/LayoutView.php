@@ -95,6 +95,14 @@
           <span>Products</span></a>
       </li>
       <hr class="sidebar-divider d-none d-md-block">
+      <div class="sidebar-heading">
+        Slider
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php?controller=slide&action=read">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Slide</span></a>
+      </li>
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>

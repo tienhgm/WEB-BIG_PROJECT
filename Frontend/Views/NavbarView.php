@@ -53,7 +53,12 @@
         </nav>
         <!-- banner -->
         <div class="banner container-fluid">
-            <img src="../Assets/Frontend/images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg" alt="">
+            <?php  
+                include "Controllers/SlideController.php";
+                $obj= new SlideController();
+                $obj->read();
+            ?>
+           
             <div class="search">
                 <h2>Tìm kiếm phòng!</h2>
                 <div class="search-content">
