@@ -89,7 +89,8 @@ INSERT INTO `location` (`id`, `name`) VALUES
 (8, 'Hà Đông'),
 (9, 'Ba Đình'),
 (10, 'Tây Hồ'),
-(11, 'Hai Bà Trưng');
+(11, 'Hai Bà Trưng')
+(12, 'Long Biên');
 
 -- --------------------------------------------------------
 
