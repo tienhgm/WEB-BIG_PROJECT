@@ -33,7 +33,11 @@
 			//load view
 			include "Views/ProductsDetailView.php";
 		}
-		
+		public function readHomeHotProducts(){
+			$hotProduct = $this->modelHotProduct(); 
+			//load view 
+			include "Views/HomeHotProductsView.php";
+		}
 			
 	}
  ?>

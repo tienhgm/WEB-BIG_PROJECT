@@ -18,16 +18,7 @@
 
     <!-- main -->
     <div class="main">
-        <div class="main-title">
-            <a class="home" href="index.php">Trang chủ</a>
-            <i class="fa fa-caret-right" aria-hidden="true"></i>
-            <a >Phòng trọ</a>
-            <h4>Cho thuê phòng trọ, Tìm nhà trọ giá rẻ mới nhất 2020</h4>
-            <p>Cho thuê phòng trọ, tìm nhà trọ giá rẻ, không chung chủ, an ninh và nhiều tiện nghi mới nhất tại Việt Nam. Đăng tin cho thuê phòng trọ nhanh chóng và hiệu quả cao.</p>
-        </div><br>
         
-        <!-- main-content -->
-        <div class="main-content row">
                 <?php 
                 //load dong MVC
                     if(file_exists($fileController)){
@@ -38,7 +29,7 @@
                         }
                     }
                 ?>
-        </div>
+        
     </div>
 
     <!-- /main -->

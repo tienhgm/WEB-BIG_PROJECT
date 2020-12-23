@@ -18,5 +18,6 @@
             //load view
             include "Views/NewsDetailView.php";
         }
+        
 	}
  ?>

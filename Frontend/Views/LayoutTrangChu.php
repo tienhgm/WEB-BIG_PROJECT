@@ -23,9 +23,9 @@
             <!-- cho thuê vip -->
             <div class="chothuevip">   
                 <?php  
-                    include "Controllers/HomeHotProductsController.php";
-                    $obj= new HomeHotProductsController();
-                    $obj->read();
+                    include "Controllers/ProductsController.php";
+                    $obj= new ProductsController();
+                    $obj->readHomeHotProducts();
                 ?>
             </div>
             

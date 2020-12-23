@@ -5,5 +5,10 @@
             $hotNews= $this->modelListHotNews();
             include "Views/HomeHotNewsView.php";
         }
+        public function readHotNews(){
+        	$hotNews1 = $this->modelListHotNews();
+        	include "Views/HotNewsView.php";
+        }
+        
     }
 ?>
