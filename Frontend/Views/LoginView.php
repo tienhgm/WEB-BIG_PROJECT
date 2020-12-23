@@ -21,7 +21,11 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="../Assets/Frontend/images/signin-image.jpg" alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">Create an account</a>
+                        <?php if(isset($_GET["notify"]) && $_GET["notify"]=="success"): ?>
+                            <span style="color:red; font-size: 16px; font-weight: bold;">SIGN UP SUCCESS</span>
+                        <?php else: ?> 
+                            <a href="index.php?controller=account&action=register" class="signup-image-link">Create an account</a>
+                        <?php endif; ?> 
                     </div>
 
                     <div class="signin-form">

@@ -24,23 +24,23 @@
                     </li>
                 </ul>
               
-                <ul class="navbar-nav ml-auto" style="margin-right: 46px;">
+                <ul class="navbar-nav " style="margin-right: 115px;">
                     <li class="nav-item dropdown">
-                      <?php if(isset($_SESSION["customerName"]) == false): ?>
+                      <?php if(isset($_SESSION["renterName"]) == false): ?>
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Tài khoản
                       </a>
                       <?php else: ?>
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION["customerName"];  ?>
+                        <?php echo $_SESSION["renterName"];  ?>
                       </a>
                       <?php endif; ?>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 14px;">
-                        <?php if(isset($_SESSION["customerName"]) == false): ?>
+                        <?php if(isset($_SESSION["renterName"]) == false): ?>
                         <a class="dropdown-item" href="index.php?controller=account&action=login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp&nbspĐăng nhập</a>
                         <a class="dropdown-item" href="index.php?controller=account&action=register"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp&nbspĐăng ký</a>
                         <?php else: ?>
-                        <a class="dropdown-item" href="user/read"><i class="fa fa-user" aria-hidden="true"></i>&nbsp&nbspThông tin tài khoản</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp&nbspThông tin tài khoản</a>
                         <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp&nbspCài đặt</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.php?controller=account&action=logout"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp&nbspĐăng xuất</a>

@@ -47,9 +47,7 @@
                     </div>
                     <div class="signup-image">
                         <figure><img src="../Assets/Frontend/images/signup-image.jpg" alt="sing up image"></figure>
-						<?php if(isset($_GET["notify"]) && $_GET["notify"]=="success"): ?>
-                        <span style="color:red; font-size: 16px; font-weight: bold;">Đăng ký thành công</span>
-                    	<?php endif; ?>  
+                        <a href="index.php" class="signup-image-link" style="text-decoration: none;font-size: 16px;">Home Page</a>
                     </div>
                 </div>
             </div>
