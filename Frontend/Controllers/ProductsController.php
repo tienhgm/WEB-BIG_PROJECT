@@ -5,7 +5,7 @@
 		public function categories(){
 			$category_id = isset($_GET["id"]) ? $_GET["id"] : 0;
 			//quy dinh so ban ghi tren mot trang
-			$recordPerPage = 6;
+			$recordPerPage = 9;
 			//tinh so trang
 			$numPage = ceil($this->modelTotalCategory($category_id)/$recordPerPage);
 			//goi ham de lay du lieu

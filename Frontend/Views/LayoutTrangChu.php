@@ -21,241 +21,14 @@
         <!-- danh sach phong -->
         <div class="col-xs-12 content no-padding">
             <!-- cho thuê vip -->
-            <div class="chothuevip">
-                <div class="chothuevip-title">
-                    <h4>CHO THUÊ VIP</h4>
-                    <a href="#">Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-                <div class="chothuevip-main row">
-                    <?php  
-                        include "Controllers/HomeHotProductsController.php";
-                        $obj= new HomeHotProductsController();
-                        $obj->read();
-                    ?>
-                </div>
+            <div class="chothuevip">   
+                <?php  
+                    include "Controllers/HomeHotProductsController.php";
+                    $obj= new HomeHotProductsController();
+                    $obj->read();
+                ?>
             </div>
-            <!-- chothuemoi -->
-            <div class="chothuevip chothuemoi">
-                <div class="chothuevip-title">
-                    <h4>CHO THUÊ MỚI NHẤT</h4>
-                    <a href="#">Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-                <div class="chothuevip-main row">   
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <a href="#">
-                                <img src="../Assets/Frontend/images/20200808181616-3ysp4.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h6>Phòng studio đủ đồ chỉ việc xách vali đến ở. số 51a ngách 33 văn chương2</h6>
-                                    <p class="area">
-                                        <i class="fa fa-area-chart" aria-hidden="true"></i> 30 m2
-                                        <span>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </span>
-                                    </p>
-                                    <p class="address">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
-                                    </p>
-                                    <p class="price">
-                                        <i class="fa fa-usd" aria-hidden="true"></i> 4 Triệu/tháng
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tintucmoi -->
-            <div class="tintucmoi chothuevip">
-                <div class="chothuevip-title">
-                    <h4>TIN TỨC MỚI</h4>
-                    <a href="#">Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-                <div class="tintucmoi-main row">
-                    <a href="#" class="col-lg-6 col-md-12">
-                        <div class="tintucmoi-content d-flex">
-                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
-                            <div>
-                                <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
-                                <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="col-lg-6 col-md-12">
-                        <div class="tintucmoi-content d-flex">
-                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
-                            <div>
-                                <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
-                                <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="col-lg-6 col-md-12">
-                        <div class="tintucmoi-content d-flex">
-                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
-                            <div>
-                                <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
-                                <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="col-lg-6 col-md-12">
-                        <div class="tintucmoi-content d-flex">
-                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
-                            <div>
-                                <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
-                                <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="col-lg-6 col-md-12">
-                        <div class="tintucmoi-content d-flex">
-                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
-                            <div>
-                                <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
-                                <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="col-lg-6 col-md-12">
-                        <div class="tintucmoi-content d-flex">
-                            <img src="../Assets/Frontend/images/chothuematbang01-1_1591697241.jpg" alt="">
-                            <div>
-                                <h5>Top 5 website đăng tin cho thuê mặt bằng hiệu quả nhất hiện nay</h5>
-                                <p>Hiện nay, do ảnh hưởng của Virut Corona, nhiều mặt bằng đã bị trả lại hàng loạt do kinh doanh buôn bán ế ẩm. Để kích thích người thuê, nhiều chủ nhà đã giảm 10-30% tuy nhiên tình hình cho thuê vẫn chưa được cải thiện là mấy.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            
             <!-- Cac dia diem cho thue noi tieng -->
             <div class="diadiemnoi chothuevip">
                 <div class="chothuevip-title">
@@ -265,7 +38,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="../Assets/Frontend/images/ho-hoan-kiem-1.png" alt=""></a>
+                                <a href="index.php?controller=products&action=locations&id=3"><img class="img" src="../Assets/Frontend/images/ho-hoan-kiem-1.png" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Hoàn Kiếm</div>
                         </div>
@@ -273,7 +46,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="../Assets/Frontend/images/20200222151632-0d67_wm.jpg" alt=""></a>
+                                <a href="index.php?controller=products&action=locations&id=1"><img class="img" src="../Assets/Frontend/images/20200222151632-0d67_wm.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Cầu Giấy</div>
                         </div>
@@ -281,7 +54,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="../Assets/Frontend/images/unnamed.jpg" alt=""></a>
+                                <a href="index.php?controller=products&action=locations&id=7"><img class="img" src="../Assets/Frontend/images/unnamed.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Thanh Xuân</div>
                         </div>
@@ -289,7 +62,7 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="../Assets/Frontend/images/a16.jpg" alt=""></a>
+                                <a href="index.php?controller=products&action=locations&id=2"><img class="img" src="../Assets/Frontend/images/a16.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Đống Đa</div>
                         </div>
@@ -297,21 +70,29 @@
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="../Assets/Frontend/images/1541794002754279644.jpg" alt=""></a>
+                                <a href="index.php?controller=products&action=locations&id=9"><img class="img" src="../Assets/Frontend/images/1541794002754279644.jpg" alt=""></a>
                             </div>
-                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Hai Bà Trưng</div>
+                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Ba Đình</div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="img-container">
                             <div class="diadiem">
-                                <a href="#"><img class="img" src="../Assets/Frontend/images/tayho.jpg" alt=""></a>
+                                <a href="index.php?controller=products&action=locations&id=10"><img class="img" src="../Assets/Frontend/images/tayho.jpg" alt=""></a>
                             </div>
                             <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Tây Hồ</div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+         <!-- Tintucmoi -->
+        <div class="tintucmoi chothuevip">
+             <?php  
+                    include "Controllers/HotNewsController.php";
+                    $obj= new HotNewsController();
+                    $obj->readHomeHotNews();
+                ?>   
         </div>
     </div>
     <!-- /main -->

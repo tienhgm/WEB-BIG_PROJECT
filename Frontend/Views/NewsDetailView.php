@@ -1,0 +1,1 @@
+NewsDetailView.php
