@@ -1,7 +1,7 @@
 
 <div class="chothuevip-title">
     <h4>CHO THUÊ VIP</h4>
-    <a href="#">Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <a href="index.php?controller=products&action=categories&id=1">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 </div>
 <div class="chothuevip-main row">
     <?php foreach($hotProduct as $rows): ?>

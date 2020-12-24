@@ -26,6 +26,7 @@
                         <?php else: ?> 
                             <a href="index.php?controller=account&action=register" class="signup-image-link">Create an account</a>
                         <?php endif; ?> 
+                        <a href="index.php" class="signup-image-link" style="text-decoration: none;font-size: 16px;">Home Page</a>
                     </div>
 
                     <div class="signin-form">

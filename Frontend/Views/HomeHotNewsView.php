@@ -1,6 +1,6 @@
 <div class="chothuevip-title">
     <h4>TIN TỨC NỔI BẬT</h4>
-    <a href="index.php?controller=news&action=read">Xem tất cả <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <a href="index.php?controller=news&action=read">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 </div>
 <div class="tintucmoi-main row">
 	<?php foreach ($hotNews as $rows):?>

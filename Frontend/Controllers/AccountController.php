@@ -29,12 +29,12 @@
 			unset($_SESSION["renterName"]);
 			echo "<script>location.href='index.php';</script>";
 		}
-		// public function read(){
-		// 	$id= $_SESSION["renterId"];
-		// 	$customer = $this->modelGetCustomers($id);
-		// 	$info = $this->modelGetInfo($id);
-		// 	include "Views/AccountView.php";
-		// }
+		public function readDetail(){
+			$id= $_SESSION["renterId"];
+			$renter_user = $this->modelGetrenter_user($id);
+			// $info = $this->modelGetInfo($id);
+			include "Views/AccountView.php";
+		}
 		
 	}
  ?>

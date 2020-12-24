@@ -24,7 +24,7 @@
                     </li>
                 </ul>
               
-                <ul class="navbar-nav " style="margin-right: 115px;">
+                <ul class="navbar-nav " style="margin-right: 110px;">
                     <li class="nav-item dropdown">
                       <?php if(isset($_SESSION["renterName"]) == false): ?>
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +40,7 @@
                         <a class="dropdown-item" href="index.php?controller=account&action=login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp&nbspĐăng nhập</a>
                         <a class="dropdown-item" href="index.php?controller=account&action=register"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp&nbspĐăng ký</a>
                         <?php else: ?>
-                        <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp&nbspThông tin tài khoản</a>
+                        <a class="dropdown-item" href="index.php?controller=account&action=readDetail"><i class="fa fa-user" aria-hidden="true"></i>&nbsp&nbspThông tin tài khoản</a>
                         <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp&nbspCài đặt</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.php?controller=account&action=logout"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp&nbspĐăng xuất</a>
@@ -58,19 +58,55 @@
                 $obj= new SlideController();
                 $obj->read();
             ?>
-           
-            <div class="search">
+            <script>
+                function smartSearch(){
+                    //hien thi
+                    document.getElementById("box-smart-search").setAttribute("style","display:block;");
+                    //-----
+                        //lay gia tri cua id=key
+                        var key= document.getElementById("key").value;
+                        //clear cac gia tri trong the ul truoc khi append
+                        $('#box-smart-search ul').empty();
+                    //----
+                    //dua JQUERY vao trang cua minh
+                    $.ajax({
+                        url: "smartSearch.php?key="+key,
+                        success: function( result ) {
+                            
+                            $('#box-smart-search ul').append(result);
+                        }
+                    });
+                    //-----
+                }
+                function stopSmartSearch(){
+                    // document.getElementById("box-smart-search").setAttribute("style","display:none;");
+                }
+            </script>
+            <div class="box-search">
                 <h2>Tìm kiếm phòng!</h2>
                 <div class="search-content">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Phòng bạn cần tìm" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                          <button class="btn btn-danger" type="button" id="button-addon2">Tìm</button>
+                    <form action="" id="search">
+                        <div class="input-group mb-3">
+                            <input type="text" autocomplete="off" onkeyup="smartSearch();" class="form-control" placeholder="Phòng bạn cần tìm" aria-label="Recipient's username" aria-describedby="button-addon2" id="key">
+                            <div class="input-group-append">
+                              <button class="btn btn-danger" type="button" id="button-addon2">Tìm</button>
+                            </div>
                         </div>
+                    </form>
+                    <div id="box-smart-search">
+                        <ul></ul>
                     </div>
                 </div>
             </div>
+            <style>
+                #box-smart-search{z-index: 999; height: 400px; overflow: auto; 
+                    background:white; display:none;}
+                #box-smart-search ul{padding: 0; margin:0; list-style: none; }
+                #box-smart-search img{width:100px;height: 100px;}
+                #box-smart-search li{border-bottom: 1px solid #dddddd;}
+                #box-smart-search a{margin-left: 15px;color: black; }
+                #box-smart-search a:hover{color: #00afe8; transition: 0.3s; text-decoration: none;}
+            </style>
         </div>
-        
     </header>
     <!-- /header -->

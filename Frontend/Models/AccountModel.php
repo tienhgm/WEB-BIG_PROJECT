@@ -34,7 +34,7 @@
 		}
 
         //lay mot ban ghi trong table renter_users
-        public function modelGetrenter_users($id){
+        public function modelGetrenter_user($id){
 			//---
 			$conn = Connection::getInstance();
 			$query = $conn->query("select * from renter_users where id = $id");
@@ -42,13 +42,13 @@
 			return $query->fetch();
 			//---
         }
-        // public function modelGetInfo($id){
-        // 	//------
-        // 	$conn = Connection::getInstance();
-        // 	$query= $conn->query("Select p.name, o.date, od.quantity, od.price, o.status FROM orders o join orderdetails od ON o.id=od.order_id JOIN products p ON p.id=od.product_id where o.customer_id =$id");
-        // 	//tra ve mot ban ghi
-        // 	return $query->fetchAll();
-        // 	//-------
-        // }	
+        /*public function modelGetInfo($id){
+        	//------
+        	$conn = Connection::getInstance();
+        	$query= $conn->query("Select p.name, o.date, od.quantity, od.price, o.status FROM orders o join orderdetails od ON o.id=od.order_id JOIN products p ON p.id=od.product_id where o.customer_id =$id");
+        	//tra ve mot ban ghi
+        	return $query->fetchAll();
+        	//-------
+        }	*/
 	}
  ?>

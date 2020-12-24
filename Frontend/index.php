@@ -29,6 +29,9 @@
    else if($_GET["controller"]=="account" && $_GET["action"]=="register"){
    		include "Views/RegisterView.php";
    }
+   else if($_GET["controller"]=="account" && $_GET["action"]=="read"){
+   		include "Views/RegisterView.php";
+   }
 	else{
 		include "Views/LayoutTrangTrong.php";
 	}
