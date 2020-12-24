@@ -98,15 +98,7 @@
                     </div>
                 </div>
             </div>
-            <style>
-                #box-smart-search{z-index: 999; height: 400px; overflow: auto; 
-                    background:white; display:none;}
-                #box-smart-search ul{padding: 0; margin:0; list-style: none; }
-                #box-smart-search img{width:100px;height: 100px;}
-                #box-smart-search li{border-bottom: 1px solid #dddddd;}
-                #box-smart-search a{margin-left: 15px;color: black; }
-                #box-smart-search a:hover{color: #00afe8; transition: 0.3s; text-decoration: none;}
-            </style>
+            
         </div>
     </header>
     <!-- /header -->

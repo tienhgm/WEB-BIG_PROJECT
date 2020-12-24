@@ -34,8 +34,5 @@
 			return $query->fetch();
 			//---
 		}
-		
-
-		
 	}
  ?>

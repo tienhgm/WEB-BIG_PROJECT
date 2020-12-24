@@ -16,7 +16,6 @@
                     <div>
                         <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>"><h6><?php echo $rows->name; ?></h6></a>
                         <div class="tomtat"><?php echo $rows->description; ?></div>
-                        
                     </div>
                 </div>
             <?php endforeach; ?>
