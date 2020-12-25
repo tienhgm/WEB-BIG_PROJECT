@@ -24,8 +24,8 @@
               <tbody>
                 <tr style="text-align: center;">
                   <td style="">
-                    <?php if($rows->photo != "" && file_exists('../../Assets/Upload/Products/'.$rows->photo)): ?>
-                      <img src="../../Assets/Upload/Products/<?php echo $rows->photo; ?>" style="width:100px;">
+                    <?php if($rows->photo != "" && file_exists('../../Assets/Upload/TitleImg/'.$rows->photo)): ?>
+                      <img src="../../Assets/Upload/TitleImg/<?php echo $rows->photo; ?>" style="width:100px;">
                     <?php endif; ?>
                   </td>
                   <th><?php echo $rows->name; ?></th>

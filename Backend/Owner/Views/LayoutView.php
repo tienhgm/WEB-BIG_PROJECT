@@ -174,7 +174,7 @@
         <div class="modal-body">Bạn có muốn thoát</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="index.php?controller=login&action=logout">Logout</a>
+          <a class="btn btn-primary" href="index.php?controller=account&action=logout">Logout</a>
         </div>
       </div>
     </div>
