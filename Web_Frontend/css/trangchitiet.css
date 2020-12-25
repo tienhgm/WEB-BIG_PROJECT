@@ -1,62 +1,206 @@
-
-.favarite-icon{
-  color: red;
+.chitietphong{
+  background: white;
+  width: 98%;
+  padding: 10px 5px;
+  z-index: 100;
+  box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
 }
-.review{
-  color: orange;
-  padding-right: 10px;
+.chitietphong h5{
+  padding: 20px 2%;
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(236, 5, 5);
 }
-.address{
-  margin-top: 5px;
+.thongtinchung tr{
+  line-height: 20px;
+  font-size: 16px;
+}
+.thongtinchung th{
+  background: #f3f8fc;
+}
+.thongtinchung td{
+  font-weight: 700;
+}
+.thongtinchung td a:hover{
+  text-decoration: none;
+}
+.table{
+  width: 96%;
+  margin: auto 2%;
+}
+.thongtinchitiet{
+  width: 96%;
+  margin: 30px 2% 20px;
+}
+.thongtinchitiet .card-body{
+  padding: 20px 15px 10px;
+}
+.thongtinchitiet h6{
+  font-weight: bolder;
+  font-size: 19px;
+}
+.thongtinchitiet p{
+  font-weight: 700;
+  font-size: 15px;
+}
+/* hinhanh */
+.hinhanh{
+    margin-top: 20px;
+    background: white;
+    width: 98%;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
+}
+.hinhanh h6{
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color:#6a7075; 
+    font-size: 19px;
+}
+.slideshow{
+    width: 99% !important;
+}
+/* bando */
+.bando{
+    margin-top: 20px;
+    background: white;
+    width: 98%;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
+}
+.bando h6{
+    font-weight: bolder;
+    color:#6a7075; 
+    font-size: 19px;
+}
+.bando iframe{
+    width: 100% !important;
+    height: 450px !important;
+}
+/* danhgia */
+.danhgia{
+    margin-top: 20px;
+    background: white;
+    width: 98%;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
+}
+.danhgia h6{
+    font-weight: bolder;
+    color:#6a7075; 
+    font-size: 19px;
+}
+.diemso{
+    margin-top: 30px;    
+}
+.diemso .diemtb{
+    background: #9fc43a;  
+    padding: 8px 16px;
+    border-radius: 3px; 
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+}
+.themdanhgia{
+    margin-top: 30px;
+}
+.themdanhgia .form-group{
+    margin-bottom: 5px;
+}
+.themdanhgia .form-group button{
+    height: 80%;
+    width: 50 !important;
+    margin: 10px 15px;
+}
+#number{
+    border: 1px solid #9fc43a;
+    padding: 3px;margin-left: 5px;
+}
+.dadanhgia{
+    margin: 30px;
+}
+.dadanhgia .d-flex{
+    padding: 20px 0;
+    border-bottom: 1px solid #cccccc;
+}
+.dadanhgia .diem{
+    background: #9fc43a;
+    padding: 1px 10px;
+    border-radius: 3px; 
+    color: white;
+}
+.dadanhgia .binhluan{
+    margin-left: 15px;
+}
+.dadanhgia .binhluan p{
+    margin-bottom: 8px;
+}
+/* timkiemtin */
+.timtheoquan{
+    width: 98%;
+    background: white;
+    z-index: 100;
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
+}
+.timtheoquan h5{
+    color: green;
+}
+.timtheoquan a{
+    color: #141414;
+    font-size: 16px;
+    font-weight: 600;
+}
+.timtheoquan a:hover{
+    text-decoration: none;
+    color: rgb(81, 104, 231);
 }
 
-.score{
-  background-color:green;
-  color: white;
-  border-radius: 5px;
-  padding-left: 3px;
-  padding-right: 3px;
+.phonglienquan{
+    margin-top: 20px;
+    width: 98%;
+    background: white;
+    z-index: 100;
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
 }
-
-.score-description{
-  color: green;
+.phonglienquan h5{
+    color: green;
+    background: rgb(243, 236, 236);
 }
-
-.sign-in{
-  background-color: orange;
-  color: white;
-  border-radius: 5px;
-  border-width: 0px;
-  margin-top: 10px;
-  margin-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
+.phonglienquan .card-body{
+    background: rgb(252, 250, 247);
 }
-
-.comment{
-  margin-top: 40px;
-  text-align: justify;
+.lienquan{
+    padding: 8px 0px;
+    border-bottom: 1px dotted #bbbbbb;
+    position: relative;
 }
-
-
-.recommend-detail{
-  padding-left: 10px;
+.lienquan img{
+    width: 80px;
+    height: 60px;
+    margin-right: 8px;
 }
-
-.rent-feature{
-  margin-top: 20px;
+.lienquan div p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    -webkit-line-clamp: 2;
+    height: 34px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
-.rent-feature tr{
-  border: 1px solid gray;
+.lienquan div a{
+    color: #015f95;
+    font-weight: 600;
 }
-
-.head-row{
-  text-align: center;
+.lienquan div a:hover{
+    color: rgb(81, 104, 231);
+    text-decoration: none;
 }
-
-
-
-
+.lienquan div b{
+    color: rgb(212, 37, 37);
+    position: absolute;
+    top: 55%;
+}

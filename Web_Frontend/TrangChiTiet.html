@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="icon_font/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/trangchu.css">
   <link rel="stylesheet" href="css/trangchitiet.css">
+  <link rel="stylesheet" href="css/trangdanhmuc.css">
+  <link rel="stylesheet" href="css/trangtintuc.css">
   <title>Trang chi tiết</title>
 </head>
 
@@ -69,127 +71,349 @@
   </header>
   <!-- /header -->
   <!-- main -->
-  <div class="container">
-    <div class="row">
-      <div id ="location" class="col-4">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0122164591066!2d105.80998661488354!3d21.03219718599647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6cf59cc7e1%3A0xe98382655f28598e!2zTE9UVEUgQ2VudGVyIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1605626156223!5m2!1svi!2s"
-          width="350" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
+  <div class="main">
+    <div class="blog-title">
+        <a class="home" href="TrangChu.html">Trang chủ</a>
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+        <a class="home" href="TrangDanhMuc.html">Phòng trọ</a>
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+    </div>
+    <div class="main-content row">
+        <div class="col-md-12 col-lg-8">
+            <!-- chitietphong -->
+            <div class="chitietphong">
+                <h5>CHUNG CƯ MINI TẠI 50 ĐÌNH THÔN, MỸ ĐÌNH 1, NAM TỪ LIÊM, HÀ NỘI</h5>
+                <div class="thongtinchung">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Địa chỉ</th>
+                                <td colspan="3">Định Công, Hoàng Mai</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Chuyên mục</th>
+                                <td colspan="3"><a href="#">Cho thuê phòng trọ</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">Giá cho thuê</th>
+                                <td style="color: #f3051b;">5 triệu/tháng</td>
+                                <th scope="row">Diện tích</th>
+                                <td style="color: #f3051b;">35 m²</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Giá điện nước</th>
+                                <td>15k/số điện , 20k/m3 nước</td>
+                                <th scope="row">Chung chủ</th>
+                                <td>Có</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Phòng tắm</th>
+                                <td>khép kín, có nóng lạnh</td>
+                                <th scope="row">Ban công</th>
+                                <td>Có</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Phòng bếp</th>
+                                <td>Bếp chung</td>
+                                <th scope="row">Điều hòa</th>
+                                <td>Có</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Liên hệ</th>
+                                <td>Đặng Tuấn</td>
+                                <th scope="row">Ngày đăng bài</th>
+                                <td>23/12/2020</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Điện thoại</th>
+                                <td style="color: #4cae4c; font-size: 17px;"><i class="fa fa-phone" aria-hidden="true"></i> 0343698845</td>
+                                <th scope="row">Ngày hết hạn</th>
+                                <td>23/01/2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- thongtinchitiet -->
+                <div class="thongtinchitiet">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Thông tin chi tiết</h6>
+                            <p>
+                                Cho thuê chung cư mini tại ngõ 50 Đình Thôn, không chung chủ, rộng rãi diện tích 35m2, thiết kế thông thoáng, tiện ích đầy đủ, dịch vụ không thiếu thứ gì. <br>
+                                Phòng đầy đủ đồ đạc: giường đôi, tủ đứng, tủ bếp, điều hòa, nóng lạnh,máy giặt, bàn ghế (Chuẩn như hình).Không gian phòng yên tĩnh, vệ sinh định kỳ hàng tuần. Internet tốc độ cao kết nối từng phòng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hinhanh -->
+            <div class="hinhanh">
+                <h6>Hình ảnh</h6>
+                <!--  -->
+                <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                    window.jssor_1_slider_init = function() {
 
-        <div class="comment">
-          <h5>Trải nghiệm phải thử ở Khách Sạn Malibu Beach Vũng Tàu</h5>
-          <p>- Thưởng thức các món bánh và trà chiều tại quầy bar cạnh tiếp tân.<br>
-          - Nghe nhạc live buổi tối và tận hưởng không khí biển trên cao tại poolbar của khách sạn.</p>
+                        var jssor_1_SlideshowTransitions = [
+                        {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+                        {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+                        ];
+
+                        var jssor_1_options = {
+                        $AutoPlay: 1,
+                        $SlideshowOptions: {
+                            $Class: $JssorSlideshowRunner$,
+                            $Transitions: jssor_1_SlideshowTransitions,
+                            $TransitionsOrder: 1
+                        },
+                        $ArrowNavigatorOptions: {
+                            $Class: $JssorArrowNavigator$
+                        },
+                        $ThumbnailNavigatorOptions: {
+                            $Class: $JssorThumbnailNavigator$,
+                            $SpacingX: 5,
+                            $SpacingY: 5
+                        }
+                        };
+
+                        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                        /*#region responsive code begin*/
+
+                        var MAX_WIDTH = 980;
+
+                        function ScaleSlider() {
+                            var containerElement = jssor_1_slider.$Elmt.parentNode;
+                            var containerWidth = containerElement.clientWidth;
+
+                            if (containerWidth) {
+
+                                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                                jssor_1_slider.$ScaleWidth(expectedWidth);
+                            }
+                            else {
+                                window.setTimeout(ScaleSlider, 30);
+                            }
+                        }
+
+                        ScaleSlider();
+
+                        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                        /*#endregion responsive code end*/
+                    };
+                </script>
+                <style>
+                    /*jssor slider loading skin spin css*/
+                    .jssorl-009-spin img {
+                        animation-name: jssorl-009-spin;
+                        animation-duration: 1.6s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+
+                    @keyframes jssorl-009-spin {
+                        from { transform: rotate(0deg); }
+                        to { transform: rotate(360deg); }
+                    }
+
+                    /*jssor slider arrow skin 106 css*/
+                    .jssora106 {display:block;position:absolute;cursor:pointer;}
+                    .jssora106 .c {fill:#fff;opacity:.3;}
+                    .jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+                    .jssora106:hover .c {opacity:.5;}
+                    .jssora106:hover .a {opacity:.8;}
+                    .jssora106.jssora106dn .c {opacity:.2;}
+                    .jssora106.jssora106dn .a {opacity:1;}
+                    .jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+                    /*jssor slider thumbnail skin 101 css*/
+                    .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+                    .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+                    .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+                    .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+                    .jssort101 .p:hover{padding:2px;}
+                    .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+                    .jssort101 .p:hover.pdn{padding:0;}
+                    .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+                    .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+                    .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+                    .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+                    .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+                </style>
+                <div id="jssor_1" class="slideshow" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:650px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:48px;height:38px;" src="img/spin.svg" />
+                    </div>
+                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:950px;height:550px;overflow:hidden;">
+                        <div>
+                            <img data-u="image" class="images" src="images/01.jpg" />
+                            <img data-u="thumb" src="images/01.jpg" />
+                        </div>
+                        <div>
+                            <img data-u="image" class="images" src="images/02.jpg" />
+                            <img data-u="thumb" src="images/02.jpg" />
+                        </div>
+                        <div>
+                            <img data-u="image" class="images" src="images/03.jpg" />
+                            <img data-u="thumb" src="images/03.jpg" />
+                        </div>
+                    
+                    </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
+                    <!-- Thumbnail Navigator -->
+                    <div data-u="thumbnavigator" class="jssort101" style="position:absolute; left: 0px;bottom:0px;width:900px;height:100px;background-color:rgb(255, 255, 255);" data-autocenter="1" data-scale-bottom="0.75">
+                        <div data-u="slides">
+                            <div data-u="prototype" class="p" style="width:150px;height:90px;">
+                                <div data-u="thumbnailtemplate" class="t"></div>
+                                <svg viewbox="0 0 16000 16000" class="cv">
+                                    <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                                    <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                                    <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:240px;left:30px;" data-scale="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                            <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                            <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:240px;right:30px;" data-scale="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                            <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                            <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+                        </svg>
+                    </div>
+                </div>
+            <script type="text/javascript">jssor_1_slider_init();</script>
+            </div>
+            <!-- /hinhanh -->
+            <!-- bando -->
+            <div class="bando">
+                <h6>Bản đồ</h6>
+                <p>Địa chỉ: ngõ 20 Hồ Tùng Mậu, Cầu giấy, Hà Nội</p>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.862331149102!2d105.77676471486184!3d21.038193785993258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454ca878b2b9d%3A0xd7145b1f32ab41d7!2zTmfDtSAyMCBI4buTIFTDuW5nIE3huq11LCBNYWkgROG7i2NoLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1608874770649!5m2!1svi!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <!-- danhgia -->
+            <div class="danhgia">
+                <h6>Đánh giá, nhận xét</h6>
+                <div class="diemso">
+                    <span class="diemtb">9/10</span>
+                    <span style="color: #26bed6;">1 đánh giá</span>
+                </div>
+                <div class="themdanhgia">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"><b>Đánh giá của bạn :</b></label>
+                            <input type="number" name="number" id="number" max="10" min="0" step="1" placeholder="Điểm">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"><b>Nhận xét của bạn :</b></label>
+                            <div class="row" style="margin: 3px 10px;">
+                                <textarea class="form-control col-md-10" id="exampleFormControlTextarea1" rows="2" style="width: 80%;" placeholder="Viết bình luận"></textarea>
+                                <button type="submit" class="btn btn-primary col-md-1 col-sm-2 col-3">Gửi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="dadanhgia">
+                    
+                    <div class="d-flex">
+                        <div>
+                            <i class="fa fa-user-circle fa-3x" style="color: #aaaaaa;font-size: 60px;" aria-hidden="true"></i>
+                        </div>
+                        <div class="binhluan">
+                            <p><b>Tuấn </b>- 21/01/2020</p>
+                            <span class="diem">9.0</span> <span style="color: #26bed6;">Phòng đẹp</span>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div>
+                            <i class="fa fa-user-circle fa-3x" style="color: #aaaaaa;font-size: 60px;" aria-hidden="true"></i>
+                        </div>
+                        <div class="binhluan">
+                            <p><b>Tuấn </b>- 21/01/2020</p>
+                            <span class="diem">8.0</span> <span style="color: #26bed6;">Phòng Tour tư vấn ban đầu có 25 khách nhưng khi đến sân bay là 45 khách. Tour đi quá đông, hdv không thể chăm sóc tốt hết được</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="recommend">
-          <h5>Khách sạn tương tự</h5>
-          <div class="row recommend-detail">
-            <div class="col-xs-4">
-              <img src="images/binh-an-village-vung-tau-2-60x45.jpg">
+        <!-- timkiemtin -->
+        <div class="timkiemtin col-md-12 col-lg-4">
+            <div class="timtheoquan">
+                <div class="card-body khuvuc">
+                    <h5 class="card-title">Cho thuê phòng trọ</h5>
+                    <p class="card-text"><a href="#">Quận Hoàn Kiếm</a></p>
+                    <p class="card-text"><a href="#">Quận Cầu Giấy</a></p>
+                    <p class="card-text"><a href="#">Quận Đống Đa</a></p>
+                    <p class="card-text"><a href="#">Quận Thanh Xuân</a></p>
+                    <p class="card-text"><a href="#">Quận Tây Hồ</a></p>
+                    <p class="card-text"><a href="#">Quận Nam Từ Liêm</a></p>
+                    <p class="card-text"><a href="#">Quận Bắc Từ Liêm</a></p>
+                    <p class="card-text"><a href="#">Quận Ba Đình</a></p>
+                </div>
             </div>
-            <div class="col-xs-8">
-              <span class="recommend-name">&nbsp Khu nghỉ dưỡng Bình An Village Vũng Tàu<br></span>
-              <span class="review"> &nbsp <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                  class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span class="score">7.8</span>
-              <span class="score-description">Khá tốt</span>
-              <span> | 5 đánh giá</span>
+            <div class="phonglienquan">
+                <div class="card">
+                    <h5 class="card-header">TIN LIÊN QUAN</h5>
+                    <div class="card-body">
+                        <div class="lienquan d-flex">
+                            <a href="#"><img src="images/lq.jpg" alt=""></a>
+                            <div>
+                                <p><a href="#">Cho thuê phòng chỉ 3,6 tr, dt 25m full đồ giá rẻ mới tính 100%</a></p>
+                                <b>3.6 triệu/tháng</b>
+                            </div>
+                        </div>
+                        <div class="lienquan d-flex">
+                            <a href="#"><img src="images/lq.jpg" alt=""></a>
+                            <div>
+                                <p><a href="#">Cho thuê phòng chỉ 3,6 tr, dt 25m full đồ giá rẻ mới tính 100%</a></p>
+                                <b>3.6 triệu/tháng</b>
+                            </div>
+                        </div>
+                        <div class="lienquan d-flex">
+                            <a href="#"><img src="images/lq.jpg" alt=""></a>
+                            <div>
+                                <p><a href="#">Cho thuê phòng chỉ 3,6 tr, dt 25m full đồ giá rẻ mới tính 100%</a></p>
+                                <b>3.6 triệu/tháng</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="row recommend-detail">
-            <div class="col-xs-4">
-              <img src="images/khach-san-dic-star-vung-tau-1-60x45.jpg">
-            </div>
-            <div class="col-xs-8">
-              <span class="recommend-name">&nbsp Khu nghỉ dưỡng DIC Star Vũng Tàu<br></span>
-              <span class="review">&nbsp <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-            </div>
-          </div>
-
-          <div class="row recommend-detail">
-            <div class="col-xs-4">
-              <img src="images/khu-nghi-duong-intourco-vung-tau-60x45.jpg">
-            </div>
-            <div class="col-xs-8">
-              <span class="recommend-name">&nbsp Khu nghỉ dưỡng Intourco Vũng Tàu<br></span>
-              <span class="review">&nbsp <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                  class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-              <span class="score">9.0</span>
-              <span class="score-description">Tuyệt vời</span>
-              <span> | 59 đánh giá</span>
-            </div>
-          </div>
         </div>  
-      </div>
-      <div id="content" class="col-md-8">
-        <div class="row rent-information">
-          <div class="col-md-9">
-            <h2 class="title">
-              <span class="rent-name">Khách sạn Malibu Beach Vũng Tàu</span>
-              <span class="favarite-icon"><i class="fa fa-heart" aria-hidden="true"></i></span>
-            </h2>
-          <div class="col-md-8 score-container">
-            <span class="review"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
-            <span class="score">9.4</span>
-            <span class="score-description">Tuyệt vời</span>
-            <span> | 423 đánh giá <i class="fa fa-angle-down"></i></span>
-          </div>
-          <p class="address">
-            <i class="fa fa-map-marker" aria-hidden="true"></i> 53 Liễu Giai, Ba Đình, Hà Nội
-          </p>
-          </div>
-          <div class="col-md-3">
-            <button class="sign-in">Đặt ngay</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <img src="images/landscape-4096-1-800x450.jpg" width="730">
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-12">
-            <table class="table table-bordered rent-feature">
-              <tr class="head-row">
-                <th scope="col" class="dacdiem" width="200px">Đặc điểm</th>
-                <th scope="col" class="vitri" width="200px">Vị trí</th>
-                <th scope="col" class="tienich" width="200px">Tiện ích</th>
-                <th scope="col" class="giaphong" width="150px">Giá phòng</th>
-                <th scope="col" class="contact" width="150px">Liên hệ</th>
-              </tr>
-              <tr class="body-row">
-                <td>- Tối đa 3 người lớn & 1 trẻ em | 2 người lớn & 2 trẻ em<br>
-                  - Hướng biển | thành phố<br>
-                  - Diện tích: 39m²
-                  <br>
-                  - Phòng không hút thuốc
-                  <br>
-                  - Phòng không cửa sổ
-                  <br>
-                  - 2 Giường đơn
-                  <br>
-                  - Vòi hoa sen
-                </td>
-                <td>Gần abcxyz</td>
-                <td>Bể bơi, siêu thị, phòng tập gym...</td>
-                <td>- Giá phòng: 3.000.000<br>
-                - Giá điện: 4000/số<br>
-                - Giá nước: 25000/khối</td>
-                <td>Nhắn tin<br>
-                Gọi điện</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-
-      </div>
-      
+           
     </div>
   </div>
 
