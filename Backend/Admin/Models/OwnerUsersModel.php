@@ -80,5 +80,13 @@
 			$conn = Connection::getInstance();
 			$query = $conn->query("delete from owner_users where id = $id");
 		}
+		public function modelSetActive($id){
+            //---
+			$conn = Connection::getInstance();
+			$query = $conn->query("update owner_users set active =1 where id = $id");
+			//tra ve mot ban ghi
+			return $query->fetch();
+			//---
+        }
 	}
  ?>

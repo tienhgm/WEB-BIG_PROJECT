@@ -1,6 +1,8 @@
 <div class="col-md-12" >
     <div style="margin-bottom:5px;">
+      <?php if($this->modelGetOwnerActive($_SESSION["ownerId"])==1): ?>
         <a href="index.php?controller=products&action=create" class="btn btn-primary">Add products</a>
+      <?php endif; ?>
     </div>
     <div class="card card-primary">
         <h6 class="card-header bg-info" style="color: white">Products</h6>

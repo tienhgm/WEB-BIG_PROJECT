@@ -89,7 +89,6 @@
 						unlink('../../Assets/Upload/Products/'.$rows->image);
 						$conn->query("delete from img_products where id_product = $id");
 					}
-					
 				}
 
 				$files = $_FILES['images'];
@@ -161,6 +160,13 @@
 			$query = $conn-> query("select * from owner_users where id = $id");
 			$recordOwner= $query->fetch();
 			return $recordOwner->name;
+
+		}
+		public function modelGetOwnerActive($owner_id){
+			$conn = Connection::getInstance();
+			$query = $conn-> query("select * from owner_users where id = $owner_id");
+			$recordOwner= $query->fetch();
+			return $recordOwner->active;
 
 		}
 		

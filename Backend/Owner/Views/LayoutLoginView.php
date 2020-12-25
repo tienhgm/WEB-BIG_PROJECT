@@ -33,9 +33,9 @@
 		$action = $action == "" ? "index":$action;
 		//---
 		//load file LoginController.php
-		include "Controllers/LoginController.php";
+		include "Controllers/AccountController.php";
 		//khoi tao object
-		$obj = new LoginController();
+		$obj = new AccountController();
 		//goi ham
 		$obj->$action();
  	?>
