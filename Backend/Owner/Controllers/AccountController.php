@@ -21,6 +21,18 @@
 			//header("location:index.php?controller=account&action=register&notify=success");
 			echo "<script>location.href='index.php?controller=account&action=login&notify=success';</script>";
 		}
+		public function update(){
+			$record = $this->modelGetOwnerUser();
+			include "Views/AccountUpdateView.php";
+		}
+		//edit khi an nut submit
+		public function updatePost(){
+			//goi ham de update du lieu
+			$this->modelUpdate();
+			//di chuyen den trang danh sach cac ban ghi
+			echo "<script>location.href='index.php?controller=account&action=update';</script>";
+		}
+
 		public function logout(){
 			//huy session
 			unset($_SESSION["email_owner"]);

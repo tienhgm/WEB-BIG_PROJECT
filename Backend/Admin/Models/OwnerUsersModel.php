@@ -47,7 +47,7 @@
 			$password = md5($password);	
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("insert into owner_users set name='$name',email='$email', password='$password', phonenumber='$phonenumber', cmnd='$cmnd', address='$address'");
+			$conn->query("insert into owner_users set name='$name',email='$email', password='$password', phonenumber='$phonenumber', cmnd='$cmnd', address='$address',active=1");
 		}
 
 		//update ban ghi

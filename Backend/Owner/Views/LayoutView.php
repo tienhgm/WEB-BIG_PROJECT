@@ -47,9 +47,9 @@
         Users
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?controller=ownerUsers&action=read">
+        <a class="nav-link" href="index.php?controller=account&action=update">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Owner-users</span></a>
+          <span>My Account</span></a>
       </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
