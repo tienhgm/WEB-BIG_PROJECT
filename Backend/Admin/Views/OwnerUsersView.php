@@ -29,8 +29,12 @@
                   <th><?php echo $rows->address;?></th>
                   <th>1</th>
                   <td style="text-align:center;">
-                    <a href="index.php?controller=ownerUsers&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;
-                    <a href="index.php?controller=ownerUsers&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
+                    <?php if($rows->active==1): ?>
+                      <a href="index.php?controller=ownerUsers&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;
+                      <a href="index.php?controller=ownerUsers&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
+                    <?php else: ?>
+                      <a href="index.php?controller=ownerUsers&action=setActive&id=<?php echo $rows->id;?>">Active</a>
+                    <?php endif; ?>
                   </td>
                 </tr>
               </tbody>

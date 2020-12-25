@@ -49,5 +49,12 @@
 			//di chuyen den trang danh sach cac ban ghi
 			echo "<script>location.href='index.php?controller=ownerUsers&action=read';</script>";
 		}
+		public function setActive(){
+			$id= isset($_GET["id"]) ? $_GET["id"] :0;
+            //goi ham tu model de thuc hien
+            $this->modelSetActive($id);
+            //di chuyen den trang danh sach cac ban ghi
+            echo "<script>location.href='index.php?controller=ownerUsers&action=read';</script>";
+		}
 	}
  ?>

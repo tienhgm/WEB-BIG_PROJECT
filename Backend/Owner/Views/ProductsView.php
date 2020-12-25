@@ -1,6 +1,8 @@
 <div class="col-md-12" >
     <div style="margin-bottom:5px;">
+      <?php if($this->modelGetOwnerActive($_SESSION["ownerId"])==1): ?>
         <a href="index.php?controller=products&action=create" class="btn btn-primary">Add products</a>
+      <?php endif; ?>
     </div>
     <div class="card card-primary">
         <h6 class="card-header bg-info" style="color: white">Products</h6>
@@ -22,8 +24,8 @@
               <tbody>
                 <tr style="text-align: center;">
                   <td style="">
-                    <?php if($rows->photo != "" && file_exists('../../Assets/Upload/Products/'.$rows->photo)): ?>
-                      <img src="../../Assets/Upload/Products/<?php echo $rows->photo; ?>" style="width:100px;">
+                    <?php if($rows->photo != "" && file_exists('../../Assets/Upload/TitleImg/'.$rows->photo)): ?>
+                      <img src="../../Assets/Upload/TitleImg/<?php echo $rows->photo; ?>" style="width:100px;">
                     <?php endif; ?>
                   </td>
                   <th><?php echo $rows->name; ?></th>
@@ -45,9 +47,6 @@
             <style type="text/css">
                 .pagination{padding:0px; margin:0px;}
                 .page-link{display: inline;}
-                .tien tr:nth-child(even){
-                    color: green;
-                }
             </style>
             <ul class="pagination">
                 <li class="page-item">

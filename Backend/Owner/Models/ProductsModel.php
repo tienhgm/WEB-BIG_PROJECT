@@ -67,15 +67,39 @@
 					//lay mot ban ghi
 					$oldPhoto = $oldImage->fetch();
 					//xoa anh cu bang ham unlink
-					if(file_exists('../../Assets/Upload/Products/'.$oldPhoto->photo))
-						unlink('../../Assets/Upload/Products/'.$oldPhoto->photo);
+					if(file_exists('../../Assets/Upload/TitleImg/'.$oldPhoto->photo))
+						unlink('../../Assets/Upload/TitleImg/'.$oldPhoto->photo);
 				}
 				//---
 				$photo = time().$_FILES["photo"]["name"];
 				//thuc hien upload file
-				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../Assets/Upload/Products/".$photo);
+				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../Assets/Upload/TitleImg/".$photo);
 				//update truong photo
 				$conn->query("update products set photo='$photo' where id=$id");
+			}
+			if(isset($_FILES['images'])){
+				//xoa anh cu truoc khi upload anh moi
+				$oldImage = $conn->query("select image from img_products where id_product=$id");
+				if($oldImage->rowCount() > 0){
+					//lay ban ghi
+					$oldPhoto = $oldImage->fetchAll();
+					//xoa anh cu bang ham unlink
+					foreach ($oldPhoto as $rows) {
+						# code...
+						unlink('../../Assets/Upload/Products/'.$rows->image);
+						$conn->query("delete from img_products where id_product = $id");
+					}
+				}
+
+				$files = $_FILES['images'];
+				$file_names = $files['name'];
+				foreach ($file_names as $key=>$value) {
+					# code...
+					move_uploaded_file($files['tmp_name'][$key],'../../Assets/Upload/Products/'.$value);
+				} 
+			}
+			foreach ($file_names as $key => $value) {
+					$conn->query("INSERT INTO img_products(id_product,image) VALUES('$id','$value')");
 			}
 		}
 		public function modelCreate(){
@@ -97,29 +121,52 @@
 			$hot = isset($_POST["hot"]) ? 1 : 0;
 			$gia_dien_nuoc = $_POST["gia_dien_nuoc"];
 			$quantities= $_POST["quantities"];
+			$photo="";
 			
-			$photo = "";
 			if($_FILES["photo"]["name"]!= ""){
 				$photo = time().$_FILES["photo"]["name"];
-				//thuc hien upload file
-				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../Assets/Upload/Products/".$photo);
+				//thuc hien upload file(filename)
+				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../Assets/Upload/TitleImg/".$photo);
+			}
+
+			if(isset($_FILES['images'])){
+				$files = $_FILES['images'];
+				$file_names = $files['name'];
+				foreach ($file_names as $key=>$value) {
+					# code...
+					move_uploaded_file($files['tmp_name'][$key],'../../Assets/Upload/Products/'.$value);
+				}
 			}
 
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("insert into products set name='$name',owner_id='{$_SESSION["ownerId"]}', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount, title='$title',description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot=$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo='$photo',date=now()");
+			$conn->exec("insert into products set name='$name',owner_id='{$_SESSION["ownerId"]}', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount, title='$title',description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot=$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo ='$photo',date=now()");
+
+			$id_product= $conn->lastInsertId();
+
+			foreach ($file_names as $key => $value) {
+				$conn->query("INSERT INTO img_products(id_product,image) VALUES('$id_product','$value')");
+			}
 		}
 		public function modelDelete($id){
 			//---
 			$conn = Connection::getInstance();
 			//---
 			$query = $conn->query("delete from products where id = $id");
+			$query1 = $conn->query("delete from img_products where id_product = $id");
 		}
 		public function modelGetOwnerName($id){
 			$conn = Connection::getInstance();
 			$query = $conn-> query("select * from owner_users where id = $id");
 			$recordOwner= $query->fetch();
 			return $recordOwner->name;
+
+		}
+		public function modelGetOwnerActive($owner_id){
+			$conn = Connection::getInstance();
+			$query = $conn-> query("select * from owner_users where id = $owner_id");
+			$recordOwner= $query->fetch();
+			return $recordOwner->active;
 
 		}
 		

@@ -47,7 +47,7 @@
 			$password = md5($password);	
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("insert into owner_users set name='$name',email='$email', password='$password', phonenumber='$phonenumber', cmnd='$cmnd', address='$address'");
+			$conn->query("insert into owner_users set name='$name',email='$email', password='$password', phonenumber='$phonenumber', cmnd='$cmnd', address='$address',active=1");
 		}
 
 		//update ban ghi
@@ -80,5 +80,13 @@
 			$conn = Connection::getInstance();
 			$query = $conn->query("delete from owner_users where id = $id");
 		}
+		public function modelSetActive($id){
+            //---
+			$conn = Connection::getInstance();
+			$query = $conn->query("update owner_users set active =1 where id = $id");
+			//tra ve mot ban ghi
+			return $query->fetch();
+			//---
+        }
 	}
  ?>

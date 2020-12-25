@@ -166,9 +166,18 @@
             <!-- end rows -->
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
-                <div class="col-md-2">Photo</div>
+                <div class="col-md-2">Title Photo</div>
                 <div class="col-md-10">
                     <input type="file" name="photo">
+                </div>
+            </div>
+            <br>
+            <!-- end rows -->
+            <!-- rows -->
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-2">List Detail Images </div>
+                <div class="col-md-10">
+                    <input type="file" name="images[]" multiple="multiple">
                 </div>
             </div>
             <!-- end rows -->

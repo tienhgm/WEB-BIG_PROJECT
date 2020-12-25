@@ -47,9 +47,9 @@
         Users
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?controller=ownerUsers&action=read">
+        <a class="nav-link" href="index.php?controller=account&action=update">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Owner-users</span></a>
+          <span>My Account</span></a>
       </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -174,7 +174,7 @@
         <div class="modal-body">Bạn có muốn thoát</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="index.php?controller=login&action=logout">Logout</a>
+          <a class="btn btn-primary" href="index.php?controller=account&action=logout">Logout</a>
         </div>
       </div>
     </div>
