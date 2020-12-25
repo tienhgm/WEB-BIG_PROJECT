@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 23, 2020 lúc 06:45 PM
+-- Thời gian đã tạo: Th12 25, 2020 lúc 04:46 AM
 -- Phiên bản máy phục vụ: 10.4.14-MariaDB
 -- Phiên bản PHP: 7.2.34
 
@@ -34,22 +34,23 @@ CREATE TABLE `owner_users` (
   `password` varchar(500) NOT NULL,
   `phonenumber` bigint(20) NOT NULL,
   `cmnd` bigint(20) NOT NULL,
-  `address` varchar(500) NOT NULL
+  `address` varchar(500) NOT NULL,
+  `active` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `owner_users`
 --
 
-INSERT INTO `owner_users` (`id`, `name`, `email`, `password`, `phonenumber`, `cmnd`, `address`) VALUES
-(7, 'Nguyễn Mạnh Tiến', 'tiennm@gmail.com', '202cb962ac59075b964b07152d234b70', 842432000, 123456789, 'Hà Giang'),
-(9, 'Vũ Thị Oanh', 'oanhvt@gmail.com', '202cb962ac59075b964b07152d234b70', 962113019, 2147483647, 'Hải Dương'),
-(10, 'Đặng Văn Tuấn', 'tuandv@gmail.com', '202cb962ac59075b964b07152d234b70', 1234567688, 2147483647, 'Vĩnh Phúc'),
-(11, 'Nguyễn Thị Minh Ngọc', 'ngocntm@gmail.com', '202cb962ac59075b964b07152d234b70', 2147483647, 2147483647, 'Hải Dương'),
-(12, 'Nguyễn Thu Hà', 'hant@gmail.com', '202cb962ac59075b964b07152d234b70', 2147483647, 30300002177, 'Hải Dương'),
-(13, 'Nguyễn Thu Hương', 'huonght@gmail.com', '202cb962ac59075b964b07152d234b70', 356284538, 55566778, 'Hải Dương'),
-(14, 'Hoàng Trung Phong', 'phonght@gmail.com', '202cb962ac59075b964b07152d234b70', 47368757, 76554578, 'Hà Nội'),
-(15, 'Trịnh Thị Thư', 'thutt@gmail.com', '202cb962ac59075b964b07152d234b70', 465873269, 1234567, 'Nam Định');
+INSERT INTO `owner_users` (`id`, `name`, `email`, `password`, `phonenumber`, `cmnd`, `address`, `active`) VALUES
+(7, 'Nguyễn Mạnh Tiến', 'tiennm@gmail.com', '202cb962ac59075b964b07152d234b70', 842432000, 123456789, 'Hà Giang', 1),
+(9, 'Vũ Thị Oanh', 'oanhvt@gmail.com', '202cb962ac59075b964b07152d234b70', 962113019, 2147483647, 'Hải Dương', 1),
+(10, 'Đặng Văn Tuấn', 'tuandv@gmail.com', '202cb962ac59075b964b07152d234b70', 1234567688, 2147483647, 'Vĩnh Phúc', 1),
+(11, 'Nguyễn Thị Minh Ngọc', 'ngocntm@gmail.com', '202cb962ac59075b964b07152d234b70', 2147483647, 2147483647, 'Hải Dương', 1),
+(12, 'Nguyễn Thu Hà', 'hant@gmail.com', '202cb962ac59075b964b07152d234b70', 2147483647, 30300002177, 'Hải Dương', 1),
+(13, 'Nguyễn Thu Hương', 'huonght@gmail.com', '202cb962ac59075b964b07152d234b70', 356284538, 55566778, 'Hải Dương', 1),
+(14, 'Hoàng Trung Phong', 'phonght@gmail.com', '202cb962ac59075b964b07152d234b70', 47368757, 76554578, 'Hà Nội', 1),
+(15, 'Trịnh Thị Thư', 'thutt@gmail.com', '202cb962ac59075b964b07152d234b70', 465873269, 1234567, 'Nam Định', 1);
 
 --
 -- Chỉ mục cho các bảng đã đổ
