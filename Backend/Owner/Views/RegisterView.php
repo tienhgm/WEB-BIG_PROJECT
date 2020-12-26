@@ -35,15 +35,7 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                      <?php if(isset($_GET["notify"]) && $_GET["notify"]=="success"): ?>
-                          <span style="color:red; font-size: 16px; font-weight: bold;">Đơn đăng ký của bạn đang chờ phê duyệt</span>
-                      <?php else: ?> 
-                          <a href="index.php?controller=account&action=register" class="signup-image-link">Create an account</a>
-                      <?php endif; ?> 
-                  </div>
-                  
-                  <div class="text-center">
-                    <a class="small" href="#">Create an Account!</a>
+                      <a href="index.php" class="signup-image-link">Home Page</a> 
                   </div>
                 </div>
               </div>

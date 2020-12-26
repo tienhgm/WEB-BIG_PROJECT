@@ -13,9 +13,11 @@
 .main-title a:hover{
     text-decoration: none;
     color: #015F95;
+    transition: 0.4s;
 }
 .main-title .home:hover{
     color: cornflowerblue;
+    transition: 0.4s;
 }
 .main-title h4{
     font-size: 26px;
@@ -57,6 +59,7 @@
 }
 .phong div a:hover{
     text-decoration: none;
+    transition: 0.4s;
 }
 .phong div a:hover h6{
     color: rgb(43, 156, 231);
@@ -64,6 +67,9 @@
 .phong h6{
     color:#10438f;
     font-weight: bold;
+}
+.phong h6:hover{
+    transition: 0.4s;
 }
 .phong .tomtat{
     color: rgb(66, 62, 62);
@@ -106,8 +112,8 @@
     border: none;
 }
 .timkiemphong .card-header{
-    color: rgb(185, 3, 161);
-    background: rgb(160, 214, 214);
+    color: #4169E1;
+    background:#DCDCDC;
 }
 .timkiemphong .card-title{
     color: green;
@@ -127,6 +133,7 @@
 .timkiemphong a:hover{
     text-decoration: none;
     color: rgb(81, 104, 231);
+    transition: 0.4s;
 }
 @media all and (max-width:992px){
     .timkiemphong{

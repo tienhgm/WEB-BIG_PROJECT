@@ -30,6 +30,7 @@
 			$id = isset($_GET["id"]) ? $_GET["id"] : 0;
 			//goi ham trong class Model de lay 1 ban ghi
 			$record = $this->modelGetProduct($id);
+			$listImg = $this->modelGetProductsImg($id);
 			//load view
 			include "Views/ProductsDetailView.php";
 		}

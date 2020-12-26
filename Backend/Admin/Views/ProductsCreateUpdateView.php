@@ -72,14 +72,6 @@
             <!-- end rows -->
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
-                <div class="col-md-2">Discount</div>
-                <div class="col-md-8" >
-                    <input type="number" value="<?php echo isset($record->discount)?$record->discount:""; ?>" name="discount" class="form-control" >
-                </div>
-            </div>
-            <!-- end rows -->
-            <!-- rows -->
-            <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Title</div>
                 <div class="col-md-10">
                     <textarea id="title" class="title" name="title"><?php echo isset($record->title)?$record->title:""; ?> </textarea>
@@ -164,11 +156,20 @@
                 </div>
             </div>
             <!-- end rows -->
-            <!-- rows -->
+             <!-- rows -->
             <div class="row" style="margin-top:5px;">
-                <div class="col-md-2">Photo</div>
+                <div class="col-md-2">Title Photo</div>
                 <div class="col-md-10">
                     <input type="file" name="photo">
+                </div>
+            </div>
+            <br>
+            <!-- end rows -->
+            <!-- rows -->
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-2">List Detail Images </div>
+                <div class="col-md-10">
+                    <input type="file" name="images[]" multiple="multiple">
                 </div>
             </div>
             <!-- end rows -->

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../Assets/Frontend/css/trangchitiet.css">
     <link rel="stylesheet" href="../Assets/Frontend/css/trangtintuc.css">
     <link rel="stylesheet" href="../Assets/Frontend/css/chitiettintuc.css">
+    
     <title>NHATRO VIP</title>
 </head>
 <body>
@@ -39,6 +40,7 @@
     <!-- /footer -->
     <script src="../Assets/Frontend/js/jquery-3.5.1.min.js"></script>
     <script src="../Assets/Frontend/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 

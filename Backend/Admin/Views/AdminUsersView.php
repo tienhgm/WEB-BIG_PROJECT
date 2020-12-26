@@ -22,8 +22,8 @@
                   <td><?php echo $rows->email; ?></td>
                   
                   <td style="text-align:center;">
-                    <a href="index.php?controller=adminUsers&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;
-                    <a href="index.php?controller=adminUsers&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
+                    <a class="badge badge-primary" href="index.php?controller=adminUsers&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;
+                    <a class="badge badge-danger" href="index.php?controller=adminUsers&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
                   </td>
                 </tr>
               </tbody>

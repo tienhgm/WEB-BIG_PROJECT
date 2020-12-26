@@ -29,8 +29,6 @@
                 <tr>
                     <th style="width:100px;">Area</th>
                     <td><?php echo number_format($rows->area);?> m2</td>
-                    <th style="width:100px;">Discount</th>
-                    <td><?php echo number_format($rows->discount); ?> %</td>
                 </tr>
                 <tr>
                     <th style="width:100px;">Phòng tắm</th>
@@ -86,13 +84,26 @@
                         ?>
                     </td>
                 </tr>
+                <tr>
+                    <th style="width:100px;">Trạng thái</th>
+                    <th>
+                        <?php  
+                            if($rows->active ==0){
+                                echo "Bài viết chưa được kích hoạt";
+                            }
+                            else{
+                                echo "Bài viết đã được kích hoạt";
+                            }
+                        ?>
+                    </th>
+                </tr>
             
             </table>
              <table class="table table-bordered table-hover">
                 <tr>
                     <th style="width: 100px; text-align: center;">Photo</th>
-                     <td><?php if($rows->photo != "" && file_exists('../../Assets/Upload/Products/'.$rows->photo)): ?>
-                      <img src="../../Assets/Upload/Products/<?php echo $rows->photo; ?>" style="width:100px;">
+                     <td><?php if($rows->photo != "" && file_exists('../../Assets/Upload/TitleImg/'.$rows->photo)): ?>
+                      <img src="../../Assets/Upload/TitleImg/<?php echo $rows->photo; ?>" style="width:100px;">
                     <?php endif; ?></td>
                     
                 </tr>

@@ -34,7 +34,7 @@
 				break;
 			}
 			//---
-			$query = $conn->query("select * from products where category_id=$category_id $sqlOrderBy limit $from, $recordPerPage");
+			$query = $conn->query("SELECT p.* , lo.name as locationname from products p JOIN location lo ON p.location_id =lo.id where category_id=$category_id $sqlOrderBy limit $from, $recordPerPage");
 			//tra ve tat ca cac ban truy van duoc
 			return $query->fetchAll();
 		}
@@ -42,7 +42,7 @@
 		public function modelTotalCategory($category_id){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select id from products where category_id=$category_id order by id desc");
+			$query = $conn->query("SELECT id from products where category_id=$category_id order by id desc");
 			//lay tong so ban ghi
 			return $query->rowCount();
 			//---
@@ -77,7 +77,7 @@
 				break;
 			}
 			//---
-			$query = $conn->query("select * from products where location_id=$location_id $sqlOrderBy limit $from, $recordPerPage");
+			$query = $conn->query("SELECT p.*,lo.name as locationname from products p JOIN location lo ON p.location_id =lo.id where location_id=$location_id $sqlOrderBy limit $from, $recordPerPage");
 			//tra ve tat ca cac ban truy van duoc
 			return $query->fetchAll();
 		}
@@ -85,7 +85,7 @@
 		public function modelTotalLocation($location_id){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select id from products where location_id=$location_id order by id desc");
+			$query = $conn->query("SELECT id from products where location_id=$location_id order by id desc");
 			//lay tong so ban ghi
 			return $query->rowCount();
 			//---
@@ -94,7 +94,7 @@
 		public function modelGetProduct($id){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select * from products where id = $id");
+			$query = $conn->query("SELECT * from products where id = $id");
 			//tra ve mot ban ghi
 			return $query->fetch();
 			//---
@@ -103,7 +103,7 @@
 		public function modelGetCategory($category_id){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select name from categories where id = $category_id");
+			$query = $conn->query("SELECT name from categories where id = $category_id");
 			//tra ve mot ban ghi
 			$result = $query->fetch();
 			return $result->name;
@@ -113,16 +113,46 @@
 		public function modelGetLocation($location_id){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select name from location where id = $location_id");
+			$query = $conn->query("SELECT name from location where id = $location_id");
 			//tra ve mot ban ghi
 			$result = $query->fetch();
 			return $result->name;
 			//---
 		}
+		public function modelGetProductsImg($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT * from img_products where id_product = $id");
+			//tra ve mot ban ghi
+			return $result = $query->fetchAll();
+			
+			//---
+		}
+		//lay ten chu nha tro
+		public function modelGetNameOwner($owner_id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT name from owner_users where id = $owner_id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->name;
+			//---
+		}
+		//lay PhoneNumber chu nha tro
+		public function modelGetPhoneOwner($owner_id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT phonenumber from owner_users where id = $owner_id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->phonenumber;
+			//---
+		}
+
 		//lay tca ban ghi
 		public function modelGetAllProduct(){
 			$conn = Connection::getInstance();
-			$query = $conn->query("select * from products");
+			$query = $conn->query("SELECT * from products");
 			$result = $query->fetchAll();
 			return $result;
 		}
@@ -130,8 +160,18 @@
 		//lay 6 ban ghi san pham noi bat
 		public function modelHotProduct(){
 			$conn = Connection::getInstance();
-			$query = $conn->query("select * from products where hot=1 order by id desc limit 0,6");
+			$query = $conn->query("SELECT * from products where hot=1 order by id desc limit 0,6");
 			return $query->fetchAll();
+		}
+		//lay ten products
+		public function modelGetNameProducts($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT name from products where id = $id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->name;
+			//---
 		}
 
 	}

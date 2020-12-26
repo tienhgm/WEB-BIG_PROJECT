@@ -1,0 +1,20 @@
+.timkiemtin{
+    margin: 0;
+}
+.chitiettin{
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
+    z-index: 100;
+    background: white;
+    padding: 20px 15px;
+    width: 97%;
+}
+.chitiettin h3{
+    font-weight: bold;
+}
+.tomtattin{
+    font-weight: 700;
+    margin-top: 20px;
+}
+.noidungtin{
+    margin-top: 20px;
+}

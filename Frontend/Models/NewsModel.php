@@ -12,7 +12,7 @@
 			$from = $page * $recordPerPage;
 			//thuc hien truy van
 			$conn = Connection::getInstance();
-			$query = $conn->query("select * from news order by id desc limit $from, $recordPerPage");
+			$query = $conn->query("SELECT * from news order by id desc limit $from, $recordPerPage");
 			//tra ve tat ca cac ban truy van duoc
 			return $query->fetchAll();
 		}
@@ -20,7 +20,7 @@
 		public function modelTotal(){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select id from news order by id desc");
+			$query = $conn->query("SELECT id from news order by id desc");
 			//lay tong so ban ghi
 			return $query->rowCount();
 			//---
@@ -29,7 +29,7 @@
 		public function modelGetRecord($id){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select * from news where id = $id");
+			$query = $conn->query("SELECT * from news where id = $id");
 			//tra ve mot ban ghi
 			return $query->fetch();
 			//---

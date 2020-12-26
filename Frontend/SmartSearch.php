@@ -10,7 +10,7 @@
     $result = $query->fetchAll();
     $strResult= "";
     foreach($result as $rows){
-        $strResult= $strResult."<li><img src='../Assets/Upload/Products/".$rows->photo."'><a href='index.php?controller=products&action=detail&id=".$rows->id."'>".$rows->name."</a></li>";
+        $strResult= $strResult."<li><img src='../Assets/Upload/TitleImg/".$rows->photo."'><a href='index.php?controller=products&action=detail&id=".$rows->id."'>".$rows->name."</a></li>";
     }
     echo $strResult;
     //--

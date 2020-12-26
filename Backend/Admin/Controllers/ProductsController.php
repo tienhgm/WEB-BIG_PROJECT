@@ -3,7 +3,7 @@
 	class ProductsController extends ProductsModel{
 		public function read(){
 			//quy dinh so ban ghi tren mot trang
-			$recordPerPage = 25;
+			$recordPerPage = 10;
 			//tinh so trang
 			$numPage = ceil($this->modelTotal()/$recordPerPage);
 			//goi ham de lay du lieu
@@ -12,7 +12,7 @@
 			//load view
 			include "Views/ProductsView.php";
 		}
-		//edit ban ghi
+				//edit ban ghi
 		public function update(){
 			$id = isset($_GET["id"]) ? $_GET["id"] : 0;
 			//goi ham de lay du lieu truyen ra view
@@ -58,5 +58,12 @@
             //di chuyen den trang danh sach cac ban ghi
            include "Views/ProductsDetailView.php";
         }
+        public function setActive(){
+			$id= isset($_GET["id"]) ? $_GET["id"] :0;
+            //goi ham tu model de thuc hien
+            $this->modelSetActive($id);
+            //di chuyen den trang danh sach cac ban ghi
+            echo "<script>location.href='index.php?controller=products&action=read';</script>";
+		}
 	}
  ?>
