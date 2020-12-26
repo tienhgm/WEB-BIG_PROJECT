@@ -235,7 +235,34 @@
 .diadiemnoi-main{
     margin-top: 20px;
 }
-.img-container{
+.diadiemnoi-main img{
+    width: 100%;
+    border-radius: 4px;
+    z-index: 100;
+}
+.anhthap{
+    height: 200px;
+}
+.anhcao{
+    height: 415px;
+}
+.diadiemnoi-main .diadiem{
+    position: relative;
+}
+.diadiem .tendiadiem{
+    background: rgba(56, 54, 54, 0.2);
+    position: absolute;
+    left: 30px;bottom: 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.diadiem img:hover{
+    box-shadow: 3px 5px 8px #aaaaaa;
+}
+
+/* .img-container{
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -265,7 +292,7 @@
     color: white;
     text-align: center;
     font-size: 23px;
-}
+} */
 /* footer */
 .key-word{
     width: 80%;
