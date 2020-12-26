@@ -20,6 +20,82 @@
         
         <!-- danh sach phong -->
         <div class="col-xs-12 content no-padding">
+             <!-- Cac dia diem cho thue noi tieng -->
+            <div class="diadiemnoi chothuevip">
+                <div class="chothuevip-title">
+                    <h4>CÁC ĐỊA ĐIỂM CHO THUÊ PHỔ BIẾN</h4>
+                </div>
+                <div class="diadiemnoi-main">
+                    <!-- row1 -->
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="diadiem">
+                                <a href="index.php?controller=products&action=locations&id=3">
+                                    <img class="anhthap" src="../Assets/Frontend/images/hoankiem.jpg" alt="">
+                                    <p class="tendiadiem">Hoàn Kiếm</p>
+                                </a>
+                            </div>
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-6 diadiem" style="padding-right: 7px;">
+                                    <a href="index.php?controller=products&action=locations&id=9">
+                                        <img class="anhthap" src="../Assets/Frontend/images/badinh.jpg" alt="">
+                                        <p class="tendiadiem">Ba Đình</p>
+                                    </a>
+                                </div>
+                                <div class="col-6 diadiem" style="padding-left: 7px;">
+                                    <a href="index.php?controller=products&action=locations&id=2">
+                                        <img class="anhthap" src="../Assets/Frontend/images/Lotte-Hotel-Hanoi.jpg" alt="">
+                                        <p class="tendiadiem">Đống Đa</p>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 diadiem" style="padding-left: 0;">
+                            <div>
+                                <a href="index.php?controller=products&action=locations&id=5">
+                                    <img class="anhcao" src="../Assets/Frontend/images/namtuliem.jpg" alt="">
+                                    <p class="tendiadiem">Nam Từ Liêm</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row2 -->
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-4 diadiem" style="padding-right: 7px;">
+                            <div>
+                                <a href="index.php?controller=products&action=locations&id=7">
+                                    <img class="anhcao" src="../Assets/Frontend/images/thanhxuan.jpg" alt="">
+                                    <p class="tendiadiem">Thanh Xuân</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-8" style="padding-left:7px;">
+                            <div class="diadiem">
+                                <a href="index.php?controller=products&action=locations&id=10">
+                                    <img class="anhthap" src="../Assets/Frontend/images/hotay.jpg" alt="">
+                                    <p class="tendiadiem">Tây Hồ</p>
+                                </a>
+                            </div>
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-6 diadiem" style="padding-right: 7px;">
+                                    <a href="index.php?controller=products&action=locations&id=1">
+                                        <img class="anhthap" src="../Assets/Frontend/images/caugiay.jpg" alt="">
+                                        <p class="tendiadiem">Cầu Giấy</p>
+                                    </a>
+                                </div>
+                                <div class="col-6 diadiem" style="padding-left: 7px;">
+                                    <a href="index.php?controller=products&action=locations&id=11">
+                                        <img class="anhthap" src="../Assets/Frontend/images/haibatrung.jpg" alt="">
+                                        <p class="tendiadiem">Hai Ba Trưng</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
             <!-- cho thuê vip -->
             <div class="chothuevip">   
                 <?php  
@@ -28,63 +104,7 @@
                     $obj->readHomeHotProducts();
                 ?>
             </div>
-            
-            <!-- Cac dia diem cho thue noi tieng -->
-            <div class="diadiemnoi chothuevip">
-                <div class="chothuevip-title">
-                    <h4>CÁC ĐỊA ĐIỂM CHO THUÊ PHỔ BIẾN</h4>
-                </div>
-                <div class="diadiemnoi-main row">
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="img-container">
-                            <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=3"><img class="img" src="../Assets/Frontend/images/ho-hoan-kiem-1.png" alt=""></a>
-                            </div>
-                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Hoàn Kiếm</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="img-container">
-                            <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=1"><img class="img" src="../Assets/Frontend/images/20200222151632-0d67_wm.jpg" alt=""></a>
-                            </div>
-                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Cầu Giấy</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="img-container">
-                            <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=7"><img class="img" src="../Assets/Frontend/images/unnamed.jpg" alt=""></a>
-                            </div>
-                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Thanh Xuân</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="img-container">
-                            <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=2"><img class="img" src="../Assets/Frontend/images/a16.jpg" alt=""></a>
-                            </div>
-                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Đống Đa</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="img-container">
-                            <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=9"><img class="img" src="../Assets/Frontend/images/1541794002754279644.jpg" alt=""></a>
-                            </div>
-                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Ba Đình</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12">
-                        <div class="img-container">
-                            <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=10"><img class="img" src="../Assets/Frontend/images/tayho.jpg" alt=""></a>
-                            </div>
-                            <div class="tenquan"><i class="fa fa-map-marker" style="color: orange;" aria-hidden="true"></i> Tây Hồ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
          <!-- Tintucmoi -->
         <div class="tintucmoi chothuevip">
