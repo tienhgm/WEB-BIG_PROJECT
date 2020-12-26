@@ -6,7 +6,7 @@
     z-index: 100;
     background: white;
     padding: 20px 15px;
-    width: 97%;
+    width: 98%;
 }
 .chitiettin h3{
     font-weight: bold;
@@ -17,4 +17,12 @@
 }
 .noidungtin{
     margin-top: 20px;
+}
+.timkiemtin{
+    width: 98%;
+}
+@media all and (max-width:996px){
+    .timkiemtin{
+        margin-top: 20px;
+    }
 }

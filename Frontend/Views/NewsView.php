@@ -8,39 +8,43 @@
         
 <!-- main-content -->
 <div class="main-content row">
-    <div class="danhsachtin col-md-12 col-lg-7">
-        <div class="tintuc">
-            <?php foreach($listRecord as $rows): ?>
-                <div class="phong tin d-flex">
-                    <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>"><img src="../Assets/Upload/News/<?php echo $rows->photo; ?>" alt=""></a>
-                    <div>
-                        <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>"><h6><?php echo $rows->name; ?></h6></a>
-                        <div class="tomtat"><?php echo $rows->description; ?></div>
+    <div class="col-md-12 col-lg-8">
+        <div class="danhsachtin">
+            <div class="tintuc">
+                <?php foreach($listRecord as $rows): ?>
+                    <div class="phong tin d-flex">
+                        <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>"><img src="../Assets/Upload/News/<?php echo $rows->photo; ?>" alt=""></a>
+                        <div>
+                            <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>"><h6><?php echo $rows->name; ?></h6></a>
+                            <div class="tomtat"><?php echo $rows->description; ?></div>
+                        </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination" style="margin-top:10px;">
+                    <?php for($i = 1; $i <= $numPage; $i++): ?>
+                        <li class="page-item"><a style="color: #00afe8;" class="page-link" href="index.php?controller=news&action=read&id=<?php echo $i; ?>&p=<?php echo $i; ?>"><?php echo $i;?></a></li>
+                    <?php endfor; ?>
+                </ul>
+            </nav>
         </div>
-        <nav aria-label="...">
-            <ul class="pagination">
-                <?php for($i = 1; $i <= $numPage; $i++): ?>
-                    <li class="page-item"><a style="color: #00afe8;" class="page-link" href="index.php?controller=news&action=read&id=<?php echo $i; ?>&p=<?php echo $i; ?>"><?php echo $i;?></a></li>
-                <?php endfor; ?>
-              </ul>
-        </nav>
     </div>
 
-    <div class="timkiemtin col-md-12 col-lg-4">
+    <div class="col-md-12 col-lg-4">
         <!-- tin noi bat -->
-        <div class="card">
-            <div class="card-header">
-              Tin nổi bật
-            </div>
-            <div class="card-body">
-                <?php  
-                    include "Controllers/HotNewsController.php";
-                    $obj= new HotNewsController();
-                    $obj->readHotNews();
-                ?>
+        <div class="timkiemtin">
+            <div class="card">
+                <div class="card-header">
+                Tin nổi bật
+                </div>
+                <div class="card-body">
+                    <?php  
+                        include "Controllers/HotNewsController.php";
+                        $obj= new HotNewsController();
+                        $obj->readHotNews();
+                    ?>
+                </div>
             </div>
         </div>
     </div>   

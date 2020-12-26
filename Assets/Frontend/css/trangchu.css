@@ -205,26 +205,6 @@
 .diadiemnoi-main{
     margin-top: 20px;
 }
-.img-container{
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 245px;
-    width: 100%;
-    padding: 0;
-    margin-top: 15px;
-}
-.diadiem{
-    transition: transform 0.5s ease;
-}
-.diadiem:hover{
-    transform: scale(1.1);
-
-}
-.img-container img{
-    transform: translate(0,0);
-    width: 100% !important;
-}
 .tenquan{
     width: 100%;
     height: 42px;
@@ -237,6 +217,33 @@
     text-align: center;
     font-size: 23px;
 }
+.diadiemnoi-main img{
+    width: 100%;
+    border-radius: 4px;
+    z-index: 100;
+}
+.anhthap{
+    height: 200px;
+}
+.anhcao{
+    height: 415px;
+}
+.diadiemnoi-main .diadiem{
+    position: relative;
+}
+.diadiem .tendiadiem{
+    background: rgba(56, 54, 54, 0.2);
+    position: absolute;
+    left: 30px;bottom: 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.diadiem img:hover{
+    box-shadow: 3px 5px 8px #aaaaaa;
+}
+
 /* footer */
 .key-word{
     width: 80%;

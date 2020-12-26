@@ -36,10 +36,12 @@
 }
 .main-content>div{padding: 0;}
 .danhsachphong{
+    width: 98%;
     background: white;
     z-index: 100px;
     border-radius: 5px;
-    box-shadow: 2px 2px 1px #dddddd, -2px -2px 1px #dddddd;
+    height: auto;
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
 }
 .phong{
     border-bottom: 1px solid #ccc;
@@ -101,12 +103,12 @@
 }
 /* timkiemphong */
 
-.timkiemphong{
-    margin-left: 5%;
+.timkiemphong{  
+    width: 98%;
+    z-index: 100;
     background: white;
-    z-index: 100px;
     border-radius: 5px;
-    box-shadow: 2px 2px 1px #dddddd, -2px -2px 1px #dddddd;
+    box-shadow: 1px 1px 1px #eeeeee, -1px -1px 1px #eeeeee;
 }
 .timkiemphong .card{
     border: none;

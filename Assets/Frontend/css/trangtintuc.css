@@ -3,9 +3,7 @@
     margin: auto;
     padding-top: 30px;
 }
-.blog-title{
 
-}
 .blog-title a{
     font-size: 16px;
     font-weight: bold;
@@ -39,10 +37,13 @@
     color: rgb(26, 122, 36);
     transition: 0.4s;
 }
+/*  */
+.danhsachtin{
+    width: 98%;
+}
 /* tintuc */
 .tin .tomtat{
     font-weight: 700;
-    margin-top: 10px;
     line-height: 18px;
     height: 38px;
 }
@@ -59,7 +60,7 @@
 }
 /* timkiemtin */
 .timkiemtin{
-    margin-left: 5%;
+    width: 98%;
 }
 .timkiemtin .card{
     margin-bottom: 30px;

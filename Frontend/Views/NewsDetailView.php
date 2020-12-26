@@ -19,8 +19,9 @@
                 </div>
             </div>
         </div>
-		<div class="timkiemtin col-md-12 col-lg-4">
-		        <!-- tin noi bat -->
+		<div class="col-md-12 col-lg-4">
+		    <div class="timkiemtin">
+                 <!-- tin noi bat -->
 		        <div class="card">
 		            <div class="card-header">
 		              Tin nổi bật
@@ -33,6 +34,7 @@
 		                ?>
 		            </div>
 		        </div>
+            </div>
 		</div>        
     </--div>
 </div>
