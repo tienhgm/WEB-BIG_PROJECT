@@ -43,7 +43,6 @@
 			$price = $_POST["price"];			
 			$address = $_POST["address"];
 			$area = $_POST["area"];	
-			$discount = $_POST["discount"];	
 			$title = $_POST["title"];	
 			$description = $_POST["description"];	
 			$phong_tam = $_POST["phong_tam"];	
@@ -57,7 +56,7 @@
 			
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("update products set name='$name', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount,title='$title', description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot =$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
+			$conn->query("update products set name='$name', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area,title='$title', description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot =$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
 			//neu user chon anh thi thuc hien upload anh
 			if($_FILES["photo"]["name"]!= ""){
 				//---
@@ -109,8 +108,7 @@
 			$location_id = $_POST["location_id"];
 			$price = $_POST["price"];			
 			$address = $_POST["address"];
-			$area = $_POST["area"];	
-			$discount = $_POST["discount"];	
+			$area = $_POST["area"];		
 			$title = $_POST["title"];
 			$description = $_POST["description"];	
 			$phong_tam = $_POST["phong_tam"];
@@ -140,7 +138,7 @@
 
 			//---
 			$conn = Connection::getInstance();
-			$conn->exec("insert into products set name='$name',owner_id='{$_SESSION["ownerId"]}', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount, title='$title',description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot=$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo ='$photo',date=now()");
+			$conn->exec("insert into products set name='$name',owner_id='{$_SESSION["ownerId"]}', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, title='$title',description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot=$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo ='$photo',date=now()");
 
 			$id_product= $conn->lastInsertId();
 

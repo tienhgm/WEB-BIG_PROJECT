@@ -34,7 +34,52 @@
 			return $query->fetch();
 			//---
 		}
-		//update ban ghi
+		public function modelCreate(){
+			//---
+			$name = $_POST["name"];
+			$category_id = $_POST["category_id"];
+			$location_id = $_POST["location_id"];
+			$price = $_POST["price"];			
+			$address = $_POST["address"];
+			$area = $_POST["area"];	
+			$title = $_POST["title"];
+			$description = $_POST["description"];	
+			$phong_tam = $_POST["phong_tam"];
+			$phong_bep = $_POST["phong_bep"];		
+			$chung_chu = isset($_POST["chung_chu"]) ? 1 : 0;
+			$dieu_hoa = isset($_POST["dieu_hoa"]) ? 1 : 0;
+			$ban_cong = isset($_POST["ban_cong"]) ? 1 : 0;
+			$hot = isset($_POST["hot"]) ? 1 : 0;
+			$gia_dien_nuoc = $_POST["gia_dien_nuoc"];
+			$quantities= $_POST["quantities"];
+			$photo="";
+			
+			if($_FILES["photo"]["name"]!= ""){
+				$photo = time().$_FILES["photo"]["name"];
+				//thuc hien upload file(filename)
+				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../Assets/Upload/TitleImg/".$photo);
+			}
+
+			if(isset($_FILES['images'])){
+				$files = $_FILES['images'];
+				$file_names = $files['name'];
+				foreach ($file_names as $key=>$value) {
+					# code...
+					move_uploaded_file($files['tmp_name'][$key],'../../Assets/Upload/Products/'.$value);
+				}
+			}
+
+			//---
+			$conn = Connection::getInstance();
+			$conn->exec("insert into products set name='$name',owner_id=1, category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, title='$title',description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot=$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo ='$photo',date=now(),active=1");
+
+			$id_product= $conn->lastInsertId();
+
+			foreach ($file_names as $key => $value) {
+				$conn->query("INSERT INTO img_products(id_product,image) VALUES('$id_product','$value')");
+			}
+		}
+				//update ban ghi
 		public function modelUpdate($id){
 			//---
 			$name = $_POST["name"];
@@ -43,7 +88,6 @@
 			$price = $_POST["price"];			
 			$address = $_POST["address"];
 			$area = $_POST["area"];	
-			$discount = $_POST["discount"];	
 			$title = $_POST["title"];	
 			$description = $_POST["description"];	
 			$phong_tam = $_POST["phong_tam"];	
@@ -57,7 +101,7 @@
 			
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("update products set name='$name', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount,title='$title',description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot=$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
+			$conn->query("update products set name='$name', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, title='$title', description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot =$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities where id = $id");
 			//neu user chon anh thi thuc hien upload anh
 			if($_FILES["photo"]["name"]!= ""){
 				//---
@@ -67,48 +111,43 @@
 					//lay mot ban ghi
 					$oldPhoto = $oldImage->fetch();
 					//xoa anh cu bang ham unlink
-					if(file_exists('../../Assets/Upload/Products/'.$oldPhoto->photo))
-						unlink('../../Assets/Upload/Products/'.$oldPhoto->photo);
+					if(file_exists('../../Assets/Upload/TitleImg/'.$oldPhoto->photo))
+						unlink('../../Assets/Upload/TitleImg/'.$oldPhoto->photo);
 				}
 				//---
 				$photo = time().$_FILES["photo"]["name"];
 				//thuc hien upload file
-				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../../Assets/Upload/Products/".$photo);
+				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../Assets/Upload/TitleImg/".$photo);
 				//update truong photo
 				$conn->query("update products set photo='$photo' where id=$id");
 			}
-		}
-		public function modelCreate(){
-			//---
-			$name = $_POST["name"];
-			$category_id = $_POST["category_id"];
-			$location_id = $_POST["location_id"];
-			$price = $_POST["price"];			
-			$address = $_POST["address"];
-			$area = $_POST["area"];	
-			$discount = $_POST["discount"];	
-			$title = $_POST["title"];	
-			$description = $_POST["description"];	
-			$phong_tam = $_POST["phong_tam"];
-			$phong_bep = $_POST["phong_bep"];		
-			$chung_chu = isset($_POST["chung_chu"]) ? 1 : 0;
-			$dieu_hoa = isset($_POST["dieu_hoa"]) ? 1 : 0;
-			$ban_cong = isset($_POST["ban_cong"]) ? 1 : 0;
-			$hot = isset($_POST["hot"]) ? 1 : 0;
-			$gia_dien_nuoc = $_POST["gia_dien_nuoc"];
-			$quantities= $_POST["quantities"];
-			
-			$photo = "";
-			if($_FILES["photo"]["name"]!= ""){
-				$photo = time().$_FILES["photo"]["name"];
-				//thuc hien upload file
-				move_uploaded_file($_FILES["photo"]["tmp_name"], "../../Assets/Upload/Products/".$photo);
-			}
+			if(isset($_FILES['images'])){
+				//xoa anh cu truoc khi upload anh moi
+				$oldImage = $conn->query("select image from img_products where id_product=$id");
+				if($oldImage->rowCount() > 0){
+					//lay ban ghi
+					$oldPhoto = $oldImage->fetchAll();
+					//xoa anh cu bang ham unlink
+					foreach ($oldPhoto as $rows) {
+						# code...
+						unlink('../../Assets/Upload/Products/'.$rows->image);
+						$conn->query("delete from img_products where id_product = $id");
+					}
+				}
 
-			//---
-			$conn = Connection::getInstance();
-			$conn->query("insert into products set name='$name', category_id=$category_id,location_id= $location_id, price=$price,address='$address',area=$area, discount=$discount,title='$title',description='$description', phong_tam='$phong_tam', phong_bep='$phong_bep', chung_chu=$chung_chu,dieu_hoa=$dieu_hoa,ban_cong=$ban_cong,hot=$hot,gia_dien_nuoc='$gia_dien_nuoc',quantities=$quantities,photo='$photo',date=now()");
+				$files = $_FILES['images'];
+				$file_names = $files['name'];
+				foreach ($file_names as $key=>$value) {
+					# code...
+					move_uploaded_file($files['tmp_name'][$key],'../../Assets/Upload/Products/'.$value);
+				} 
+			}
+			foreach ($file_names as $key => $value) {
+					$conn->query("INSERT INTO img_products(id_product,image) VALUES('$id','$value')");
+			}
 		}
+
+
 		public function modelDelete($id){
 			//---
 			$conn = Connection::getInstance();
@@ -120,6 +159,7 @@
 			$query = $conn-> query("select * from owner_users where id = $id");
 			$recordOwner= $query->fetch();
 			return $recordOwner->name;
+			
 
 		}
 		
@@ -170,5 +210,13 @@
 			return $query->fetchAll();
 			//---
         }	
+        public function modelSetActive($id){
+            //---
+			$conn = Connection::getInstance();
+			$query = $conn->query("update products set active =1 where id = $id");
+			//tra ve mot ban ghi
+			return $query->fetch();
+			//---
+        }
 	}
  ?>

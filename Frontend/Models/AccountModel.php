@@ -10,7 +10,7 @@
 			$password = md5($password);
 			//---
 			$conn = Connection::getInstance();
-			$conn->query("insert into renter_users set name='$name',email='$email',phonenumber='$phonenumber',password='$password'");
+			$conn->query("INSERT INTO renter_users set name='$name',email='$email',phonenumber='$phonenumber',password='$password'");
 			//---
 		}
 		//login
@@ -19,7 +19,7 @@
 			$password = $_POST["password"];
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select id, name, email, password from renter_users where email='$email'");
+			$query = $conn->query("SELECT id, name, email, password from renter_users where email='$email'");
 			$result = $query->fetch();
 			if(isset($result->email)){
 				if($result->password == md5($password)){
@@ -37,7 +37,7 @@
         public function modelGetrenter_user($id){
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("select * from renter_users where id = $id");
+			$query = $conn->query("SELECT * from renter_users where id = $id");
 			//tra ve mot ban ghi
 			return $query->fetch();
 			//---
@@ -45,7 +45,7 @@
         /*public function modelGetInfo($id){
         	//------
         	$conn = Connection::getInstance();
-        	$query= $conn->query("Select p.name, o.date, od.quantity, od.price, o.status FROM orders o join orderdetails od ON o.id=od.order_id JOIN products p ON p.id=od.product_id where o.customer_id =$id");
+        	$query= $conn->query("SELECT p.name, o.date, od.quantity, od.price, o.status FROM orders o join orderdetails od ON o.id=od.order_id JOIN products p ON p.id=od.product_id where o.customer_id =$id");
         	//tra ve mot ban ghi
         	return $query->fetchAll();
         	//-------

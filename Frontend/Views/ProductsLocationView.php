@@ -23,12 +23,13 @@
     	<br><br>
     	<?php foreach($listRecordLocation as $rows): ?>
     		<div class="phong d-flex">
-    		    <img style="height: 143px;" src="../Assets/Upload/products/<?php echo $rows->photo ?>" alt="">
+    		    <img style="height: 143px;" src="../Assets/Upload/TitleImg/<?php echo $rows->photo ?>" alt="">
     		    <div>
     		        <h6><a href="#"><?php echo $rows->name; ?></a></h6>
     		        <p class="tomtat"><!-- <?php echo $rows->description; ?> --></p>
     		        <p class="gia">Giá: <?php echo $rows->price; ?> vnđ</p>
-    		        <p class="dientich">Diện tích: <?php echo $rows->area; ?> m² <span></span> Khu vực: Hoàn Kiếm, Hà Nội</p>
+                    <br>
+    		        <p class="dientich">Diện tích: <?php echo $rows->area; ?> m² <span></span> Khu vực: <?php echo $rows->locationname; ?>, Hà Nội</p>
     		    </div>
 
     		</div>
@@ -57,6 +58,8 @@
                     <p class="card-text"><a href="index.php?controller=products&action=locations&id=6">Quận Bắc Từ Liêm</a></p>
                     <p class="card-text"><a href="index.php?controller=products&action=locations&id=9">Quận Ba Đình</a></p>
                     <p class="card-text"><a href="index.php?controller=products&action=locations&id=8">Quận Hà Đông</a></p>
+                    <p class="card-text"><a href="index.php?controller=products&action=locations&id=12">Quận Long Biên</a></p>
+                    <p class="card-text"><a href="index.php?controller=products&action=locations&id=11">Quận Hai Bà Trưng</a></p>
                 </div>
                 <div class="card-body mucgia">
                     <h5 class="card-title">Theo mức giá</h5>
@@ -76,22 +79,18 @@
                     </div>                  
                 </div>
                 <div class="card-body dientich">
-                    <h5 class="card-title">Theo diện tích</h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="card-text"><a href="#">Dưới 15 m2</a></p>
-                            <p class="card-text"><a href="#">Từ 15 - 25 m2</a></p>
-                            <p class="card-text"><a href="#">Từ 50 - 70 m2</a></p>
-                            <p class="card-text"><a href="#">Từ 100 - 150 m2</a></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="card-text"><a href="#">Từ 25 - 35 m2</a></p>
-                            <p class="card-text"><a href="#">Từ 35 - 50 m2</a></p>
-                            <p class="card-text"><a href="#">Từ 70 - 100 m2</a></p>
-                            <p class="card-text"><a href="#">Trên 150 m2</a></p>
-                        </div>      
-                    </div>         
-                </div>
+                <h5 class="card-title">Theo diện tích</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="card-text"><a href="#">Dưới 20m²</a></p>
+                        <p class="card-text"><a href="#">Từ 60 - 100m²</a></p>
+                    </div>
+                    <div class="col-6">
+                        <p class="card-text"><a href="#">Từ 20 - 60m²</a></p>
+                        <p class="card-text"><a href="#">Trên 100m²</a></p>
+                    </div>
+                </div>         
+            </div>
           </div>
      </div> 
 </div>

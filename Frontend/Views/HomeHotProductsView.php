@@ -8,7 +8,7 @@
         <div class="col-xs-12 col-md-6 col-lg-4">
             <div class="card">
                 <a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>">
-                    <img src="../Assets/Upload/Products/<?php echo $rows->photo; ?>" class="card-img-top" alt="...">
+                    <img src="../Assets/Upload/TitleImg/<?php echo $rows->photo; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h6><?php echo $rows->name; ?></h6>
                         <p class="area">

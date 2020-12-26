@@ -1,4 +1,4 @@
-<!-- main -->
++<!-- main -->
 <div class="main">
     <div class="blog-title">
         <a class="home" href="index.php">Trang chủ</a>
@@ -34,5 +34,5 @@
 		            </div>
 		        </div>
 		</div>        
-    </div>
+    </--div>
 </div>
