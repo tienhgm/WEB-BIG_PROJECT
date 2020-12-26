@@ -36,7 +36,7 @@
 
     <!-- /main -->
     <!-- footer -->
-    <?php include "FooterView.php"; ?>
+    <?php include "Views/FooterView.php"; ?>
     <!-- /footer -->
     <script src="../Assets/Frontend/js/jquery-3.5.1.min.js"></script>
     <script src="../Assets/Frontend/js/bootstrap.bundle.min.js"></script>

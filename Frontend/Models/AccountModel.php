@@ -32,23 +32,34 @@
 			return false;
 			//---
 		}
-
-        //lay mot ban ghi trong table renter_users
-        public function modelGetrenter_user($id){
+		//update nguoi dung
+		public function modelUpdate(){
+			//---
+			$name = $_POST["name"];
+			$password = $_POST["password"];
+			$phonenumber = $_POST["phonenumber"];				
 			//---
 			$conn = Connection::getInstance();
-			$query = $conn->query("SELECT * from renter_users where id = $id");
+			//update mail,name
+			$conn->query("update renter_users set name='$name', phonenumber='$phonenumber' where id='{$_SESSION["renterId"]}'");
+			//neu password khong rong thi update password
+			if($password != ""){
+				//ma hoa password
+				$password = md5($password);
+				$conn->query("update renter_users set password='$password' where id='{$_SESSION["renterId"]}'");
+			}
+			unset($_SESSION["renterName"]);
+			$_SESSION["renterName"]=$name;
+			
+		}
+        //lay mot ban ghi trong table renter_users
+        public function modelGetrenter_user(){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT * from renter_users where id = '{$_SESSION["renterId"]}'");
 			//tra ve mot ban ghi
 			return $query->fetch();
 			//---
         }
-        /*public function modelGetInfo($id){
-        	//------
-        	$conn = Connection::getInstance();
-        	$query= $conn->query("SELECT p.name, o.date, od.quantity, od.price, o.status FROM orders o join orderdetails od ON o.id=od.order_id JOIN products p ON p.id=od.product_id where o.customer_id =$id");
-        	//tra ve mot ban ghi
-        	return $query->fetchAll();
-        	//-------
-        }	*/
 	}
  ?>

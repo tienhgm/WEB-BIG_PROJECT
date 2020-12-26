@@ -34,11 +34,28 @@
 			//load view
 			include "Views/ProductsDetailView.php";
 		}
+		//xem cac san pham hot
 		public function readHomeHotProducts(){
 			$hotProduct = $this->modelHotProduct(); 
 			//load view 
 			include "Views/HomeHotProductsView.php";
 		}
+		//tim kiem theo muc gia
+		public function searchPrice(){
+			$fromPrice = isset($_GET["fromPrice"]) ? $_GET["fromPrice"] :0;
+			$toPrice = isset($_GET["toPrice"]) ? $_GET["toPrice"] :0;
+			//--
+			//quy dinh so ban ghi tren mot trang
+			$recordPerPage = 20;
+			//tinh so trang
+			$numPage = ceil($this->modelTotalSearchPrice($fromPrice,$toPrice/$recordPerPage));
+			//goi ham de lay du lieu
+			$listRecordPrice = $this->modelReadSearchPrice($fromPrice,$toPrice,$recordPerPage);
+			//load view
+			include "Views/ProductsSearchPriceView.php";
+		}
+
+
 			
 	}
  ?>

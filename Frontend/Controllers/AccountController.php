@@ -29,9 +29,20 @@
 			unset($_SESSION["renterName"]);
 			echo "<script>location.href='index.php';</script>";
 		}
+		//sua thong tin nguoi dung
+		public function update(){
+			$record = $this->modelGetrenter_user();
+			include "Views/AccountUpdateView.php";
+		}
+		//edit khi an nut submit
+		public function updatePost(){
+			//goi ham de update du lieu
+			$this->modelUpdate();
+			//di chuyen den trang read
+			echo "<script>location.href='index.php?controller=account&action=readDetail';</script>";
+		}
 		public function readDetail(){
-			$id= $_SESSION["renterId"];
-			$renter_user = $this->modelGetrenter_user($id);
+			$renter_user = $this->modelGetrenter_user();
 			// $info = $this->modelGetInfo($id);
 			include "Views/AccountView.php";
 		}

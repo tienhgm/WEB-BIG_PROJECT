@@ -34,7 +34,7 @@
 				break;
 			}
 			//---
-			$query = $conn->query("SELECT p.* , lo.name as locationname from products p JOIN location lo ON p.location_id =lo.id where category_id=$category_id $sqlOrderBy limit $from, $recordPerPage");
+			$query = $conn->query("SELECT * from products where category_id=$category_id $sqlOrderBy limit $from, $recordPerPage");
 			//tra ve tat ca cac ban truy van duoc
 			return $query->fetchAll();
 		}
@@ -77,7 +77,7 @@
 				break;
 			}
 			//---
-			$query = $conn->query("SELECT p.*,lo.name as locationname from products p JOIN location lo ON p.location_id =lo.id where location_id=$location_id $sqlOrderBy limit $from, $recordPerPage");
+			$query = $conn->query("SELECT * from products where location_id=$location_id $sqlOrderBy limit $from, $recordPerPage");
 			//tra ve tat ca cac ban truy van duoc
 			return $query->fetchAll();
 		}
@@ -171,6 +171,48 @@
 			//tra ve mot ban ghi
 			$result = $query->fetch();
 			return $result->name;
+			//---
+		}
+
+	// tim kiem san pham theo dien tich
+		//duoi 20m2
+		public function modelSearchByArea20($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT name from products where id = $id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->name;
+			//---
+		}
+	//----
+
+	//tim theo muc gia 
+		public function modelReadSearchPrice($fromPrice,$toPrice,$recordPerPage){
+			//lay tong to so ban ghi
+			$total = $this->modelTotalSearchPrice($fromPrice,$toPrice);
+			//tinh so trang
+			$numPage = ceil($total/$recordPerPage);
+			//lay so trang hien tai truyen tu url
+			$page = isset($_GET["p"]) && $_GET["p"] > 0 ? $_GET["p"]-1 : 0;
+			//lay tu ban ghi nao
+			$from = $page * $recordPerPage;
+			//thuc hien truy van
+			$conn = Connection::getInstance();
+			//---
+			//---
+
+			$query = $conn->query("select * from products where price>= $fromPrice and price<= $toPrice limit $from, $recordPerPage");
+			//tra ve tat ca cac ban truy van duoc
+			return $query->fetchAll();
+		}
+		//ham tinh tong so ban ghi
+		public function modelTotalSearchPrice($fromPrice, $toPrice){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select id from products where price>= $fromPrice and price<= $toPrice order by id desc");
+			//lay tong so ban ghi
+			return $query->rowCount();
 			//---
 		}
 

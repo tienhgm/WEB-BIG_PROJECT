@@ -13,12 +13,7 @@
                         <h6><?php echo $rows->name; ?></h6>
                         <p class="area">
                             <i class="fa fa-area-chart" aria-hidden="true"></i> <?php echo $rows->area; ?> m2
-                            <span>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </span>
+                            
                         </p>
                         <p class="address">
                             <i class="fa fa-map-marker" aria-hidden="true"></i> Đống Đa, Hà Nội
