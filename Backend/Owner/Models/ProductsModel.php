@@ -25,7 +25,15 @@
 			return $query->rowCount();
 			//---
 		}
-		
+		//lay mot ban ghi
+		public function modelGetRecord($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("select * from products where id = $id");
+			//tra ve mot ban ghi
+			return $query->fetch();
+			//---
+		}
 		//update ban ghi
 		public function modelUpdate($id){
 			//---

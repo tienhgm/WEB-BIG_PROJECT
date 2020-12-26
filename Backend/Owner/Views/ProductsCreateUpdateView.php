@@ -164,7 +164,7 @@
                 </div>
             </div>
             <!-- end rows -->
-             <!-- rows -->
+            <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Title Photo</div>
                 <div class="col-md-10">

@@ -47,9 +47,6 @@
             <style type="text/css">
                 .pagination{padding:0px; margin:0px;}
                 .page-link{display: inline;}
-                .tien tr:nth-child(even){
-                    color: green;
-                }
             </style>
             <ul class="pagination">
                 <li class="page-item">
