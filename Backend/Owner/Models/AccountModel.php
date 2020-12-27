@@ -31,7 +31,7 @@
 				$_SESSION["ownerName"] = $record->name;
 			}
 		}
-		//update ban ghi
+		//update tai khoan
 		public function modelUpdate(){
 			//---
 			$name = $_POST["name"];
@@ -41,19 +41,15 @@
 			$address= $_POST["address"];				
 			//---
 			$conn = Connection::getInstance();
-			//kiem tra neu email khong ton tai thi moi update
-			$check = $conn->query("select id from owner_users where email='$email' and id <> '{$_SESSION["ownerId"]}'");
-			$numCheck = $check->rowCount();
-			if($numCheck == 0){
-				//update mail,name
-				$conn->query("update owner_users set name='$name', phonenumber='$phonenumber', cmnd='$cmnd', address='$address' where id='{$_SESSION["ownerId"]}'");
-				//neu password khong rong thi update password
-				if($password != ""){
-					//ma hoa password
-					$password = md5($password);
-					$conn->query("update owner_users set password='$password' where id='{$_SESSION["ownerId"]}'");
-				}
+			//update mail,name
+			$conn->query("update owner_users set name='$name', phonenumber='$phonenumber', cmnd='$cmnd', address='$address' where id='{$_SESSION["ownerId"]}'");
+			//neu password khong rong thi update password
+			if($password != ""){
+				//ma hoa password
+				$password = md5($password);
+				$conn->query("update owner_users set password='$password' where id='{$_SESSION["ownerId"]}'");
 			}
+			
 		}
 		public function modelGetOwnerUser(){
 			//---

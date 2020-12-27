@@ -1,13 +1,13 @@
 
 <div class="chothuevip-title">
     <h4>CHO THUÊ VIP</h4>
-    <a href="index.php?controller=products&action=categories&id=1">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <a href="products/categories/phongtro/1">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 </div>
 <div class="chothuevip-main row">
     <?php foreach($hotProduct as $rows): ?>
         <div class="col-xs-12 col-md-6 col-lg-4">
             <div class="card">
-                <a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>">
+                <a href="products/detail/<?php echo Unicode::removeUnicode($rows->name); ?>/<?php echo $rows->id; ?>">
                     <img src="../Assets/Upload/TitleImg/<?php echo $rows->photo; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h6><?php echo $rows->name; ?></h6>

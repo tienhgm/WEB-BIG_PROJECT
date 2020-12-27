@@ -94,6 +94,11 @@
           <i class="fas fa-fw fa-cog"></i>
           <span>Products</span></a>
       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="index.php?controller=commentProducts&action=read">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Comment Products</span></a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php?controller=news&action=read">
           <i class="fas fa-fw fa-cog"></i>

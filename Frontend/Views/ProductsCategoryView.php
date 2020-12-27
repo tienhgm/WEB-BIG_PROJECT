@@ -1,7 +1,7 @@
 <div class="main-title">
     <h4>Cho thuê phòng trọ, Tìm nhà trọ giá rẻ mới nhất 2020</h4>
     <p>Cho thuê phòng trọ, tìm nhà trọ giá rẻ, không chung chủ, an ninh và nhiều tiện nghi mới nhất tại Việt Nam. Đăng tin cho thuê phòng trọ nhanh chóng và hiệu quả cao.</p>
-    <a class="home" href="index.php">Trang chủ</a>
+    <a class="home" href="home">Trang chủ</a>
     <i class="fa fa-caret-right" aria-hidden="true"></i>
     <a ><?php echo $this->modelGetCategory($category_id); ?></a>
 </div><br>
@@ -27,7 +27,7 @@
                 <div class="phong d-flex">
                     <img style="height: 143px;" src="../Assets/Upload/TitleImg/<?php echo $rows->photo ?>" alt="">
                     <div>
-                        <h6><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id; ?>"><?php echo $rows->name; ?></a></h6>
+                        <h6><a href="products/detail/<?php echo Unicode::removeUnicode($rows->name);?>/<?php echo $rows->id;?>"><?php echo $rows->name; ?></a></h6>
                         <p class="tomtat"><!-- <?php echo $rows->description; ?> --></p>
                         <p class="gia">Giá: <?php echo $rows->price; ?> vnđ</p>
                         <br>
@@ -39,7 +39,7 @@
             <nav aria-label="...">
                 <ul class="pagination">
                     <?php for($i = 1; $i <= $numPage; $i++): ?>
-                        <li class="page-item"><a style="color: #00afe8;" class="page-link" href="index.php?controller=products&action=categories&id=<?php echo $category_id; ?>&p=<?php echo $i; ?>"><?php echo $i;?></a></li>
+                        <li class="page-item"><a style="color: #00afe8;" class="page-link" href="products/<?php echo $category_id;?>/page-<?php echo $i;?>"><?php echo $i;?></a></li>
                     <?php endfor; ?>
                 </ul>
             </nav>

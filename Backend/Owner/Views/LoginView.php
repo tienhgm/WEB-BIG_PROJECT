@@ -12,7 +12,7 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form method="post" action="index.php?controller=login&action=login">
+                  <form method="post" action="login">
                     <div class="form-group">
                       <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="email_owner" required>
                     </div>
@@ -30,7 +30,7 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                      <a class="small" href="index.php?controller=account&action=register">Create an Account!</a>
+                      <a class="small" href="register">Create an Account!</a>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 <div class="blog-title">
-    <a class="home" href="index.php">Trang chủ</a>
+    <a class="home" href="home">Trang chủ</a>
     <i class="fa fa-caret-right" aria-hidden="true"></i>
     <a><?php echo $this->modelGetNameProducts($id); ?></a>
    
@@ -159,12 +159,12 @@
                 <form method="post" action="index.php?controller=products&action=createPostRating">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"><b>Đánh giá của bạn :</b></label>
-                        <input type="number" name="star" id="number" max="10" min="0" step="1" placeholder="Điểm">
+                        <input type="number" name="star" id="number" max="10" min="0" step="1" placeholder="Điểm" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"><b>Nhận xét của bạn :</b></label>
                         <div class="row" style="margin: 3px 10px;">
-                            <textarea class="form-control col-md-10" id="exampleFormControlTextarea1" name="comment" rows="2" style="width: 80%;" placeholder="Viết bình luận"></textarea>
+                            <textarea class="form-control col-md-10" id="exampleFormControlTextarea1" name="comment" rows="2" style="width: 80%;" placeholder="Viết bình luận" required></textarea>
                             <button type="submit" class="btn btn-primary col-md-1 col-sm-2 col-3">Gửi</button>
                         </div>
                     </div>
@@ -177,7 +177,12 @@
                         <i class="fa fa-user-circle fa-3x" style="color: #aaaaaa;font-size: 60px;" aria-hidden="true"></i>
                     </div>
                     <div class="binhluan">
-                        <p><b><?php echo $this->modelGetNameRenter($rows->renter_users_id);?> </b>- <?php echo $rows->date;?></p>
+                        <p><b><?php echo $this->modelGetNameRenter($rows->renter_users_id);?> </b>- 
+                            <?php 
+                                $date1 =date_create($rows->date);
+                                echo date_format($date1,"d/m/Y"); 
+                            ?>
+                        </p>
                         <span class="diem"><?php echo number_format($rows->star);?>.0</span> <span style="color: #26bed6;"><?php echo $rows->comment;?></span>
                     </div>
                 </div>
@@ -190,29 +195,29 @@
         <div class="timtheoquan">
             <div class="card-body khuvuc">
                 <h5 class="card-title">Cho thuê phòng trọ</h5>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=3">Quận Hoàn Kiếm</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=1">Quận Cầu Giấy</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=2">Quận Đống Đa</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=7">Quận Thanh Xuân</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=10">Quận Tây Hồ</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=4">Quận Hoàng Mai</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=5">Quận Nam Từ Liêm</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=6">Quận Bắc Từ Liêm</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=9">Quận Ba Đình</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=8">Quận Hà Đông</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=12">Quận Long Biên</a></p>
-                <p class="card-text"><a href="index.php?controller=products&action=locations&id=11">Quận Hai Bà Trưng</a></p>
+                <p class="card-text"><a href="products/locations/hoankiem/3">Quận Hoàn Kiếm</a></p>
+                <p class="card-text"><a href="products/locations/caugiay/1">Quận Cầu Giấy</a></p>
+                <p class="card-text"><a href="products/locations/dongda/2">Quận Đống Đa</a></p>
+                <p class="card-text"><a href="products/locations/thanhxuan/7">Quận Thanh Xuân</a></p>
+                <p class="card-text"><a href="products/locations/tayho/10">Quận Tây Hồ</a></p>
+                <p class="card-text"><a href="products/locations/hoangmai/4">Quận Hoàng Mai</a></p>
+                <p class="card-text"><a href="products/locations/namtuliem/5">Quận Nam Từ Liêm</a></p>
+                <p class="card-text"><a href="products/locations/bactuliem/6">Quận Bắc Từ Liêm</a></p>
+                <p class="card-text"><a href="products/locations/badinh/9">Quận Ba Đình</a></p>
+                <p class="card-text"><a href="products/locations/hadong/8">Quận Hà Đông</a></p>
+                <p class="card-text"><a href="products/locations/longbien/12">Quận Long Biên</a></p>
+                <p class="card-text"><a href="products/locations/haibatrung/11">Quận Hai Bà Trưng</a></p>
             </div>
         </div>
         <div class="phonglienquan">
             <div class="card">
-                <h5 class="card-header">PhÒNG LIÊN QUAN</h5>
+                <h5 class="card-header">PHÒNG LIÊN QUAN</h5>
                 <div class="card-body">
                 <?php foreach($this->modelGetProductRelatedByCategoryId($record->category_id) as $rows):?>
                     <div class="lienquan d-flex">
-                        <a href="index.php?controller=products&action=detail&id=<?php echo $rows->id;?>"><img src="../Assets/Upload/TitleImg/<?php echo $rows->photo;?>" alt=""></a>
+                        <a href="products/detail/<?php echo Unicode::removeUnicode($rows->name);?>/<?php echo $rows->id;?>"><img src="../Assets/Upload/TitleImg/<?php echo $rows->photo;?>" alt=""></a>
                         <div>
-                            <p><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id;?>"><?php echo $rows->name;?></a></p>
+                            <p><a href="products/detail/<?php echo Unicode::removeUnicode($rows->name);?>/<?php echo $rows->id;?>"><?php echo $rows->name;?></a></p>
                             <b><?php echo number_format($rows->price);?> vnd/tháng</b>
                         </div>
                     </div>
@@ -221,5 +226,4 @@
             </div>
         </div>
     </div>  
-       
 </div>

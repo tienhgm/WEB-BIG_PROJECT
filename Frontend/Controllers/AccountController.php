@@ -10,7 +10,7 @@
 			$this->modelRegister();
 			//quay lai trang dang ky
 			//header("location:index.php?controller=account&action=register&notify=success");
-			echo "<script>location.href='index.php?controller=account&action=login&notify=success';</script>";
+			echo "<script>location.href='login/register-success';</script>";
 		}
 		//dang nhap
 		public function login(){
@@ -21,13 +21,13 @@
 			if($this->modelLogin())
 				echo "<script>location.href='index.php';</script>";
 			else
-				echo "<script>location.href='index.php?controller=account&action=login&notify=fail';</script>";
+				echo "<script>location.href='login/register-fail';</script>";
 		}
 		//dang xuat
 		public function logout(){	
 			unset($_SESSION["renterId"]);
 			unset($_SESSION["renterName"]);
-			echo "<script>location.href='index.php';</script>";
+			echo "<script>location.href='home';</script>";
 		}
 		//sua thong tin nguoi dung
 		public function update(){

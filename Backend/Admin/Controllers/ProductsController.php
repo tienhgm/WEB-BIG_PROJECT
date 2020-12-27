@@ -56,7 +56,7 @@
             //goi ham tu model de thuc hien
             $data= $this->modelListProductsDetail($id);
             //di chuyen den trang danh sach cac ban ghi
-           include "Views/ProductsDetailView.php";
+           	include "Views/ProductsDetailView.php";
         }
         public function setActive(){
 			$id= isset($_GET["id"]) ? $_GET["id"] :0;

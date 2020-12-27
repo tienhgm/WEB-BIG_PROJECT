@@ -174,7 +174,17 @@
 			//---
 		}
 
-	
+	// tim kiem san pham theo dien tich
+		//duoi 20m2
+		public function modelSearchByArea20($id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT name from products where id = $id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->name;
+			//---
+		}
 	//----
 
 	//tim theo muc gia 
@@ -191,7 +201,6 @@
 			$conn = Connection::getInstance();
 			//---
 			//---
-
 			$query = $conn->query("select * from products where price>= $fromPrice and price<= $toPrice limit $from, $recordPerPage");
 			//tra ve tat ca cac ban truy van duoc
 			return $query->fetchAll();

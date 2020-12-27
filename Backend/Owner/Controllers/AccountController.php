@@ -9,7 +9,7 @@
 			//goi ham modelLogin (thuoc class loginModel)
 			$this->modelLogin();			
 			//quay tro lai trang index
-			header("location:index.php");
+			header("location:home");
 		}
 		public function register(){
 			include "Views/RegisterView.php";
@@ -30,7 +30,7 @@
 			//goi ham de update du lieu
 			$this->modelUpdate();
 			//di chuyen den trang danh sach cac ban ghi
-			echo "<script>location.href='index.php?controller=account&action=update';</script>";
+			echo "<script>location.href='update';</script>";
 		}
 
 		public function logout(){
@@ -39,7 +39,7 @@
 			unset($_SESSION["ownerId"]);
 			unset($_SESSION["ownerName"]);
 			//quay tro lai trang index
-			echo "<script>location.href='index.php';</script>";
+			echo "<script>location.href='home';</script>";
 		}
 	}
  ?>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 27, 2020 lúc 02:29 PM
--- Phiên bản máy phục vụ: 10.4.14-MariaDB
--- Phiên bản PHP: 7.4.11
+-- Thời gian đã tạo: Th12 27, 2020 lúc 04:05 PM
+-- Phiên bản máy phục vụ: 10.4.11-MariaDB
+-- Phiên bản PHP: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,10 +41,9 @@ CREATE TABLE `ratings` (
 --
 
 INSERT INTO `ratings` (`id`, `product_id`, `renter_users_id`, `star`, `comment`, `date`) VALUES
-(7, 47, 2, 10, 'dep', '2020-12-27'),
-(8, 47, 2, 9, 'hay\r\n', '2020-12-27'),
-(9, 47, 2, 8, 'xau', '2020-12-27'),
-(10, 47, 2, 10, 'rất đẹp', '2020-12-27');
+(11, 57, 1, 10, 'Chủ trọ uy tín, nhà đẹp giá tốt ', '2020-12-27'),
+(12, 57, 17, 8, 'Bạn chủ xinh gái nhiệt tình, nhà rộng đẹp', '2020-12-27'),
+(13, 57, 17, 2, 'Hay', '2020-12-27');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -64,7 +63,7 @@ ALTER TABLE `ratings`
 -- AUTO_INCREMENT cho bảng `ratings`
 --
 ALTER TABLE `ratings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

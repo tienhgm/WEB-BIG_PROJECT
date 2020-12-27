@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteRule ^home$ index.php
+
+#rewrite account
+RewriteRule ^login$ index.php?controller=account&action=login
+RewriteRule ^register$ index.php?controller=account&action=register 
+RewriteRule ^logout$ index.php?controller=account&action=logout
+RewriteRule ^update$ index.php?controller=account&action=update
+
+#rewrite products
+RewriteRule ^products$ index.php?controller=products&action=read
+RewriteRule ^products/create$ index.php?controller=products&action=create
+RewriteRule ^products/detail/(.*)$ index.php?controller=products&action=detail&id=$1
+RewriteRule ^products/update/(.*)$ index.php?controller=products&action=update&id=$1
+RewriteRule ^products/page-(.*)$ index.php?controller=products&action=read&p=$1

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up Form by Colorlib</title>
-
+    <base href="http://localhost/WEB-BTL/Frontend/">
     <!-- Font Icon -->
     <link rel="stylesheet" href="../Assets/Frontend/fonts/material-icon/css/material-design-iconic-font.min.css">
     <!-- style -->
@@ -29,7 +29,7 @@
                             </div>
                             <div class="form-group">
                                 <label><i class="zmdi zmdi-email"></i></label>
-                                 <input name="email" type="text" placeholder="Email của bạn" required>
+                                 <input name="email" type="email" placeholder="Email của bạn" required>
                             </div>
                             <div class="form-group">
                                 <label><i class="zmdi zmdi-lock"></i></label>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="signup-image">
                         <figure><img src="../Assets/Frontend/images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="index.php" class="signup-image-link" style="text-decoration: none;font-size: 16px;">Home Page</a>
+                        <a href="home" class="signup-image-link" style="text-decoration: none;font-size: 16px;">Home Page</a>
                     </div>
                 </div>
             </div>

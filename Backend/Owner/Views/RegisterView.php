@@ -17,16 +17,16 @@
                       <input type="name" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="name" required placeholder="Nhập vào Tên">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="exampleInputPassword" name="phonenumber" required placeholder="Nhập số điện thoại của bạn">
+                      <input type="text" class="form-control form-control-user" id="exampleInputPhoneNumber" name="phonenumber" required placeholder="Nhập số điện thoại của bạn">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="exampleInputPassword" name="address" required placeholder="Nhập địa chỉ của bạn">
+                      <input type="text" class="form-control form-control-user" id="exampleInputAddress" name="address" required placeholder="Nhập địa chỉ của bạn">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="exampleInputPassword" name="cmnd" required placeholder="Nhập CMND của bạn">
+                      <input type="text" class="form-control form-control-user" id="exampleInputCMND" name="cmnd" required placeholder="Nhập CMND của bạn">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="email" required placeholder="Nhập vào Email">
+                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="email" required placeholder="Nhập vào Email">
                     </div>
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" id="exampleInputPassword" name="password" required placeholder="Nhập password của bạn">

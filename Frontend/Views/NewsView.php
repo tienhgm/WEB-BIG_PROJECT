@@ -1,7 +1,7 @@
 <div class="main-title">
     <h4>Cho thuê phòng trọ, Tìm nhà trọ giá rẻ mới nhất 2020</h4>
     <p>Cho thuê phòng trọ, tìm nhà trọ giá rẻ, không chung chủ, an ninh và nhiều tiện nghi mới nhất tại Việt Nam. Đăng tin cho thuê phòng trọ nhanh chóng và hiệu quả cao.</p>
-    <a class="home" href="index.php">Trang chủ</a>
+    <a class="home" href="home">Trang chủ</a>
     <i class="fa fa-caret-right" aria-hidden="true"></i>
     <a >Tin Tức</a>
 </div><br>
@@ -13,9 +13,9 @@
             <div class="tintuc">
                 <?php foreach($listRecord as $rows): ?>
                     <div class="phong tin d-flex">
-                        <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>"><img src="../Assets/Upload/News/<?php echo $rows->photo; ?>" alt=""></a>
+                        <a href="news/detail/<?php echo Unicode::removeUnicode($rows->name); ?>/<?php echo $rows->id; ?>"><img src="../Assets/Upload/News/<?php echo $rows->photo; ?>" alt=""></a>
                         <div>
-                            <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>"><h6><?php echo $rows->name; ?></h6></a>
+                            <a href="news/detail/<?php echo Unicode::removeUnicode($rows->name); ?>/<?php echo $rows->id; ?>"><h6><?php echo $rows->name; ?></h6></a>
                             <div class="tomtat"><?php echo $rows->description; ?></div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
             <nav aria-label="...">
                 <ul class="pagination" style="margin-top:10px;">
                     <?php for($i = 1; $i <= $numPage; $i++): ?>
-                        <li class="page-item"><a style="color: #00afe8;" class="page-link" href="index.php?controller=news&action=read&id=<?php echo $i; ?>&p=<?php echo $i; ?>"><?php echo $i;?></a></li>
+                        <li class="page-item"><a style="color: #00afe8;" class="page-link" href="news/page/<?php echo $i;?>/<?php echo $i; ?>"><?php echo $i;?></a></li>
                     <?php endfor; ?>
                 </ul>
             </nav>

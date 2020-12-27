@@ -27,7 +27,7 @@
 			//goi ham de update du lieu
 			$this->modelUpdate($id);
 			//di chuyen den trang danh sach cac ban ghi
-			echo "<script>location.href='index.php?controller=products&action=read';</script>";
+			echo "<script>location.href='products';</script>";
 		}
 		//create ban ghi
 		public function create(){
@@ -40,7 +40,7 @@
 			//goi ham de insert ban ghi
 			$this->modelCreate();
 			//di chuyen den trang danh sach cac ban ghi
-			echo "<script>location.href='index.php?controller=products&action=read';</script>";
+			echo "<script>location.href='products';</script>";
 		}
 		//delete ban ghi
 		public function delete(){
@@ -48,7 +48,7 @@
 			//goi ham de update du lieu
 			$this->modelDelete($id);
 			//di chuyen den trang danh sach cac ban ghi
-			echo "<script>location.href='index.php?controller=products&action=read';</script>";
+			echo "<script>location.href='products';</script>";
 		}
 		//chi tiet san pham
         public function detail(){

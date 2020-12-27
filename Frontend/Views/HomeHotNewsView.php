@@ -1,10 +1,10 @@
 <div class="chothuevip-title">
     <h4>TIN TỨC NỔI BẬT</h4>
-    <a href="index.php?controller=news&action=read">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <a href="news">Xem thêm <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 </div>
 <div class="tintucmoi-main row">
 	<?php foreach ($hotNews as $rows):?>
-	    <a href="index.php?controller=news&action=detail&id=<?php echo $rows->id;?>" class="col-lg-6 col-md-12">
+	    <a href="news/detail/<?php echo Unicode::removeUnicode($rows->name); ?>/<?php echo $rows->id; ?>" class="col-lg-6 col-md-12">
 	        <div class="tintucmoi-content d-flex">
 	            <img src="../Assets/Upload/News/<?php echo $rows->photo; ?>" alt="">
 	            <div>

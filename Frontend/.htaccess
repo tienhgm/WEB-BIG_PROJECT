@@ -1,0 +1,23 @@
+RewriteEngine On
+#rewrite Navbar and Home
+RewriteRule ^home$ index.php
+
+#rewrite full of News
+RewriteRule ^news$ index.php?controller=news&action=read
+RewriteRule ^news/detail/(.*)/(.*)$ index.php?controller=news&action=detail&id=$2
+RewriteRule ^news/page/(.*)/(.*)$ index.php?controller=news&action=read&id=$1&p=$2
+
+#rewrite full of Products
+RewriteRule ^products/categories/(.*)/(.*)$ index.php?controller=products&action=categories&id=$2
+RewriteRule ^products/detail/(.*)/(.*)$ index.php?controller=products&action=detail&id=$2
+RewriteRule ^products/(.*)/page-(.*)$ index.php?controller=products&action=categories&id=$1&p=$2
+#rewrite ByLocationProducts
+RewriteRule ^products/locations/(.*)/(.*)$ index.php?controller=products&action=locations&id=$2
+
+
+#rewrite Account
+RewriteRule ^login$ index.php?controller=account&action=login
+RewriteRule ^register$ index.php?controller=account&action=register 
+RewriteRule ^login/register-(.*)$ index.php?controller=account&action=login&notify=$1
+RewriteRule ^logout$ index.php?controller=account&action=logout
+RewriteRule ^account/detail$ index.php?controller=account&action=readDetail

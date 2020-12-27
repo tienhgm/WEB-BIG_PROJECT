@@ -24,9 +24,9 @@
 			if(isset($result->email)){
 				if($result->password == md5($password)){
 					//dang nhap thanh cong
-					$_SESSION["renterEmail"] = $result->email;
 					$_SESSION["renterId"] = $result->id;
 					$_SESSION["renterName"] = $result->name;
+					$_SESSION["renterEmail"] = $result->email;
 					return true;
 				}
 			}

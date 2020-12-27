@@ -1,7 +1,7 @@
 <div class="col-md-12" >
     <div style="margin-bottom:5px;">
       <?php if($this->modelGetOwnerActive($_SESSION["ownerId"])==1): ?>
-        <a href="index.php?controller=products&action=create" class="btn btn-primary">Add products</a>
+        <a href="products/create" class="btn btn-primary">Add products</a>
       <?php endif; ?>
     </div>
     <div class="card card-primary">
@@ -32,10 +32,10 @@
                   <th> <?php echo number_format($rows->price);?> VNĐ</th>
                   <th><?php echo $this->modelGetLocationName($rows->location_id); ?></th>
                   
-                  <td><a class="badge badge-warning" href="index.php?controller=products&action=detail&id=<?php echo $rows->id;?>" class="label label-success">Chi tiết</a></td>
+                  <td><a class="badge badge-warning" href="products/detail/<?php echo $rows->id; ?>" class="label label-success">Chi tiết</a></td>
                   <td style="text-align:center;">
                     <?php if($rows->active==0): ?>
-                    <a class="badge badge-primary" href="index.php?controller=products&action=update&id=<?php echo $rows->id; ?>">Edit</a>&nbsp;
+                    <a class="badge badge-primary" href="products/update/<?php echo $rows->id; ?>">Edit</a>&nbsp;
                     <a class="badge badge-danger" href="index.php?controller=products&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
                     <?php else: ?>
                       <a class="badge badge-danger" href="index.php?controller=products&action=delete&id=<?php echo $rows->id; ?>" onclick="return window.confirm('Are you sure?');">Delete</a>
@@ -49,14 +49,12 @@
             <style type="text/css">
                 .pagination{padding:0px; margin:0px;}
                 .page-link{display: inline;}
-                .tien tr:nth-child(even){
-                    color: green;
-                }
+                
             </style>
             <ul class="pagination">
                 <li class="page-item">
                     <?php for($i = 1; $i <= $numPage; $i++): ?>
-                    <a href="index.php?controller=products&action=read&p=<?php echo $i; ?>" class="page-link"><?php echo $i; ?></a>
+                    <a href="products/page-<?php echo $i; ?>" class="page-link"><?php echo $i; ?></a>
                     <?php endfor; ?>
                 </li>
             </ul>

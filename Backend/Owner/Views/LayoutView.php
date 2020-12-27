@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  <base href="http://localhost/WEB-BTL/Backend/Owner/">
   <title>SB Admin 2 - Dashboard</title>
 
   <!-- Custom fonts for this template-->
@@ -31,7 +31,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -47,7 +47,7 @@
         Users
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?controller=account&action=update">
+        <a class="nav-link" href="update">
           <i class="fas fa-fw fa-cog"></i>
           <span>My Account</span></a>
       </li>
@@ -57,7 +57,7 @@
         Products
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="index.php?controller=products&action=read">
+        <a class="nav-link" href="products">
           <i class="fas fa-fw fa-cog"></i>
           <span>Products</span></a>
       </li>
@@ -123,11 +123,6 @@
           </ul>
         </nav>
         <!-- End of Topbar -->
-
-
-
-       
-
         <!-- Begin Page Content -->
       <div class="container-fluid">
 

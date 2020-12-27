@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up Form by Colorlib</title>
-
+    <base href="http://localhost/WEB-BTL/Frontend/">
     <!-- Font Icon -->
     <link rel="stylesheet" href="../Assets/Frontend/fonts/material-icon/css/material-design-iconic-font.min.css">
     <!-- style -->
@@ -22,11 +22,11 @@
                     <div class="signin-image">
                         <figure><img src="../Assets/Frontend/images/signin-image.jpg" alt="sing up image"></figure>
                         <?php if(isset($_GET["notify"]) && $_GET["notify"]=="success"): ?>
-                            <span style="color:red; font-size: 16px; font-weight: bold;">SIGN UP SUCCESS</span>
+                            <span style="color:red; font-size: 16px; font-weight: bold;margin-left: 57px;">SIGN UP SUCCESS</span>
                         <?php else: ?> 
-                            <a href="index.php?controller=account&action=register" class="signup-image-link">Create an account</a>
+                            <a href="register" class="signup-image-link">Create an account</a>
                         <?php endif; ?> 
-                        <a href="index.php" class="signup-image-link" style="text-decoration: none;font-size: 16px;">Home Page</a>
+                        <a href="home" class="signup-image-link" style="text-decoration: none;font-size: 16px;">Home Page</a>
                     </div>
 
                     <div class="signin-form">

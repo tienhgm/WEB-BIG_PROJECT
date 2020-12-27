@@ -10,7 +10,6 @@
 			$numPage = ceil($this->modelTotalCategory($category_id)/$recordPerPage);
 			//goi ham de lay du lieu
 			$listRecordCategory = $this->modelReadCategory($category_id,$recordPerPage);
-			
 			//load view
 			include "Views/ProductsCategoryView.php";
 		}		
@@ -59,17 +58,17 @@
 			//load view
 			include "Views/ProductsSearchPriceView.php";
 		}
-
 		public function createPostRating(){
             if(isset($_SESSION["renterEmail"])){
                 $this->modelCreateRating();
-                echo "<script>location.href= 'index.php?controller=products&action=detail&id=".$_SESSION["prId"]." ';</script>";
-                unset($_SESSION['prId']);
+                echo "<script>location.href='index.php?controller=products&action=detail&id=".$_SESSION["prId"]." ';</script>";
+                // unset($_SESSION['prId']);
             }
             else{
-                echo "<script>window.alert('Đăng nhập để đánh giá');location.href='index.php?controller=account&action=login';</script>";
+                echo "<script>window.alert('Đăng nhập để đánh giá');location.href='login';</script>";
             }
         }
-       
+
+			
 	}
  ?>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://localhost/WEB-BTL/Frontend/">
     <link rel="stylesheet" href="../Assets/Frontend/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/icon_font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Assets/Frontend/css/trangchu.css">
@@ -30,20 +31,20 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=3">
+                                <a href="products/locations/hoankiem/3">
                                     <img class="anhthap" src="../Assets/Frontend/images/hoankiem.jpg" alt="">
                                     <p class="tendiadiem">Hoàn Kiếm</p>
                                 </a>
                             </div>
                             <div class="row" style="margin-top: 15px;">
                                 <div class="col-6 diadiem" style="padding-right: 7px;">
-                                    <a href="index.php?controller=products&action=locations&id=9">
+                                    <a href="products/locations/badinh/9">
                                         <img class="anhthap" src="../Assets/Frontend/images/badinh.jpg" alt="">
                                         <p class="tendiadiem">Ba Đình</p>
                                     </a>
                                 </div>
                                 <div class="col-6 diadiem" style="padding-left: 7px;">
-                                    <a href="index.php?controller=products&action=locations&id=2">
+                                    <a href="products/locations/dongda/2">
                                         <img class="anhthap" src="../Assets/Frontend/images/Lotte-Hotel-Hanoi.jpg" alt="">
                                         <p class="tendiadiem">Đống Đa</p>
                                     </a>
@@ -53,7 +54,7 @@
                         </div>
                         <div class="col-4 diadiem" style="padding-left: 0;">
                             <div>
-                                <a href="index.php?controller=products&action=locations&id=5">
+                                <a href="products/locations/namtuliem/5">
                                     <img class="anhcao" src="../Assets/Frontend/images/namtuliem.jpg" alt="">
                                     <p class="tendiadiem">Nam Từ Liêm</p>
                                 </a>
@@ -64,7 +65,7 @@
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-4 diadiem" style="padding-right: 7px;">
                             <div>
-                                <a href="index.php?controller=products&action=locations&id=7">
+                                <a href="products/locations/thanhxuan/7">
                                     <img class="anhcao" src="../Assets/Frontend/images/thanhxuan.jpg" alt="">
                                     <p class="tendiadiem">Thanh Xuân</p>
                                 </a>
@@ -72,27 +73,26 @@
                         </div>
                         <div class="col-8" style="padding-left:7px;">
                             <div class="diadiem">
-                                <a href="index.php?controller=products&action=locations&id=10">
+                                <a href="products/locations/tayho/10">
                                     <img class="anhthap" src="../Assets/Frontend/images/hotay.jpg" alt="">
                                     <p class="tendiadiem">Tây Hồ</p>
                                 </a>
                             </div>
                             <div class="row" style="margin-top: 15px;">
                                 <div class="col-6 diadiem" style="padding-right: 7px;">
-                                    <a href="index.php?controller=products&action=locations&id=1">
+                                    <a href="products/locations/caugiay/1">
                                         <img class="anhthap" src="../Assets/Frontend/images/caugiay.jpg" alt="">
                                         <p class="tendiadiem">Cầu Giấy</p>
                                     </a>
                                 </div>
                                 <div class="col-6 diadiem" style="padding-left: 7px;">
-                                    <a href="index.php?controller=products&action=locations&id=11">
+                                    <a href="products/locations/haibatrung/11">
                                         <img class="anhthap" src="../Assets/Frontend/images/haibatrung.jpg" alt="">
                                         <p class="tendiadiem">Hai Ba Trưng</p>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                       
+                        </div>  
                     </div>
                 </div>
             </div>
