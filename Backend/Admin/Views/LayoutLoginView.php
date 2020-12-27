@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin 2 - Login</title>
+  <title>nhà trọ TOT - Login</title>
 
   <!-- Custom fonts for this template-->
   <link href="../../Assets/Backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

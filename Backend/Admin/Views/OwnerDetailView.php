@@ -3,7 +3,7 @@
         <a href="index.php?controller=products&action=create" class="btn btn-primary">Add products</a>
     </div>
     <div class="card card-primary">
-        <h6 class="card-header bg-info" style="color: white">Products</h6>
+        <h6 class="card-header" style="color: white;background:#C79F32">Products</h6>
         <div class="card-body">
             <table class="table table-bordered">
               <thead class="thead-light">

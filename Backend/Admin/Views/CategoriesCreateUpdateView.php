@@ -1,7 +1,7 @@
 <div class="col-md-12">  
     <div class="card card-primary">
         
-        <h6 class="card-header bg-info" style="color: white">Create-Edit Category</h6>
+        <h6 class="card-header" style="color: white;background:#C79F32">Create-Edit Category</h6>
         <form method="post" action="<?php echo $action; ?>" style="margin: 20px 0;">
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
