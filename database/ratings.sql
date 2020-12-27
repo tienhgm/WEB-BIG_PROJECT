@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 27, 2020 lúc 04:05 PM
--- Phiên bản máy phục vụ: 10.4.11-MariaDB
--- Phiên bản PHP: 7.4.6
+-- Thời gian đã tạo: Th12 27, 2020 lúc 07:01 PM
+-- Phiên bản máy phục vụ: 10.4.14-MariaDB
+-- Phiên bản PHP: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,9 +41,12 @@ CREATE TABLE `ratings` (
 --
 
 INSERT INTO `ratings` (`id`, `product_id`, `renter_users_id`, `star`, `comment`, `date`) VALUES
-(11, 57, 1, 10, 'Chủ trọ uy tín, nhà đẹp giá tốt ', '2020-12-27'),
-(12, 57, 17, 8, 'Bạn chủ xinh gái nhiệt tình, nhà rộng đẹp', '2020-12-27'),
-(13, 57, 17, 2, 'Hay', '2020-12-27');
+(15, 57, 2, 10, 'Nhà đẹp, giá tốt, không gian sáng sủa, thoáng mát, dễ chịu, điểm trừ là chủ nhà quá xinh gái! :)', '2020-12-27'),
+(16, 57, 3, 9, 'Có sàn gỗ, đèn led xịn xò, giá hơi chát ', '2020-12-27'),
+(17, 58, 3, 8, 'Phòng trọ mới, cửa sổ rộng nên khá nhiều ánh sáng, thoáng mát, điểm trừ là không có khu để xe, phải gửi xe ngoài', '2020-12-27'),
+(18, 58, 2, 9, 'Phòng đẹp nhưng giá hơi chát so với diện tích, điểm cộng là chủ nhà dễ tính', '2020-12-27'),
+(19, 58, 4, 10, 'Phòng đẹp, thoáng mát, nhiều ánh sáng, chủ nhà dễ tính', '2020-12-27'),
+(20, 57, 5, 8, 'Nhà đẹp, nội thất chanh xả, view đẹp, giao thông khá thuận lợi, gần nơi làm việc', '2020-12-27');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -63,7 +66,7 @@ ALTER TABLE `ratings`
 -- AUTO_INCREMENT cho bảng `ratings`
 --
 ALTER TABLE `ratings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 25, 2020 lúc 04:46 AM
+-- Thời gian đã tạo: Th12 27, 2020 lúc 07:01 PM
 -- Phiên bản máy phục vụ: 10.4.14-MariaDB
 -- Phiên bản PHP: 7.2.34
 
@@ -133,7 +133,52 @@ INSERT INTO `img_products` (`id`, `id_product`, `image`) VALUES
 (131, 57, '95.jpg'),
 (132, 56, '100.jpg'),
 (133, 56, '99.jpg'),
-(134, 56, '98.jpg');
+(134, 56, '98.jpg'),
+(135, 60, '103.jpg'),
+(136, 60, '102.jpg'),
+(137, 60, '101.jpg'),
+(138, 61, '106.jpg'),
+(139, 61, '105.jpg'),
+(140, 61, '104.jpg'),
+(141, 62, '109.jpg'),
+(142, 62, '108.jpg'),
+(143, 62, '107.jpg'),
+(144, 63, '112.jpg'),
+(145, 63, '111.jpg'),
+(146, 63, '110.jpg'),
+(147, 64, '115.jpg'),
+(148, 64, '114.jpg'),
+(149, 64, '113.jpg'),
+(150, 65, '118.jpg'),
+(151, 65, '117.jpg'),
+(152, 65, '116.jpg'),
+(153, 66, '121.jpg'),
+(154, 66, '120.jpg'),
+(155, 66, '119.jpg'),
+(156, 67, '124.jpg'),
+(157, 67, '123.jpg'),
+(158, 67, '122.jpg'),
+(159, 68, '127.jpg'),
+(160, 68, '126.jpg'),
+(161, 68, '125.jpg'),
+(162, 69, '130.jpg'),
+(163, 69, '129.jpg'),
+(164, 69, '128.jpg'),
+(165, 70, '133.jpg'),
+(166, 70, '132.jpg'),
+(167, 70, '131.jpg'),
+(168, 71, '136.jpg'),
+(169, 71, '135.jpg'),
+(170, 71, '134.jpg'),
+(177, 72, '139.jpg'),
+(178, 72, '138.jpg'),
+(179, 72, '137.jpg'),
+(180, 73, '142.jpg'),
+(181, 73, '141.jpg'),
+(182, 73, '140.jpg'),
+(183, 74, '145.jpg'),
+(184, 74, '144.jpg'),
+(185, 74, '143.jpg');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -153,7 +198,7 @@ ALTER TABLE `img_products`
 -- AUTO_INCREMENT cho bảng `img_products`
 --
 ALTER TABLE `img_products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=186;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
