@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up Form by Colorlib</title>
-    <base href="http://localhost/WEB-BTL/Frontend/">
+    <base href="http://localhost/WEB-BIG_PROJECT/Frontend/">
     <!-- Font Icon -->
     <link rel="stylesheet" href="../Assets/Frontend/fonts/material-icon/css/material-design-iconic-font.min.css">
     <!-- style -->
