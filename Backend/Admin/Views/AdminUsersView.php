@@ -3,7 +3,7 @@
         <a href="index.php?controller=adminUsers&action=create" class="btn btn-primary">Add user</a>
     </div>
     <div class="card">
-  <h6 class="card-header bg-info" style="color: white">Admin-User</h6>
+  <h6 class="card-header" style="color: white;background:#C79F32">Admin-User</h6>
   <div class="card-body">
     <table class="table table-bordered table-hover">
               <thead class="thead-light">

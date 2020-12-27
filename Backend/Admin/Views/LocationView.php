@@ -3,7 +3,7 @@
         <a href="index.php?controller=location&action=create" class="btn btn-primary">Add Location</a>
     </div>
     <div class="card card-primary">
-        <h6 class="card-header bg-info" style="color: white">Categories</h6>
+        <h6 class="card-header" style="color: white;background:#C79F32">Categories</h6>
         <div class="card-body">
             <table class="table table-bordered">
               <thead class="thead-light">

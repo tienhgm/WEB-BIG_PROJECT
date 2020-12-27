@@ -3,7 +3,7 @@
         <a href="index.php?controller=slide&action=create" class="btn btn-primary">Add Slider</a>
     </div>
     <div class="card card-primary">
-       <h6 class="card-header bg-info" style="color: white">Slide</h6>
+       <h6 class="card-header" style="color: white;background:#C79F32">Slide</h6>
         <div class="card-body">
             <table class="table table-bordered">
               <thead class="thead-light">

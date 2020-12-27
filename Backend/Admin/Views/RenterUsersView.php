@@ -3,7 +3,7 @@
         <a href="index.php?controller=renterUsers&action=create" class="btn btn-primary">Add user</a>
     </div>
     <div class="card card-primary">
-       <h6 class="card-header bg-info" style="color: white">Renter-User</h6>
+       <h6 class="card-header" style="color: white;background:#C79F32">Renter-User</h6>
         <div class="card-body">
             <table class="table table-bordered">
               <thead class="thead-light">
