@@ -205,7 +205,7 @@
 			return $query->rowCount();
 			//---
 		}
-
+		//ham lay cac ban ghi trong ratings
 		public function modelReadRating($product_id){
             $conn = Connection::getInstance();
 			$query = $conn->query("select * from ratings where product_id =$product_id order by id desc");
