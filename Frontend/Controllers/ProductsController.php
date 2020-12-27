@@ -33,6 +33,7 @@
 			$listImg = $this->modelGetProductsImg($id);
 			//load view
 			include "Views/ProductsDetailView.php";
+			$_SESSION["prId"]= $id;
 		}
 		//xem cac san pham hot
 		public function readHomeHotProducts(){

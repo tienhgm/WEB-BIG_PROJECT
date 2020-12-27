@@ -6,6 +6,7 @@
 </div>
 <div class="main-content row">
     <div class="col-md-12 col-lg-8">
+        <?php var_dump($_SESSION['prId']);?>
         <!-- chitietphong -->
         <div class="chitietphong">
             <h5><?php echo $record->name; ?></h5>
@@ -156,15 +157,15 @@
                 <span style="color: #26bed6;">1 đánh giá</span>
             </div>
             <div class="themdanhgia">
-                <form action="">
+                <form method="post" action="index.php?controller=ratings&action=createPost">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"><b>Đánh giá của bạn :</b></label>
-                        <input type="number" name="number" id="number" max="10" min="0" step="1" placeholder="Điểm">
+                        <input type="number" name="star" id="number" max="10" min="0" step="1" placeholder="Điểm">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"><b>Nhận xét của bạn :</b></label>
                         <div class="row" style="margin: 3px 10px;">
-                            <textarea class="form-control col-md-10" id="exampleFormControlTextarea1" rows="2" style="width: 80%;" placeholder="Viết bình luận"></textarea>
+                            <textarea class="form-control col-md-10" id="exampleFormControlTextarea1" name="comment" rows="2" style="width: 80%;" placeholder="Viết bình luận"></textarea>
                             <button type="submit" class="btn btn-primary col-md-1 col-sm-2 col-3">Gửi</button>
                         </div>
                     </div>
