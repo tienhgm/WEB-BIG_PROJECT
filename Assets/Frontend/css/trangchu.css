@@ -196,6 +196,7 @@
 }
 .tintucmoi-main a:hover .tintucmoi-content h5{
     color: rgb(184, 44, 44);
+    transition: 0.4s;
 }
 
 /* Cac dia diem cho thue noi tieng */
@@ -241,7 +242,8 @@
 }
 
 .diadiem img:hover{
-    box-shadow: 3px 5px 8px #aaaaaa;
+    box-shadow: 5px 5px 8px #aaaaaa;
+    transition: 0.4s;
 }
 
 /* footer */
