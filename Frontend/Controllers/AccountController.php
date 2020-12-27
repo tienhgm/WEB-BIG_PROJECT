@@ -19,7 +19,7 @@
 		//khi an nut submit dang nhap
 		public function loginPost(){
 			if($this->modelLogin())
-				echo "<script>location.href='index.php';</script>";
+				echo "<script>location.href='home';</script>";
 			else
 				echo "<script>location.href='login/register-fail';</script>";
 		}
@@ -39,7 +39,7 @@
 			//goi ham de update du lieu
 			$this->modelUpdate();
 			//di chuyen den trang read
-			echo "<script>location.href='index.php?controller=account&action=readDetail';</script>";
+			echo "<script>location.href='account/detail';</script>";
 		}
 		public function readDetail(){
 			$renter_user = $this->modelGetrenter_user();
