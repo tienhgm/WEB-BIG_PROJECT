@@ -6,7 +6,6 @@
 </div>
 <div class="main-content row">
     <div class="col-md-12 col-lg-8">
-        <?php var_dump($_SESSION['prId']);?>
         <!-- chitietphong -->
         <div class="chitietphong">
             <h5><?php echo $record->name; ?></h5>
@@ -153,11 +152,11 @@
         <div class="danhgia">
             <h6>Đánh giá, nhận xét</h6>
             <div class="diemso">
-                <span class="diemtb">9/10</span>
-                <span style="color: #26bed6;">1 đánh giá</span>
+                <span class="diemtb"><?php echo $avgMark; ?>/10</span>
+                <span style="color: #26bed6;"><?php echo $totalRating; ?> đánh giá</span>
             </div>
             <div class="themdanhgia">
-                <form method="post" action="index.php?controller=ratings&action=createPost">
+                <form method="post" action="index.php?controller=products&action=createPostRating">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"><b>Đánh giá của bạn :</b></label>
                         <input type="number" name="star" id="number" max="10" min="0" step="1" placeholder="Điểm">
@@ -172,25 +171,17 @@
                 </form>
             </div>
             <div class="dadanhgia">
-                
+            <?php foreach($listRecordRating as $rows):?>
                 <div class="d-flex">
                     <div>
                         <i class="fa fa-user-circle fa-3x" style="color: #aaaaaa;font-size: 60px;" aria-hidden="true"></i>
                     </div>
                     <div class="binhluan">
-                        <p><b>Tuấn </b>- 21/01/2020</p>
-                        <span class="diem">9.0</span> <span style="color: #26bed6;">Phòng đẹp</span>
+                        <p><b><?php echo $this->modelGetNameRenter($rows->renter_users_id);?> </b>- <?php echo $rows->date;?></p>
+                        <span class="diem"><?php echo number_format($rows->star);?>.0</span> <span style="color: #26bed6;"><?php echo $rows->comment;?></span>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <div>
-                        <i class="fa fa-user-circle fa-3x" style="color: #aaaaaa;font-size: 60px;" aria-hidden="true"></i>
-                    </div>
-                    <div class="binhluan">
-                        <p><b>Tuấn </b>- 21/01/2020</p>
-                        <span class="diem">8.0</span> <span style="color: #26bed6;">Phòng Tour tư vấn ban đầu có 25 khách nhưng khi đến sân bay là 45 khách. Tour đi quá đông, hdv không thể chăm sóc tốt hết được</span>
-                    </div>
-                </div>
+            <?php endforeach;?>
             </div>
         </div>
     </div>
@@ -217,27 +208,15 @@
             <div class="card">
                 <h5 class="card-header">PhÒNG LIÊN QUAN</h5>
                 <div class="card-body">
+                <?php foreach($this->modelGetProductRelatedByCategoryId($record->category_id) as $rows):?>
                     <div class="lienquan d-flex">
-                        <a href="#"><img src="images/lq.jpg" alt=""></a>
+                        <a href="index.php?controller=products&action=detail&id=<?php echo $rows->id;?>"><img src="../Assets/Upload/TitleImg/<?php echo $rows->photo;?>" alt=""></a>
                         <div>
-                            <p><a href="#">Cho thuê phòng chỉ 3,6 tr, dt 25m full đồ giá rẻ mới tính 100%</a></p>
-                            <b>3.6 triệu/tháng</b>
+                            <p><a href="index.php?controller=products&action=detail&id=<?php echo $rows->id;?>"><?php echo $rows->name;?></a></p>
+                            <b><?php echo number_format($rows->price);?> vnd/tháng</b>
                         </div>
                     </div>
-                    <div class="lienquan d-flex">
-                        <a href="#"><img src="images/lq.jpg" alt=""></a>
-                        <div>
-                            <p><a href="#">Cho thuê phòng chỉ 3,6 tr, dt 25m full đồ giá rẻ mới tính 100%</a></p>
-                            <b>3.6 triệu/tháng</b>
-                        </div>
-                    </div>
-                    <div class="lienquan d-flex">
-                        <a href="#"><img src="images/lq.jpg" alt=""></a>
-                        <div>
-                            <p><a href="#">Cho thuê phòng chỉ 3,6 tr, dt 25m full đồ giá rẻ mới tính 100%</a></p>
-                            <b>3.6 triệu/tháng</b>
-                        </div>
-                    </div>
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>

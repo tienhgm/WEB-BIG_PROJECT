@@ -174,17 +174,7 @@
 			//---
 		}
 
-	// tim kiem san pham theo dien tich
-		//duoi 20m2
-		public function modelSearchByArea20($id){
-			//---
-			$conn = Connection::getInstance();
-			$query = $conn->query("SELECT name from products where id = $id");
-			//tra ve mot ban ghi
-			$result = $query->fetch();
-			return $result->name;
-			//---
-		}
+	
 	//----
 
 	//tim theo muc gia 
@@ -216,6 +206,52 @@
 			//---
 		}
 
+		public function modelReadRating($product_id){
+            $conn = Connection::getInstance();
+			$query = $conn->query("select * from ratings where product_id =$product_id order by id desc");
+			//tra ve tat ca cac ban truy van duoc
+			return $query->fetchAll();
+        }
+        //hàm thêm 1 bản ghi
+        public function modelCreateRating(){
+            $star = $_POST["star"];
+            $comment = $_POST["comment"];
+            //--
+            $conn = Connection::getInstance();
+            $conn->exec("insert into ratings set star='$star',product_id='{$_SESSION['prId']}',comment='$comment',date=now(),renter_users_id='{$_SESSION['renterId']}'");
+        }
+       //lay ten nguoi dung
+		public function modelGetNameRenter($renter_id){
+			//---
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT name from renter_users where id = $renter_id");
+			//tra ve mot ban ghi
+			$result = $query->fetch();
+			return $result->name;
+			//---
+		}
+		//lay so luong danh gia
+		public function modelTotalRating($product_id){
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT * from ratings where product_id = $product_id");
+			//tra ve mot ban ghi
+			return $query->rowCount();			
+		}
+		//diem trung binh danh gia
+		public function modelAvgRating($product_id){
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT AVG(star) as avgmark from ratings where product_id = $product_id");
+			//tra ve mot ban ghi
+			$result= $query->fetch();
+			return $result->avgmark;			
+		}
+		//lay sp lien quan
+		public function modelGetProductRelatedByCategoryId($category_id){
+			$conn = Connection::getInstance();
+			$query = $conn->query("SELECT * from products where category_id = $category_id limit 4");
+			//tra ve mot ban ghi
+			return $query->fetchAll();		
+		}
 	}
 	
  ?>
