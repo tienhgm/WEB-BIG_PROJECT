@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <base href="http://localhost/WEB-BIG_PROJECT/Backend/Owner/">
-  <title>SB Admin 2 - Dashboard</title>
+  <title>nhà trọ TOT - Owner</title>
 
   <!-- Custom fonts for this template-->
   <link href="../../Assets/Backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -21,7 +21,19 @@
   <!-- load ck editor -->
   <script src="ckeditor/ckeditor.js"></script>
 </head>
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5fe9f630df060f156a912aec/1eqkujbnj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 <body id="page-top">
 
   <!-- Page Wrapper -->
@@ -35,7 +47,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Admin <sup>20</sup></div>
+        <div class="sidebar-brand-text mx-3">Owner <sup>TOT</sup></div>
       </a>
 
       <!-- Divider -->

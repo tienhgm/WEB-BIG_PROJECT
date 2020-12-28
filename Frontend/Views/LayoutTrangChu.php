@@ -11,6 +11,7 @@
     
     <title>NHATRO VIP</title>
 </head>
+
 <body>
     <!-- header -->
     <?php include "Views/NavbarVIew.php";?>
